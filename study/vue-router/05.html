@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue-router4 路由参数、查询、通配符 | 南</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="这是我用 VuePress 搭建的个人学习博客！">
+    
+    <link rel="preload" href="/assets/css/0.styles.db6300be.css" as="style"><link rel="preload" href="/assets/js/app.3ce791f2.js" as="script"><link rel="preload" href="/assets/js/2.0ef20547.js" as="script"><link rel="preload" href="/assets/js/130.190215b6.js" as="script"><link rel="prefetch" href="/assets/js/10.b3961306.js"><link rel="prefetch" href="/assets/js/100.de8dcba1.js"><link rel="prefetch" href="/assets/js/101.0f8bdbac.js"><link rel="prefetch" href="/assets/js/102.18d0f745.js"><link rel="prefetch" href="/assets/js/103.45aa90ec.js"><link rel="prefetch" href="/assets/js/104.40ea827b.js"><link rel="prefetch" href="/assets/js/105.f19f2996.js"><link rel="prefetch" href="/assets/js/106.9a4ba006.js"><link rel="prefetch" href="/assets/js/107.fb828f4b.js"><link rel="prefetch" href="/assets/js/108.b00c84a3.js"><link rel="prefetch" href="/assets/js/109.357b5562.js"><link rel="prefetch" href="/assets/js/11.c432eaad.js"><link rel="prefetch" href="/assets/js/110.b4171ef1.js"><link rel="prefetch" href="/assets/js/111.966b67f0.js"><link rel="prefetch" href="/assets/js/112.c33489c3.js"><link rel="prefetch" href="/assets/js/113.9d0847e9.js"><link rel="prefetch" href="/assets/js/114.197b622f.js"><link rel="prefetch" href="/assets/js/115.667e255a.js"><link rel="prefetch" href="/assets/js/116.a2c5dc13.js"><link rel="prefetch" href="/assets/js/117.2b7a8f9c.js"><link rel="prefetch" href="/assets/js/118.aa987190.js"><link rel="prefetch" href="/assets/js/119.3408ca18.js"><link rel="prefetch" href="/assets/js/12.62a85baf.js"><link rel="prefetch" href="/assets/js/120.e12f7c91.js"><link rel="prefetch" href="/assets/js/121.6fb02f72.js"><link rel="prefetch" href="/assets/js/122.557f159e.js"><link rel="prefetch" href="/assets/js/123.d5e53c6d.js"><link rel="prefetch" href="/assets/js/124.df5ddc5d.js"><link rel="prefetch" href="/assets/js/125.a5a82896.js"><link rel="prefetch" href="/assets/js/126.df24f989.js"><link rel="prefetch" href="/assets/js/127.0f7eec10.js"><link rel="prefetch" href="/assets/js/128.9cf6ac7c.js"><link rel="prefetch" href="/assets/js/129.bb70491b.js"><link rel="prefetch" href="/assets/js/13.c727651b.js"><link rel="prefetch" href="/assets/js/131.083dd738.js"><link rel="prefetch" href="/assets/js/132.62ea35c7.js"><link rel="prefetch" href="/assets/js/133.7d63cba7.js"><link rel="prefetch" href="/assets/js/134.18e0d50b.js"><link rel="prefetch" href="/assets/js/135.ca2fec78.js"><link rel="prefetch" href="/assets/js/136.0d3ad47c.js"><link rel="prefetch" href="/assets/js/137.418a11f3.js"><link rel="prefetch" href="/assets/js/138.69b53ece.js"><link rel="prefetch" href="/assets/js/139.62977b0b.js"><link rel="prefetch" href="/assets/js/14.5e5d0e50.js"><link rel="prefetch" href="/assets/js/140.a79b939d.js"><link rel="prefetch" href="/assets/js/141.9c66c170.js"><link rel="prefetch" href="/assets/js/142.85d6851b.js"><link rel="prefetch" href="/assets/js/143.51775333.js"><link rel="prefetch" href="/assets/js/144.9379c53a.js"><link rel="prefetch" href="/assets/js/145.17e5d8ba.js"><link rel="prefetch" href="/assets/js/146.92826ffa.js"><link rel="prefetch" href="/assets/js/147.868e4654.js"><link rel="prefetch" href="/assets/js/148.46bd2981.js"><link rel="prefetch" href="/assets/js/149.b3f0b573.js"><link rel="prefetch" href="/assets/js/15.e0ac1513.js"><link rel="prefetch" href="/assets/js/150.0496f589.js"><link rel="prefetch" href="/assets/js/151.a2b2fbad.js"><link rel="prefetch" href="/assets/js/152.2f051189.js"><link rel="prefetch" href="/assets/js/153.ca0d6fd8.js"><link rel="prefetch" href="/assets/js/154.93ce9d88.js"><link rel="prefetch" href="/assets/js/155.ad84a0c1.js"><link rel="prefetch" href="/assets/js/156.05e52fa7.js"><link rel="prefetch" href="/assets/js/157.60679b29.js"><link rel="prefetch" href="/assets/js/158.f7e0284d.js"><link rel="prefetch" href="/assets/js/159.3fff958f.js"><link rel="prefetch" href="/assets/js/16.d3490606.js"><link rel="prefetch" href="/assets/js/160.eb39fb18.js"><link rel="prefetch" href="/assets/js/161.14b90860.js"><link rel="prefetch" href="/assets/js/162.5ee0334e.js"><link rel="prefetch" href="/assets/js/163.aa0cde7a.js"><link rel="prefetch" href="/assets/js/164.98440f23.js"><link rel="prefetch" href="/assets/js/165.39c2e6af.js"><link rel="prefetch" href="/assets/js/166.62e76f59.js"><link rel="prefetch" href="/assets/js/167.b3e47d54.js"><link rel="prefetch" href="/assets/js/168.03a09811.js"><link rel="prefetch" href="/assets/js/169.18721839.js"><link rel="prefetch" href="/assets/js/17.24cffbf0.js"><link rel="prefetch" href="/assets/js/170.645cd916.js"><link rel="prefetch" href="/assets/js/171.b70171f2.js"><link rel="prefetch" href="/assets/js/172.28e1cedd.js"><link rel="prefetch" href="/assets/js/173.413cb9b2.js"><link rel="prefetch" href="/assets/js/174.7cdc42a4.js"><link rel="prefetch" href="/assets/js/175.7e9f276a.js"><link rel="prefetch" href="/assets/js/176.adb1fbe0.js"><link rel="prefetch" href="/assets/js/177.56079a0e.js"><link rel="prefetch" href="/assets/js/178.3dd525e0.js"><link rel="prefetch" href="/assets/js/179.bd582685.js"><link rel="prefetch" href="/assets/js/18.9ee02a99.js"><link rel="prefetch" href="/assets/js/180.4165de33.js"><link rel="prefetch" href="/assets/js/181.208694e3.js"><link rel="prefetch" href="/assets/js/182.6621cfcd.js"><link rel="prefetch" href="/assets/js/183.13609924.js"><link rel="prefetch" href="/assets/js/184.d96f9a79.js"><link rel="prefetch" href="/assets/js/185.ad192dd3.js"><link rel="prefetch" href="/assets/js/186.d71515e4.js"><link rel="prefetch" href="/assets/js/187.2957633a.js"><link rel="prefetch" href="/assets/js/188.e9761542.js"><link rel="prefetch" href="/assets/js/189.b3254d4f.js"><link rel="prefetch" href="/assets/js/19.36aa9eae.js"><link rel="prefetch" href="/assets/js/190.1c6dcc21.js"><link rel="prefetch" href="/assets/js/20.da48423e.js"><link rel="prefetch" href="/assets/js/21.9ac934b9.js"><link rel="prefetch" href="/assets/js/22.b8c26bae.js"><link rel="prefetch" href="/assets/js/23.227fcdaa.js"><link rel="prefetch" href="/assets/js/24.08d364bb.js"><link rel="prefetch" href="/assets/js/25.984c2149.js"><link rel="prefetch" href="/assets/js/26.805e9ee6.js"><link rel="prefetch" href="/assets/js/27.db4ddb75.js"><link rel="prefetch" href="/assets/js/28.b2456edd.js"><link rel="prefetch" href="/assets/js/29.a2f6017f.js"><link rel="prefetch" href="/assets/js/3.23f4907e.js"><link rel="prefetch" href="/assets/js/30.bebab7d3.js"><link rel="prefetch" href="/assets/js/31.1d6b92cb.js"><link rel="prefetch" href="/assets/js/32.562a65a5.js"><link rel="prefetch" href="/assets/js/33.66855daf.js"><link rel="prefetch" href="/assets/js/34.805b7a34.js"><link rel="prefetch" href="/assets/js/35.2c19282a.js"><link rel="prefetch" href="/assets/js/36.945b368e.js"><link rel="prefetch" href="/assets/js/37.af1593e5.js"><link rel="prefetch" href="/assets/js/38.0a64e4f6.js"><link rel="prefetch" href="/assets/js/39.60733a6e.js"><link rel="prefetch" href="/assets/js/4.8da6a8f7.js"><link rel="prefetch" href="/assets/js/40.5ae297e8.js"><link rel="prefetch" href="/assets/js/41.5c1aa8a0.js"><link rel="prefetch" href="/assets/js/42.a857a0e6.js"><link rel="prefetch" href="/assets/js/43.ba7da108.js"><link rel="prefetch" href="/assets/js/44.009ce993.js"><link rel="prefetch" href="/assets/js/45.1cd523af.js"><link rel="prefetch" href="/assets/js/46.679a5cea.js"><link rel="prefetch" href="/assets/js/47.c921d189.js"><link rel="prefetch" href="/assets/js/48.ee12efc0.js"><link rel="prefetch" href="/assets/js/49.d7dd70e2.js"><link rel="prefetch" href="/assets/js/5.bdc1ac6b.js"><link rel="prefetch" href="/assets/js/50.bc9f0bf1.js"><link rel="prefetch" href="/assets/js/51.aaf3aebd.js"><link rel="prefetch" href="/assets/js/52.0acf038d.js"><link rel="prefetch" href="/assets/js/53.01cf6347.js"><link rel="prefetch" href="/assets/js/54.89e4a69f.js"><link rel="prefetch" href="/assets/js/55.b0d1f214.js"><link rel="prefetch" href="/assets/js/56.ca5d4676.js"><link rel="prefetch" href="/assets/js/57.553ca0a6.js"><link rel="prefetch" href="/assets/js/58.98cc5862.js"><link rel="prefetch" href="/assets/js/59.f64b8cc2.js"><link rel="prefetch" href="/assets/js/6.24e999a1.js"><link rel="prefetch" href="/assets/js/60.7ef4a647.js"><link rel="prefetch" href="/assets/js/61.f72f0bcb.js"><link rel="prefetch" href="/assets/js/62.ec890236.js"><link rel="prefetch" href="/assets/js/63.ddd5dfbc.js"><link rel="prefetch" href="/assets/js/64.320c8837.js"><link rel="prefetch" href="/assets/js/65.f99bcfcc.js"><link rel="prefetch" href="/assets/js/66.d225a06a.js"><link rel="prefetch" href="/assets/js/67.8b5477d8.js"><link rel="prefetch" href="/assets/js/68.87ae50fa.js"><link rel="prefetch" href="/assets/js/69.57ece9ad.js"><link rel="prefetch" href="/assets/js/7.5772efdd.js"><link rel="prefetch" href="/assets/js/70.c55970b3.js"><link rel="prefetch" href="/assets/js/71.fe2e2ffb.js"><link rel="prefetch" href="/assets/js/72.dae73f84.js"><link rel="prefetch" href="/assets/js/73.124f47c3.js"><link rel="prefetch" href="/assets/js/74.9c4df1a6.js"><link rel="prefetch" href="/assets/js/75.a21e4923.js"><link rel="prefetch" href="/assets/js/76.74d16534.js"><link rel="prefetch" href="/assets/js/77.671fcd3e.js"><link rel="prefetch" href="/assets/js/78.cd2e1e31.js"><link rel="prefetch" href="/assets/js/79.424d1495.js"><link rel="prefetch" href="/assets/js/8.4595d782.js"><link rel="prefetch" href="/assets/js/80.b90f1f9e.js"><link rel="prefetch" href="/assets/js/81.c78892cb.js"><link rel="prefetch" href="/assets/js/82.5a9c2ecf.js"><link rel="prefetch" href="/assets/js/83.b326d16e.js"><link rel="prefetch" href="/assets/js/84.c9aba1f2.js"><link rel="prefetch" href="/assets/js/85.80d95f81.js"><link rel="prefetch" href="/assets/js/86.6d03d757.js"><link rel="prefetch" href="/assets/js/87.b9004e5c.js"><link rel="prefetch" href="/assets/js/88.7e152654.js"><link rel="prefetch" href="/assets/js/89.110e9168.js"><link rel="prefetch" href="/assets/js/9.aab443be.js"><link rel="prefetch" href="/assets/js/90.c96c9810.js"><link rel="prefetch" href="/assets/js/91.30a74a5c.js"><link rel="prefetch" href="/assets/js/92.2735e96c.js"><link rel="prefetch" href="/assets/js/93.47b513ab.js"><link rel="prefetch" href="/assets/js/94.9ca71da5.js"><link rel="prefetch" href="/assets/js/95.4c608f53.js"><link rel="prefetch" href="/assets/js/96.a243e7de.js"><link rel="prefetch" href="/assets/js/97.f738ef91.js"><link rel="prefetch" href="/assets/js/98.06b90c5b.js"><link rel="prefetch" href="/assets/js/99.b7191e8a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.db6300be.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.svg" alt="南" class="logo"> <span class="site-name can-hide">南</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link">
+  博文
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="我的学习笔记菜单" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="我的学习笔记菜单" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/study/webpack/" class="nav-link">
+  webpack学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue3/" class="nav-link">
+  vue3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vuex/" class="nav-link">
+  vuex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue-router/" class="nav-link router-link-active">
+  vueRouter学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/axios/" class="nav-link">
+  axios学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es5/" class="nav-link">
+  ES5学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es6/" class="nav-link">
+  ES6学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/promise/" class="nav-link">
+  promise学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/typescript/" class="nav-link">
+  typescript学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/flex/" class="nav-link">
+  flex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/css3/" class="nav-link">
+  css3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/less/" class="nav-link">
+  less学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/sass/" class="nav-link">
+  sass学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-app/" class="nav-link">
+  微信小程序学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-h5/" class="nav-link">
+  微信公众号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/ali-h5/" class="nav-link">
+  支付宝生活号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/websoket/" class="nav-link">
+  websoket学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/Bluetooth/" class="nav-link">
+  Bluetooth学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/uniapp/" class="nav-link">
+  uniapp学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/lodash/" class="nav-link">
+  lodash学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/jquery/" class="nav-link">
+  jquery学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/animate/" class="nav-link">
+  animate学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/canvas/" class="nav-link">
+  canvas学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/echarts/" class="nav-link">
+  echarts学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/audio/" class="nav-link">
+  audio学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/video/" class="nav-link">
+  video学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vant/" class="nav-link">
+  vant学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/bootstrap/" class="nav-link">
+  bootstrap学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/element-ui/" class="nav-link">
+  elementUi学习
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目菜单" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目菜单" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/project/" class="nav-link">
+  我的项目
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link">
+  博文
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="我的学习笔记菜单" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="我的学习笔记菜单" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/study/webpack/" class="nav-link">
+  webpack学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue3/" class="nav-link">
+  vue3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vuex/" class="nav-link">
+  vuex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue-router/" class="nav-link router-link-active">
+  vueRouter学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/axios/" class="nav-link">
+  axios学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es5/" class="nav-link">
+  ES5学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es6/" class="nav-link">
+  ES6学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/promise/" class="nav-link">
+  promise学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/typescript/" class="nav-link">
+  typescript学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/flex/" class="nav-link">
+  flex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/css3/" class="nav-link">
+  css3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/less/" class="nav-link">
+  less学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/sass/" class="nav-link">
+  sass学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-app/" class="nav-link">
+  微信小程序学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-h5/" class="nav-link">
+  微信公众号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/ali-h5/" class="nav-link">
+  支付宝生活号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/websoket/" class="nav-link">
+  websoket学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/Bluetooth/" class="nav-link">
+  Bluetooth学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/uniapp/" class="nav-link">
+  uniapp学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/lodash/" class="nav-link">
+  lodash学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/jquery/" class="nav-link">
+  jquery学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/animate/" class="nav-link">
+  animate学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/canvas/" class="nav-link">
+  canvas学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/echarts/" class="nav-link">
+  echarts学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/audio/" class="nav-link">
+  audio学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/video/" class="nav-link">
+  video学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vant/" class="nav-link">
+  vant学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/bootstrap/" class="nav-link">
+  bootstrap学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/element-ui/" class="nav-link">
+  elementUi学习
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目菜单" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目菜单" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/project/" class="nav-link">
+  我的项目
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/study/vue-router/" class="sidebar-heading clickable router-link-active open"><span>vue-router学习</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/study/vue-router/13.html" class="sidebar-link">vue-router4 和 组合式 API</a></li><li><a href="/study/vue-router/12.html" class="sidebar-link">vue-router4 动态路由、方法</a></li><li><a href="/study/vue-router/11.html" class="sidebar-link">vue-router4 URL 的正确编码</a></li><li><a href="/study/vue-router/10.html" class="sidebar-link">vue-router4 可定制的滚动行为</a></li><li><a href="/study/vue-router/09.html" class="sidebar-link">vue-router4 HTML5 history 模式或 hash 模式</a></li><li><a href="/study/vue-router/08.html" class="sidebar-link">vue-router4 自动激活 CSS 类的链接</a></li><li><a href="/study/vue-router/07.html" class="sidebar-link">vue-router4 细致的导航控制</a></li><li><a href="/study/vue-router/06.html" class="sidebar-link">vue-router4 展示由 Vue.js 的过渡系统提供的过渡效果</a></li><li><a href="/study/vue-router/05.html" aria-current="page" class="active sidebar-link">vue-router4 路由参数、查询、通配符</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/study/vue-router/05.html#路由参数" class="sidebar-link">路由参数</a></li><li class="sidebar-sub-header"><a href="/study/vue-router/05.html#查询参数" class="sidebar-link">查询参数</a></li><li class="sidebar-sub-header"><a href="/study/vue-router/05.html#通配符" class="sidebar-link">通配符</a></li></ul></li><li><a href="/study/vue-router/04.html" class="sidebar-link">vue-router4 模块化、基于组件的路由配置</a></li><li><a href="/study/vue-router/03.html" class="sidebar-link">vue-router4 动态路由选择</a></li><li><a href="/study/vue-router/02.html" class="sidebar-link">vue-router4 嵌套路由映射</a></li><li><a href="/study/vue-router/01.html" class="sidebar-link">vue-router4 初体验</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue-router4-路由参数、查询、通配符"><a href="#vue-router4-路由参数、查询、通配符" class="header-anchor">#</a> vue-router4 路由参数、查询、通配符</h1> <p>在 Vue Router 4 中，我们可以通过路由参数、查询参数和通配符来定义不同类型的路由。</p> <h2 id="路由参数"><a href="#路由参数" class="header-anchor">#</a> 路由参数</h2> <p>路由参数可以用来动态地匹配路由。例如，我们可以定义一个动态路由 /user/:id，其中 :id 代表一个动态参数，可以匹配任意值。在路由配置中，可以使用 path 属性来定义动态路由参数，例如：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token function">createRouter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  routes<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      path<span class="token operator">:</span> <span class="token string">'/user/:id'</span><span class="token punctuation">,</span>
+      component<span class="token operator">:</span> User
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>在上面的示例中，我们为 /user/:id 路由定义了一个动态参数 :id，代表该路由可以匹配任意值。在实际应用中，当用户访问 /user/123 时，该路由会匹配到 User 组件，并将动态参数 id 的值设置为 123。</p> <p>要在组件中访问路由参数，可以通过 $route.params 来获取。例如，在 User 组件中可以通过如下方式获取动态参数 id 的值：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$route<span class="token punctuation">.</span>params<span class="token punctuation">.</span>id<span class="token punctuation">)</span> <span class="token comment">// 输出：123</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>需要注意的是，路由参数可以是任意字符串，但是不能包含斜杠 /，否则会被解释为路由路径的一部分。例如，如果我们使用 /user/:name 定义路由参数，那么当用户访问 /user/John/Doe 时，该路由会匹配失败。</p> <h2 id="查询参数"><a href="#查询参数" class="header-anchor">#</a> 查询参数</h2> <p>查询参数是指路由路径中以 ? 开头的参数，可以用来传递一些参数信息。例如，我们可以定义一个带有查询参数的路由 /search?q=keyword，其中 q 代表查询参数的名称，keyword 代表查询参数的值。在路由配置中，可以使用 path 属性和 query 属性来定义带有查询参数的路由，例如：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token function">createRouter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  routes<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      path<span class="token operator">:</span> <span class="token string">'/search'</span><span class="token punctuation">,</span>
+      component<span class="token operator">:</span> Search<span class="token punctuation">,</span>
+      <span class="token function-variable function">props</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">route</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> query<span class="token operator">:</span> route<span class="token punctuation">.</span>query<span class="token punctuation">.</span>q <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>在上面的示例中，我们为 /search 路由定义了一个查询参数 q，代表该路由可以接收一个名为 q 的查询参数。在组件中，可以通过 $route.query 来获取查询参数的值，例如：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$route<span class="token punctuation">.</span>query<span class="token punctuation">.</span>q<span class="token punctuation">)</span> <span class="token comment">// 输出：keyword</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>需要注意的是，查询参数可以有多个，多个参数之间用 &amp; 分隔。例如，我们可以定义一个带有多个查询参数的路由 /search?q=keyword&amp;sort=price，其中 sort 代表另一个查询参数的名称，price 代表查询参数的值。</p> <h2 id="通配符"><a href="#通配符" class="header-anchor">#</a> 通配符</h2> <p>通配符是指路由路径中以 * 开头的参数，代表匹配所有路由。
+当我们在路由配置中使用通配符时，可以使用 $route.params 对象来访问匹配到的动态路由参数，例如：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token function">createRouter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  routes<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      path<span class="token operator">:</span> <span class="token string">'/user/:id'</span><span class="token punctuation">,</span>
+      component<span class="token operator">:</span> User<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      path<span class="token operator">:</span> <span class="token string">'*'</span><span class="token punctuation">,</span>
+      component<span class="token operator">:</span> NotFound<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> User <span class="token operator">=</span> <span class="token punctuation">{</span>
+  template<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+    &lt;div&gt;
+      &lt;h1&gt;User {{ $route.params.id }}&lt;/h1&gt;
+    &lt;/div&gt;
+  </span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在上面的示例中，当访问 /user/123 时，路由会匹配到 /user/:id 的路由规则，然后将 id 参数保存到 $route.params.id 属性中，我们可以在组件内通过 $route.params.id 来访问该参数。</p> <p>当使用通配符 * 匹配所有路径时，$route.params 对象中不会包含任何参数。此时我们可以使用 $route.path 属性来访问当前路径。</p> <p>除了动态路由参数和通配符外，我们还可以通过查询字符串传递参数。查询字符串是一个以 ? 开头的字符串，包含一组 key=value 对，不同的 key=value 对之间使用 &amp; 分隔。例如：/path?key1=value1&amp;key2=value2。</p> <p>我们可以在路由配置中使用 query 属性来定义查询参数，例如：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token function">createRouter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  routes<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      path<span class="token operator">:</span> <span class="token string">'/search'</span><span class="token punctuation">,</span>
+      component<span class="token operator">:</span> Search<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> Search <span class="token operator">=</span> <span class="token punctuation">{</span>
+  template<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+    &lt;div&gt;
+      &lt;h1&gt;Search Results&lt;/h1&gt;
+      &lt;p&gt;Keyword: {{ $route.query.keyword }}&lt;/p&gt;
+    &lt;/div&gt;
+  </span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在上面的示例中，当访问 /search?keyword=vue-router 时，$route.query 对象中会包含一个名为 keyword 的属性，其值为 vue-router，我们可以在组件内通过 $route.query.keyword 来访问该属性。</p> <p>如果我们希望在路由中定义多个查询参数，可以使用数组语法，例如：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token function">createRouter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  routes<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      path<span class="token operator">:</span> <span class="token string">'/search'</span><span class="token punctuation">,</span>
+      component<span class="token operator">:</span> Search<span class="token punctuation">,</span>
+      query<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'keyword'</span><span class="token punctuation">,</span> <span class="token string">'category'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>在上面的示例中，我们通过 query 属性定义了两个查询参数：keyword 和 category。此时，访问 /search?keyword=vue-router&amp;category=router 时，$route.query 对象中会包含两个属性：keyword 和 category。</p> <p>总结一下，路由参数、查询参数和通配符是 vue-router4 中常用的三种路由参数传递方式。我们可以通过动态路由参数来实现路由的动态匹配和传递参数，通过查询参数来实现一些复杂的过滤和搜索功能，通过通配符来处理未知路径和错误处理。在实际开发中，我们可以根据不同的场景选择不同的参数传递方式，以实现更加灵活和高效的路由配置。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/study/vue-router/06.html" class="prev">
+        vue-router4 展示由 Vue.js 的过渡系统提供的过渡效果
+      </a></span> <span class="next"><a href="/study/vue-router/04.html">
+        vue-router4 模块化、基于组件的路由配置
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3ce791f2.js" defer></script><script src="/assets/js/2.0ef20547.js" defer></script><script src="/assets/js/130.190215b6.js" defer></script>
+  </body>
+</html>

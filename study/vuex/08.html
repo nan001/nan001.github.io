@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vuex4 组合式API | 南</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="这是我用 VuePress 搭建的个人学习博客！">
+    
+    <link rel="preload" href="/assets/css/0.styles.db6300be.css" as="style"><link rel="preload" href="/assets/js/app.3ce791f2.js" as="script"><link rel="preload" href="/assets/js/2.0ef20547.js" as="script"><link rel="preload" href="/assets/js/177.56079a0e.js" as="script"><link rel="prefetch" href="/assets/js/10.b3961306.js"><link rel="prefetch" href="/assets/js/100.de8dcba1.js"><link rel="prefetch" href="/assets/js/101.0f8bdbac.js"><link rel="prefetch" href="/assets/js/102.18d0f745.js"><link rel="prefetch" href="/assets/js/103.45aa90ec.js"><link rel="prefetch" href="/assets/js/104.40ea827b.js"><link rel="prefetch" href="/assets/js/105.f19f2996.js"><link rel="prefetch" href="/assets/js/106.9a4ba006.js"><link rel="prefetch" href="/assets/js/107.fb828f4b.js"><link rel="prefetch" href="/assets/js/108.b00c84a3.js"><link rel="prefetch" href="/assets/js/109.357b5562.js"><link rel="prefetch" href="/assets/js/11.c432eaad.js"><link rel="prefetch" href="/assets/js/110.b4171ef1.js"><link rel="prefetch" href="/assets/js/111.966b67f0.js"><link rel="prefetch" href="/assets/js/112.c33489c3.js"><link rel="prefetch" href="/assets/js/113.9d0847e9.js"><link rel="prefetch" href="/assets/js/114.197b622f.js"><link rel="prefetch" href="/assets/js/115.667e255a.js"><link rel="prefetch" href="/assets/js/116.a2c5dc13.js"><link rel="prefetch" href="/assets/js/117.2b7a8f9c.js"><link rel="prefetch" href="/assets/js/118.aa987190.js"><link rel="prefetch" href="/assets/js/119.3408ca18.js"><link rel="prefetch" href="/assets/js/12.62a85baf.js"><link rel="prefetch" href="/assets/js/120.e12f7c91.js"><link rel="prefetch" href="/assets/js/121.6fb02f72.js"><link rel="prefetch" href="/assets/js/122.557f159e.js"><link rel="prefetch" href="/assets/js/123.d5e53c6d.js"><link rel="prefetch" href="/assets/js/124.df5ddc5d.js"><link rel="prefetch" href="/assets/js/125.a5a82896.js"><link rel="prefetch" href="/assets/js/126.df24f989.js"><link rel="prefetch" href="/assets/js/127.0f7eec10.js"><link rel="prefetch" href="/assets/js/128.9cf6ac7c.js"><link rel="prefetch" href="/assets/js/129.bb70491b.js"><link rel="prefetch" href="/assets/js/13.c727651b.js"><link rel="prefetch" href="/assets/js/130.190215b6.js"><link rel="prefetch" href="/assets/js/131.083dd738.js"><link rel="prefetch" href="/assets/js/132.62ea35c7.js"><link rel="prefetch" href="/assets/js/133.7d63cba7.js"><link rel="prefetch" href="/assets/js/134.18e0d50b.js"><link rel="prefetch" href="/assets/js/135.ca2fec78.js"><link rel="prefetch" href="/assets/js/136.0d3ad47c.js"><link rel="prefetch" href="/assets/js/137.418a11f3.js"><link rel="prefetch" href="/assets/js/138.69b53ece.js"><link rel="prefetch" href="/assets/js/139.62977b0b.js"><link rel="prefetch" href="/assets/js/14.5e5d0e50.js"><link rel="prefetch" href="/assets/js/140.a79b939d.js"><link rel="prefetch" href="/assets/js/141.9c66c170.js"><link rel="prefetch" href="/assets/js/142.85d6851b.js"><link rel="prefetch" href="/assets/js/143.51775333.js"><link rel="prefetch" href="/assets/js/144.9379c53a.js"><link rel="prefetch" href="/assets/js/145.17e5d8ba.js"><link rel="prefetch" href="/assets/js/146.92826ffa.js"><link rel="prefetch" href="/assets/js/147.868e4654.js"><link rel="prefetch" href="/assets/js/148.46bd2981.js"><link rel="prefetch" href="/assets/js/149.b3f0b573.js"><link rel="prefetch" href="/assets/js/15.e0ac1513.js"><link rel="prefetch" href="/assets/js/150.0496f589.js"><link rel="prefetch" href="/assets/js/151.a2b2fbad.js"><link rel="prefetch" href="/assets/js/152.2f051189.js"><link rel="prefetch" href="/assets/js/153.ca0d6fd8.js"><link rel="prefetch" href="/assets/js/154.93ce9d88.js"><link rel="prefetch" href="/assets/js/155.ad84a0c1.js"><link rel="prefetch" href="/assets/js/156.05e52fa7.js"><link rel="prefetch" href="/assets/js/157.60679b29.js"><link rel="prefetch" href="/assets/js/158.f7e0284d.js"><link rel="prefetch" href="/assets/js/159.3fff958f.js"><link rel="prefetch" href="/assets/js/16.d3490606.js"><link rel="prefetch" href="/assets/js/160.eb39fb18.js"><link rel="prefetch" href="/assets/js/161.14b90860.js"><link rel="prefetch" href="/assets/js/162.5ee0334e.js"><link rel="prefetch" href="/assets/js/163.aa0cde7a.js"><link rel="prefetch" href="/assets/js/164.98440f23.js"><link rel="prefetch" href="/assets/js/165.39c2e6af.js"><link rel="prefetch" href="/assets/js/166.62e76f59.js"><link rel="prefetch" href="/assets/js/167.b3e47d54.js"><link rel="prefetch" href="/assets/js/168.03a09811.js"><link rel="prefetch" href="/assets/js/169.18721839.js"><link rel="prefetch" href="/assets/js/17.24cffbf0.js"><link rel="prefetch" href="/assets/js/170.645cd916.js"><link rel="prefetch" href="/assets/js/171.b70171f2.js"><link rel="prefetch" href="/assets/js/172.28e1cedd.js"><link rel="prefetch" href="/assets/js/173.413cb9b2.js"><link rel="prefetch" href="/assets/js/174.7cdc42a4.js"><link rel="prefetch" href="/assets/js/175.7e9f276a.js"><link rel="prefetch" href="/assets/js/176.adb1fbe0.js"><link rel="prefetch" href="/assets/js/178.3dd525e0.js"><link rel="prefetch" href="/assets/js/179.bd582685.js"><link rel="prefetch" href="/assets/js/18.9ee02a99.js"><link rel="prefetch" href="/assets/js/180.4165de33.js"><link rel="prefetch" href="/assets/js/181.208694e3.js"><link rel="prefetch" href="/assets/js/182.6621cfcd.js"><link rel="prefetch" href="/assets/js/183.13609924.js"><link rel="prefetch" href="/assets/js/184.d96f9a79.js"><link rel="prefetch" href="/assets/js/185.ad192dd3.js"><link rel="prefetch" href="/assets/js/186.d71515e4.js"><link rel="prefetch" href="/assets/js/187.2957633a.js"><link rel="prefetch" href="/assets/js/188.e9761542.js"><link rel="prefetch" href="/assets/js/189.b3254d4f.js"><link rel="prefetch" href="/assets/js/19.36aa9eae.js"><link rel="prefetch" href="/assets/js/190.1c6dcc21.js"><link rel="prefetch" href="/assets/js/20.da48423e.js"><link rel="prefetch" href="/assets/js/21.9ac934b9.js"><link rel="prefetch" href="/assets/js/22.b8c26bae.js"><link rel="prefetch" href="/assets/js/23.227fcdaa.js"><link rel="prefetch" href="/assets/js/24.08d364bb.js"><link rel="prefetch" href="/assets/js/25.984c2149.js"><link rel="prefetch" href="/assets/js/26.805e9ee6.js"><link rel="prefetch" href="/assets/js/27.db4ddb75.js"><link rel="prefetch" href="/assets/js/28.b2456edd.js"><link rel="prefetch" href="/assets/js/29.a2f6017f.js"><link rel="prefetch" href="/assets/js/3.23f4907e.js"><link rel="prefetch" href="/assets/js/30.bebab7d3.js"><link rel="prefetch" href="/assets/js/31.1d6b92cb.js"><link rel="prefetch" href="/assets/js/32.562a65a5.js"><link rel="prefetch" href="/assets/js/33.66855daf.js"><link rel="prefetch" href="/assets/js/34.805b7a34.js"><link rel="prefetch" href="/assets/js/35.2c19282a.js"><link rel="prefetch" href="/assets/js/36.945b368e.js"><link rel="prefetch" href="/assets/js/37.af1593e5.js"><link rel="prefetch" href="/assets/js/38.0a64e4f6.js"><link rel="prefetch" href="/assets/js/39.60733a6e.js"><link rel="prefetch" href="/assets/js/4.8da6a8f7.js"><link rel="prefetch" href="/assets/js/40.5ae297e8.js"><link rel="prefetch" href="/assets/js/41.5c1aa8a0.js"><link rel="prefetch" href="/assets/js/42.a857a0e6.js"><link rel="prefetch" href="/assets/js/43.ba7da108.js"><link rel="prefetch" href="/assets/js/44.009ce993.js"><link rel="prefetch" href="/assets/js/45.1cd523af.js"><link rel="prefetch" href="/assets/js/46.679a5cea.js"><link rel="prefetch" href="/assets/js/47.c921d189.js"><link rel="prefetch" href="/assets/js/48.ee12efc0.js"><link rel="prefetch" href="/assets/js/49.d7dd70e2.js"><link rel="prefetch" href="/assets/js/5.bdc1ac6b.js"><link rel="prefetch" href="/assets/js/50.bc9f0bf1.js"><link rel="prefetch" href="/assets/js/51.aaf3aebd.js"><link rel="prefetch" href="/assets/js/52.0acf038d.js"><link rel="prefetch" href="/assets/js/53.01cf6347.js"><link rel="prefetch" href="/assets/js/54.89e4a69f.js"><link rel="prefetch" href="/assets/js/55.b0d1f214.js"><link rel="prefetch" href="/assets/js/56.ca5d4676.js"><link rel="prefetch" href="/assets/js/57.553ca0a6.js"><link rel="prefetch" href="/assets/js/58.98cc5862.js"><link rel="prefetch" href="/assets/js/59.f64b8cc2.js"><link rel="prefetch" href="/assets/js/6.24e999a1.js"><link rel="prefetch" href="/assets/js/60.7ef4a647.js"><link rel="prefetch" href="/assets/js/61.f72f0bcb.js"><link rel="prefetch" href="/assets/js/62.ec890236.js"><link rel="prefetch" href="/assets/js/63.ddd5dfbc.js"><link rel="prefetch" href="/assets/js/64.320c8837.js"><link rel="prefetch" href="/assets/js/65.f99bcfcc.js"><link rel="prefetch" href="/assets/js/66.d225a06a.js"><link rel="prefetch" href="/assets/js/67.8b5477d8.js"><link rel="prefetch" href="/assets/js/68.87ae50fa.js"><link rel="prefetch" href="/assets/js/69.57ece9ad.js"><link rel="prefetch" href="/assets/js/7.5772efdd.js"><link rel="prefetch" href="/assets/js/70.c55970b3.js"><link rel="prefetch" href="/assets/js/71.fe2e2ffb.js"><link rel="prefetch" href="/assets/js/72.dae73f84.js"><link rel="prefetch" href="/assets/js/73.124f47c3.js"><link rel="prefetch" href="/assets/js/74.9c4df1a6.js"><link rel="prefetch" href="/assets/js/75.a21e4923.js"><link rel="prefetch" href="/assets/js/76.74d16534.js"><link rel="prefetch" href="/assets/js/77.671fcd3e.js"><link rel="prefetch" href="/assets/js/78.cd2e1e31.js"><link rel="prefetch" href="/assets/js/79.424d1495.js"><link rel="prefetch" href="/assets/js/8.4595d782.js"><link rel="prefetch" href="/assets/js/80.b90f1f9e.js"><link rel="prefetch" href="/assets/js/81.c78892cb.js"><link rel="prefetch" href="/assets/js/82.5a9c2ecf.js"><link rel="prefetch" href="/assets/js/83.b326d16e.js"><link rel="prefetch" href="/assets/js/84.c9aba1f2.js"><link rel="prefetch" href="/assets/js/85.80d95f81.js"><link rel="prefetch" href="/assets/js/86.6d03d757.js"><link rel="prefetch" href="/assets/js/87.b9004e5c.js"><link rel="prefetch" href="/assets/js/88.7e152654.js"><link rel="prefetch" href="/assets/js/89.110e9168.js"><link rel="prefetch" href="/assets/js/9.aab443be.js"><link rel="prefetch" href="/assets/js/90.c96c9810.js"><link rel="prefetch" href="/assets/js/91.30a74a5c.js"><link rel="prefetch" href="/assets/js/92.2735e96c.js"><link rel="prefetch" href="/assets/js/93.47b513ab.js"><link rel="prefetch" href="/assets/js/94.9ca71da5.js"><link rel="prefetch" href="/assets/js/95.4c608f53.js"><link rel="prefetch" href="/assets/js/96.a243e7de.js"><link rel="prefetch" href="/assets/js/97.f738ef91.js"><link rel="prefetch" href="/assets/js/98.06b90c5b.js"><link rel="prefetch" href="/assets/js/99.b7191e8a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.db6300be.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.svg" alt="南" class="logo"> <span class="site-name can-hide">南</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link">
+  博文
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="我的学习笔记菜单" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="我的学习笔记菜单" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/study/webpack/" class="nav-link">
+  webpack学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue3/" class="nav-link">
+  vue3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vuex/" class="nav-link router-link-active">
+  vuex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue-router/" class="nav-link">
+  vueRouter学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/axios/" class="nav-link">
+  axios学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es5/" class="nav-link">
+  ES5学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es6/" class="nav-link">
+  ES6学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/promise/" class="nav-link">
+  promise学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/typescript/" class="nav-link">
+  typescript学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/flex/" class="nav-link">
+  flex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/css3/" class="nav-link">
+  css3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/less/" class="nav-link">
+  less学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/sass/" class="nav-link">
+  sass学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-app/" class="nav-link">
+  微信小程序学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-h5/" class="nav-link">
+  微信公众号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/ali-h5/" class="nav-link">
+  支付宝生活号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/websoket/" class="nav-link">
+  websoket学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/Bluetooth/" class="nav-link">
+  Bluetooth学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/uniapp/" class="nav-link">
+  uniapp学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/lodash/" class="nav-link">
+  lodash学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/jquery/" class="nav-link">
+  jquery学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/animate/" class="nav-link">
+  animate学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/canvas/" class="nav-link">
+  canvas学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/echarts/" class="nav-link">
+  echarts学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/audio/" class="nav-link">
+  audio学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/video/" class="nav-link">
+  video学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vant/" class="nav-link">
+  vant学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/bootstrap/" class="nav-link">
+  bootstrap学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/element-ui/" class="nav-link">
+  elementUi学习
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目菜单" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目菜单" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/project/" class="nav-link">
+  我的项目
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link">
+  博文
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="我的学习笔记菜单" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="我的学习笔记菜单" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/study/webpack/" class="nav-link">
+  webpack学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue3/" class="nav-link">
+  vue3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vuex/" class="nav-link router-link-active">
+  vuex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue-router/" class="nav-link">
+  vueRouter学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/axios/" class="nav-link">
+  axios学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es5/" class="nav-link">
+  ES5学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es6/" class="nav-link">
+  ES6学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/promise/" class="nav-link">
+  promise学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/typescript/" class="nav-link">
+  typescript学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/flex/" class="nav-link">
+  flex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/css3/" class="nav-link">
+  css3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/less/" class="nav-link">
+  less学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/sass/" class="nav-link">
+  sass学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-app/" class="nav-link">
+  微信小程序学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-h5/" class="nav-link">
+  微信公众号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/ali-h5/" class="nav-link">
+  支付宝生活号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/websoket/" class="nav-link">
+  websoket学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/Bluetooth/" class="nav-link">
+  Bluetooth学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/uniapp/" class="nav-link">
+  uniapp学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/lodash/" class="nav-link">
+  lodash学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/jquery/" class="nav-link">
+  jquery学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/animate/" class="nav-link">
+  animate学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/canvas/" class="nav-link">
+  canvas学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/echarts/" class="nav-link">
+  echarts学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/audio/" class="nav-link">
+  audio学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/video/" class="nav-link">
+  video学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vant/" class="nav-link">
+  vant学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/bootstrap/" class="nav-link">
+  bootstrap学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/element-ui/" class="nav-link">
+  elementUi学习
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目菜单" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目菜单" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/project/" class="nav-link">
+  我的项目
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/study/vuex/" class="sidebar-heading clickable router-link-active open"><span>vuex学习</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/study/vuex/10.html" class="sidebar-link">vuex4 测试</a></li><li><a href="/study/vuex/09.html" class="sidebar-link">vuex4 插件</a></li><li><a href="/study/vuex/08.html" aria-current="page" class="active sidebar-link">vuex4 组合式API</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/study/vuex/08.html#usestore" class="sidebar-link">useStore()</a></li><li class="sidebar-sub-header"><a href="/study/vuex/08.html#usevuex" class="sidebar-link">useVuex()</a></li><li class="sidebar-sub-header"><a href="/study/vuex/08.html#usestate" class="sidebar-link">useState()</a></li><li class="sidebar-sub-header"><a href="/study/vuex/08.html#usegetters" class="sidebar-link">useGetters()</a></li><li class="sidebar-sub-header"><a href="/study/vuex/08.html#usemutations" class="sidebar-link">useMutations()</a></li><li class="sidebar-sub-header"><a href="/study/vuex/08.html#useactions" class="sidebar-link">useActions()</a></li><li class="sidebar-sub-header"><a href="/study/vuex/08.html#当我们使用组合式-api-时-我们可以使用以下函数来创建一个新的-vuex-store" class="sidebar-link">当我们使用组合式 API 时，我们可以使用以下函数来创建一个新的 Vuex store：</a></li><li class="sidebar-sub-header"><a href="/study/vuex/08.html#在组合式-api-中-我们使用以下函数来定义状态、突变、操作和-getter" class="sidebar-link">在组合式 API 中，我们使用以下函数来定义状态、突变、操作和 getter：</a></li></ul></li><li><a href="/study/vuex/07.html" class="sidebar-link">vuex4 项目结构</a></li><li><a href="/study/vuex/06.html" class="sidebar-link">vuex4 核心概念 Module</a></li><li><a href="/study/vuex/05.html" class="sidebar-link">vuex4 核心概念 Action</a></li><li><a href="/study/vuex/04.html" class="sidebar-link">vuex4 核心概念 Mutation</a></li><li><a href="/study/vuex/03.html" class="sidebar-link">vuex4 核心概念 Getter</a></li><li><a href="/study/vuex/02.html" class="sidebar-link">vuex4 核心概念 state</a></li><li><a href="/study/vuex/01.html" class="sidebar-link">vuex4 初体验</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vuex4-组合式api"><a href="#vuex4-组合式api" class="header-anchor">#</a> vuex4 组合式API</h1> <p>Vuex 4 引入了新的组合式 API，它可以让我们更灵活地使用 Vuex。在 Vuex 3 中，我们通常是通过对象来定义 State、Mutation、Action 等，但这种方式在大型项目中会变得比较混乱和难以维护。在 Vuex 4 中，我们可以使用组合式 API 来更加灵活地组织代码。</p> <p>组合式 API 是基于 Vue 3 中的 Composition API 实现的，它允许我们将逻辑代码按功能划分为多个可重用的函数，从而提高代码的可维护性和可读性。在 Vuex 4 中，我们可以使用以下几个 API 来实现组合式开发：</p> <p>useStore()：用于在组件中获取 Store 实例。
+useVuex()：用于在普通 JavaScript 中获取 Store 实例。
+useState()：用于在组件中获取 State。
+useGetters()：用于在组件中获取 Getter。
+useMutations()：用于在组件中获取 Mutation。
+useActions()：用于在组件中获取 Action。
+下面我们来具体了解一下这些 API。</p> <h2 id="usestore"><a href="#usestore" class="header-anchor">#</a> <code>useStore()</code></h2> <p><code>useStore()</code> 是一个在组件中获取 Store 实例的函数。在 Vue 3 中，我们通常使用 <code>setup()</code> 函数来获取 Store 实例，并将其返回给模板中使用。例如：</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>{{ count }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> <span class="token punctuation">{</span> useStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">useStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      count<span class="token operator">:</span> <span class="token function">computed</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>count<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>在上面的示例中，我们使用 useStore() 函数获取了 Store 实例，并使用 computed() 函数来监听 State 的变化，从而在模板中显示当前的计数值。</p> <h2 id="usevuex"><a href="#usevuex" class="header-anchor">#</a> useVuex()</h2> <p>useVuex() 是一个在普通 JavaScript 中获取 Store 实例的函数。如果我们需要在普通 JavaScript 中使用 Vuex，我们可以通过 useVuex() 来获取 Store 实例，从而进行状态管理。例如：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> useVuex <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+
+<span class="token keyword">const</span> <span class="token punctuation">{</span> store <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">useVuex</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>count<span class="token punctuation">)</span>
+</code></pre></div><p>在上面的示例中，我们使用 useVuex() 函数获取了 Store 实例，并使用 console.log() 函数来输出当前的计数值。</p> <h2 id="usestate"><a href="#usestate" class="header-anchor">#</a> useState()</h2> <p>useState() 是一个在组件中获取 State 的函数。如果我们需要在组件中获取 State，我们可以通过 useState() 函数来实现。例如：</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>{{ count }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> count <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'count'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      count
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>在上面的示例中，我们使用 useState() 函数获取了 State，并将其解构为 count 变量。在 return 中，我们将 count 变量返回给模板中使用。</p> <h2 id="usegetters"><a href="#usegetters" class="header-anchor">#</a> useGetters()</h2> <p>useGetters() 是一个在组件中获取 Getter 的组合式 API，它的使用方法如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> useGetters <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> getter1<span class="token punctuation">,</span> getter2 <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">useGetters</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'getter1'</span><span class="token punctuation">,</span> <span class="token string">'getter2'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token comment">// ...</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>useGetters() 接收一个数组作为参数，数组中包含需要获取的 Getter 名称。在组件中，我们可以使用对象解构将返回的 Getter 绑定到组件的变量上，并直接使用这些变量。</p> <p>另外，useGetters() 也可以接收一个函数作为参数，这个函数的参数为所有 Getter，返回值为需要获取的 Getter。使用方法如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> useGetters <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> getter1<span class="token punctuation">,</span> getter2 <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">useGetters</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">getters</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        getter1<span class="token operator">:</span> getters<span class="token punctuation">.</span>getter1<span class="token punctuation">,</span>
+        getter2<span class="token operator">:</span> getters<span class="token punctuation">.</span>getter2<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token comment">// ...</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>这种方法可以在获取 Getter 的同时进行一些计算或筛选操作。</p> <h2 id="usemutations"><a href="#usemutations" class="header-anchor">#</a> useMutations()</h2> <p>useMutations() 是一个在组件中获取 Mutation 的组合式 API，它的使用方法如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> useMutations <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> mutation1<span class="token punctuation">,</span> mutation2 <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">useMutations</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'mutation1'</span><span class="token punctuation">,</span> <span class="token string">'mutation2'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token comment">// ...</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>useMutations() 接收一个数组作为参数，数组中包含需要获取的 Mutation 名称。在组件中，我们可以使用对象解构将返回的 Mutation 绑定到组件的变量上，并直接调用这些变量，即可触发对应的 Mutation。</p> <p>另外，useMutations() 也可以接收一个函数作为参数，这个函数的参数为所有 Mutation，返回值为需要获取的 Mutation。使用方法如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> useMutations <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> mutation1<span class="token punctuation">,</span> mutation2 <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">useMutations</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">mutations</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        mutation1<span class="token operator">:</span> mutations<span class="token punctuation">.</span>mutation1<span class="token punctuation">,</span>
+        mutation2<span class="token operator">:</span> mutations<span class="token punctuation">.</span>mutation2<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token comment">// ...</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>这种方法可以在获取 Mutation 的同时进行一些计算或筛选操作。</p> <h2 id="useactions"><a href="#useactions" class="header-anchor">#</a> useActions()</h2> <p>useActions() 是一个在组件中获取 Action 的组合式 API，它的使用方法如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> useActions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> action1<span class="token punctuation">,</span> action2 <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">useActions</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'action1'</span><span class="token punctuation">,</span> <span class="token string">'action2'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token comment">// ...</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>useActions() 接收一个数组作为参数，数组中包含需要获取的 Action 名称。在组件中，我们可以使用对象解构将返回的 Action 绑定到组件的变量上，并直接调用这些变量，即可触发对应的 Action。</p> <p>另外，useActions() 也可以接收一个函数作为参数，这个函数的参数为所有 Action，返回值为需要获取的 Action。使用方法如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> useActions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> action1<span class="token punctuation">,</span> action2 <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">useActions</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">actions</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        action1<span class="token operator">:</span> actions<span class="token punctuation">.</span>action1<span class="token punctuation">,</span>
+        action2<span class="token operator">:</span> actions<span class="token punctuation">.</span>action2<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token comment">// ...</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>这种方法可以在获取 Action 的同时进行一些计算或筛选操作。</p> <p>除了上述两种方法，useActions() 还可以接收一个对象作为参数，这个对象中的键是需要获取的 Action 名称，值是对应的 Action。这种方法可以用于对 Action 进行重命名或者重新组合，例如：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> useActions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> addTodo <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">useActions</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      addTodo<span class="token operator">:</span> <span class="token string">'todos/addTodo'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token comment">// ...</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>上面的例子中，我们将名为 &quot;todos/addTodo&quot; 的 Action 重命名为 &quot;addTodo&quot;，这样在组件中就可以直接调用 &quot;addTodo&quot; 触发 Action 了。useActions() 是一个非常方便的组合式 API，可以大大简化组件中触发 Action 的代码量。</p> <h2 id="当我们使用组合式-api-时-我们可以使用以下函数来创建一个新的-vuex-store"><a href="#当我们使用组合式-api-时-我们可以使用以下函数来创建一个新的-vuex-store" class="header-anchor">#</a> 当我们使用组合式 API 时，我们可以使用以下函数来创建一个新的 Vuex store：</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> createStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token function">state</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      count<span class="token operator">:</span> <span class="token number">0</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  mutations<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">increment</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">.</span>count<span class="token operator">++</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>在这里，我们通过 createStore() 函数创建了一个新的 Vuex store。createStore() 函数接受一个对象作为参数，该对象包含了我们需要在 store 中定义的状态、突变、操作和 getter。</p> <h2 id="在组合式-api-中-我们使用以下函数来定义状态、突变、操作和-getter"><a href="#在组合式-api-中-我们使用以下函数来定义状态、突变、操作和-getter" class="header-anchor">#</a> 在组合式 API 中，我们使用以下函数来定义状态、突变、操作和 getter：</h2> <p>reactive()：创建一个响应式的对象，用来表示状态。
+computed()：创建一个计算属性，用来定义 getter。
+watchEffect()：创建一个副作用函数，用来定义操作。
+watch()：创建一个 watcher，用来监听状态的变化。</p> <p>下面是一个使用组合式 API 来定义 Vuex store 的例子：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> createStore<span class="token punctuation">,</span> reactive<span class="token punctuation">,</span> computed<span class="token punctuation">,</span> watchEffect <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  state<span class="token operator">:</span> <span class="token function">reactive</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    count<span class="token operator">:</span> <span class="token number">0</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  mutations<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">increment</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">.</span>count<span class="token operator">++</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  actions<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">asyncIncrement</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> commit <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'increment'</span><span class="token punctuation">)</span>
+          <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  getters<span class="token operator">:</span> <span class="token punctuation">{</span>
+    doubledCount<span class="token operator">:</span> <span class="token function">computed</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> state<span class="token punctuation">.</span>count <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  modules<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token function">watchEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>count<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'asyncIncrement'</span><span class="token punctuation">)</span>
+</code></pre></div><p>在这个例子中，我们使用 reactive() 函数来创建了一个响应式的状态对象。我们使用 computed() 函数来定义了一个名为 doubledCount 的 getter，该 getter 返回 count 的两倍。我们使用 watchEffect() 函数来创建了一个副作用函数，当 count 改变时，该函数会自动运行。</p> <p>我们还定义了一个名为 asyncIncrement 的操作，该操作使用 Promise 来模拟异步请求。我们在操作中使用 commit() 函数来提交突变，该突变会将 count 加一。</p> <p>最后，我们创建了一个新的 Vuex store，包含了我们定义的状态、突变、操作和 getter。我们使用 watchEffect() 函数来监听 count 的变化，并调用 dispatch() 函数来调用 asyncIncrement 操作。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/study/vuex/09.html" class="prev">
+        vuex4 插件
+      </a></span> <span class="next"><a href="/study/vuex/07.html">
+        vuex4 项目结构
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3ce791f2.js" defer></script><script src="/assets/js/2.0ef20547.js" defer></script><script src="/assets/js/177.56079a0e.js" defer></script>
+  </body>
+</html>

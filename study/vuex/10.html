@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vuex4 测试 | 南</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="这是我用 VuePress 搭建的个人学习博客！">
+    
+    <link rel="preload" href="/assets/css/0.styles.db6300be.css" as="style"><link rel="preload" href="/assets/js/app.3ce791f2.js" as="script"><link rel="preload" href="/assets/js/2.0ef20547.js" as="script"><link rel="preload" href="/assets/js/179.bd582685.js" as="script"><link rel="prefetch" href="/assets/js/10.b3961306.js"><link rel="prefetch" href="/assets/js/100.de8dcba1.js"><link rel="prefetch" href="/assets/js/101.0f8bdbac.js"><link rel="prefetch" href="/assets/js/102.18d0f745.js"><link rel="prefetch" href="/assets/js/103.45aa90ec.js"><link rel="prefetch" href="/assets/js/104.40ea827b.js"><link rel="prefetch" href="/assets/js/105.f19f2996.js"><link rel="prefetch" href="/assets/js/106.9a4ba006.js"><link rel="prefetch" href="/assets/js/107.fb828f4b.js"><link rel="prefetch" href="/assets/js/108.b00c84a3.js"><link rel="prefetch" href="/assets/js/109.357b5562.js"><link rel="prefetch" href="/assets/js/11.c432eaad.js"><link rel="prefetch" href="/assets/js/110.b4171ef1.js"><link rel="prefetch" href="/assets/js/111.966b67f0.js"><link rel="prefetch" href="/assets/js/112.c33489c3.js"><link rel="prefetch" href="/assets/js/113.9d0847e9.js"><link rel="prefetch" href="/assets/js/114.197b622f.js"><link rel="prefetch" href="/assets/js/115.667e255a.js"><link rel="prefetch" href="/assets/js/116.a2c5dc13.js"><link rel="prefetch" href="/assets/js/117.2b7a8f9c.js"><link rel="prefetch" href="/assets/js/118.aa987190.js"><link rel="prefetch" href="/assets/js/119.3408ca18.js"><link rel="prefetch" href="/assets/js/12.62a85baf.js"><link rel="prefetch" href="/assets/js/120.e12f7c91.js"><link rel="prefetch" href="/assets/js/121.6fb02f72.js"><link rel="prefetch" href="/assets/js/122.557f159e.js"><link rel="prefetch" href="/assets/js/123.d5e53c6d.js"><link rel="prefetch" href="/assets/js/124.df5ddc5d.js"><link rel="prefetch" href="/assets/js/125.a5a82896.js"><link rel="prefetch" href="/assets/js/126.df24f989.js"><link rel="prefetch" href="/assets/js/127.0f7eec10.js"><link rel="prefetch" href="/assets/js/128.9cf6ac7c.js"><link rel="prefetch" href="/assets/js/129.bb70491b.js"><link rel="prefetch" href="/assets/js/13.c727651b.js"><link rel="prefetch" href="/assets/js/130.190215b6.js"><link rel="prefetch" href="/assets/js/131.083dd738.js"><link rel="prefetch" href="/assets/js/132.62ea35c7.js"><link rel="prefetch" href="/assets/js/133.7d63cba7.js"><link rel="prefetch" href="/assets/js/134.18e0d50b.js"><link rel="prefetch" href="/assets/js/135.ca2fec78.js"><link rel="prefetch" href="/assets/js/136.0d3ad47c.js"><link rel="prefetch" href="/assets/js/137.418a11f3.js"><link rel="prefetch" href="/assets/js/138.69b53ece.js"><link rel="prefetch" href="/assets/js/139.62977b0b.js"><link rel="prefetch" href="/assets/js/14.5e5d0e50.js"><link rel="prefetch" href="/assets/js/140.a79b939d.js"><link rel="prefetch" href="/assets/js/141.9c66c170.js"><link rel="prefetch" href="/assets/js/142.85d6851b.js"><link rel="prefetch" href="/assets/js/143.51775333.js"><link rel="prefetch" href="/assets/js/144.9379c53a.js"><link rel="prefetch" href="/assets/js/145.17e5d8ba.js"><link rel="prefetch" href="/assets/js/146.92826ffa.js"><link rel="prefetch" href="/assets/js/147.868e4654.js"><link rel="prefetch" href="/assets/js/148.46bd2981.js"><link rel="prefetch" href="/assets/js/149.b3f0b573.js"><link rel="prefetch" href="/assets/js/15.e0ac1513.js"><link rel="prefetch" href="/assets/js/150.0496f589.js"><link rel="prefetch" href="/assets/js/151.a2b2fbad.js"><link rel="prefetch" href="/assets/js/152.2f051189.js"><link rel="prefetch" href="/assets/js/153.ca0d6fd8.js"><link rel="prefetch" href="/assets/js/154.93ce9d88.js"><link rel="prefetch" href="/assets/js/155.ad84a0c1.js"><link rel="prefetch" href="/assets/js/156.05e52fa7.js"><link rel="prefetch" href="/assets/js/157.60679b29.js"><link rel="prefetch" href="/assets/js/158.f7e0284d.js"><link rel="prefetch" href="/assets/js/159.3fff958f.js"><link rel="prefetch" href="/assets/js/16.d3490606.js"><link rel="prefetch" href="/assets/js/160.eb39fb18.js"><link rel="prefetch" href="/assets/js/161.14b90860.js"><link rel="prefetch" href="/assets/js/162.5ee0334e.js"><link rel="prefetch" href="/assets/js/163.aa0cde7a.js"><link rel="prefetch" href="/assets/js/164.98440f23.js"><link rel="prefetch" href="/assets/js/165.39c2e6af.js"><link rel="prefetch" href="/assets/js/166.62e76f59.js"><link rel="prefetch" href="/assets/js/167.b3e47d54.js"><link rel="prefetch" href="/assets/js/168.03a09811.js"><link rel="prefetch" href="/assets/js/169.18721839.js"><link rel="prefetch" href="/assets/js/17.24cffbf0.js"><link rel="prefetch" href="/assets/js/170.645cd916.js"><link rel="prefetch" href="/assets/js/171.b70171f2.js"><link rel="prefetch" href="/assets/js/172.28e1cedd.js"><link rel="prefetch" href="/assets/js/173.413cb9b2.js"><link rel="prefetch" href="/assets/js/174.7cdc42a4.js"><link rel="prefetch" href="/assets/js/175.7e9f276a.js"><link rel="prefetch" href="/assets/js/176.adb1fbe0.js"><link rel="prefetch" href="/assets/js/177.56079a0e.js"><link rel="prefetch" href="/assets/js/178.3dd525e0.js"><link rel="prefetch" href="/assets/js/18.9ee02a99.js"><link rel="prefetch" href="/assets/js/180.4165de33.js"><link rel="prefetch" href="/assets/js/181.208694e3.js"><link rel="prefetch" href="/assets/js/182.6621cfcd.js"><link rel="prefetch" href="/assets/js/183.13609924.js"><link rel="prefetch" href="/assets/js/184.d96f9a79.js"><link rel="prefetch" href="/assets/js/185.ad192dd3.js"><link rel="prefetch" href="/assets/js/186.d71515e4.js"><link rel="prefetch" href="/assets/js/187.2957633a.js"><link rel="prefetch" href="/assets/js/188.e9761542.js"><link rel="prefetch" href="/assets/js/189.b3254d4f.js"><link rel="prefetch" href="/assets/js/19.36aa9eae.js"><link rel="prefetch" href="/assets/js/190.1c6dcc21.js"><link rel="prefetch" href="/assets/js/20.da48423e.js"><link rel="prefetch" href="/assets/js/21.9ac934b9.js"><link rel="prefetch" href="/assets/js/22.b8c26bae.js"><link rel="prefetch" href="/assets/js/23.227fcdaa.js"><link rel="prefetch" href="/assets/js/24.08d364bb.js"><link rel="prefetch" href="/assets/js/25.984c2149.js"><link rel="prefetch" href="/assets/js/26.805e9ee6.js"><link rel="prefetch" href="/assets/js/27.db4ddb75.js"><link rel="prefetch" href="/assets/js/28.b2456edd.js"><link rel="prefetch" href="/assets/js/29.a2f6017f.js"><link rel="prefetch" href="/assets/js/3.23f4907e.js"><link rel="prefetch" href="/assets/js/30.bebab7d3.js"><link rel="prefetch" href="/assets/js/31.1d6b92cb.js"><link rel="prefetch" href="/assets/js/32.562a65a5.js"><link rel="prefetch" href="/assets/js/33.66855daf.js"><link rel="prefetch" href="/assets/js/34.805b7a34.js"><link rel="prefetch" href="/assets/js/35.2c19282a.js"><link rel="prefetch" href="/assets/js/36.945b368e.js"><link rel="prefetch" href="/assets/js/37.af1593e5.js"><link rel="prefetch" href="/assets/js/38.0a64e4f6.js"><link rel="prefetch" href="/assets/js/39.60733a6e.js"><link rel="prefetch" href="/assets/js/4.8da6a8f7.js"><link rel="prefetch" href="/assets/js/40.5ae297e8.js"><link rel="prefetch" href="/assets/js/41.5c1aa8a0.js"><link rel="prefetch" href="/assets/js/42.a857a0e6.js"><link rel="prefetch" href="/assets/js/43.ba7da108.js"><link rel="prefetch" href="/assets/js/44.009ce993.js"><link rel="prefetch" href="/assets/js/45.1cd523af.js"><link rel="prefetch" href="/assets/js/46.679a5cea.js"><link rel="prefetch" href="/assets/js/47.c921d189.js"><link rel="prefetch" href="/assets/js/48.ee12efc0.js"><link rel="prefetch" href="/assets/js/49.d7dd70e2.js"><link rel="prefetch" href="/assets/js/5.bdc1ac6b.js"><link rel="prefetch" href="/assets/js/50.bc9f0bf1.js"><link rel="prefetch" href="/assets/js/51.aaf3aebd.js"><link rel="prefetch" href="/assets/js/52.0acf038d.js"><link rel="prefetch" href="/assets/js/53.01cf6347.js"><link rel="prefetch" href="/assets/js/54.89e4a69f.js"><link rel="prefetch" href="/assets/js/55.b0d1f214.js"><link rel="prefetch" href="/assets/js/56.ca5d4676.js"><link rel="prefetch" href="/assets/js/57.553ca0a6.js"><link rel="prefetch" href="/assets/js/58.98cc5862.js"><link rel="prefetch" href="/assets/js/59.f64b8cc2.js"><link rel="prefetch" href="/assets/js/6.24e999a1.js"><link rel="prefetch" href="/assets/js/60.7ef4a647.js"><link rel="prefetch" href="/assets/js/61.f72f0bcb.js"><link rel="prefetch" href="/assets/js/62.ec890236.js"><link rel="prefetch" href="/assets/js/63.ddd5dfbc.js"><link rel="prefetch" href="/assets/js/64.320c8837.js"><link rel="prefetch" href="/assets/js/65.f99bcfcc.js"><link rel="prefetch" href="/assets/js/66.d225a06a.js"><link rel="prefetch" href="/assets/js/67.8b5477d8.js"><link rel="prefetch" href="/assets/js/68.87ae50fa.js"><link rel="prefetch" href="/assets/js/69.57ece9ad.js"><link rel="prefetch" href="/assets/js/7.5772efdd.js"><link rel="prefetch" href="/assets/js/70.c55970b3.js"><link rel="prefetch" href="/assets/js/71.fe2e2ffb.js"><link rel="prefetch" href="/assets/js/72.dae73f84.js"><link rel="prefetch" href="/assets/js/73.124f47c3.js"><link rel="prefetch" href="/assets/js/74.9c4df1a6.js"><link rel="prefetch" href="/assets/js/75.a21e4923.js"><link rel="prefetch" href="/assets/js/76.74d16534.js"><link rel="prefetch" href="/assets/js/77.671fcd3e.js"><link rel="prefetch" href="/assets/js/78.cd2e1e31.js"><link rel="prefetch" href="/assets/js/79.424d1495.js"><link rel="prefetch" href="/assets/js/8.4595d782.js"><link rel="prefetch" href="/assets/js/80.b90f1f9e.js"><link rel="prefetch" href="/assets/js/81.c78892cb.js"><link rel="prefetch" href="/assets/js/82.5a9c2ecf.js"><link rel="prefetch" href="/assets/js/83.b326d16e.js"><link rel="prefetch" href="/assets/js/84.c9aba1f2.js"><link rel="prefetch" href="/assets/js/85.80d95f81.js"><link rel="prefetch" href="/assets/js/86.6d03d757.js"><link rel="prefetch" href="/assets/js/87.b9004e5c.js"><link rel="prefetch" href="/assets/js/88.7e152654.js"><link rel="prefetch" href="/assets/js/89.110e9168.js"><link rel="prefetch" href="/assets/js/9.aab443be.js"><link rel="prefetch" href="/assets/js/90.c96c9810.js"><link rel="prefetch" href="/assets/js/91.30a74a5c.js"><link rel="prefetch" href="/assets/js/92.2735e96c.js"><link rel="prefetch" href="/assets/js/93.47b513ab.js"><link rel="prefetch" href="/assets/js/94.9ca71da5.js"><link rel="prefetch" href="/assets/js/95.4c608f53.js"><link rel="prefetch" href="/assets/js/96.a243e7de.js"><link rel="prefetch" href="/assets/js/97.f738ef91.js"><link rel="prefetch" href="/assets/js/98.06b90c5b.js"><link rel="prefetch" href="/assets/js/99.b7191e8a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.db6300be.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.svg" alt="南" class="logo"> <span class="site-name can-hide">南</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link">
+  博文
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="我的学习笔记菜单" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="我的学习笔记菜单" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/study/webpack/" class="nav-link">
+  webpack学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue3/" class="nav-link">
+  vue3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vuex/" class="nav-link router-link-active">
+  vuex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue-router/" class="nav-link">
+  vueRouter学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/axios/" class="nav-link">
+  axios学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es5/" class="nav-link">
+  ES5学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es6/" class="nav-link">
+  ES6学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/promise/" class="nav-link">
+  promise学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/typescript/" class="nav-link">
+  typescript学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/flex/" class="nav-link">
+  flex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/css3/" class="nav-link">
+  css3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/less/" class="nav-link">
+  less学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/sass/" class="nav-link">
+  sass学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-app/" class="nav-link">
+  微信小程序学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-h5/" class="nav-link">
+  微信公众号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/ali-h5/" class="nav-link">
+  支付宝生活号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/websoket/" class="nav-link">
+  websoket学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/Bluetooth/" class="nav-link">
+  Bluetooth学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/uniapp/" class="nav-link">
+  uniapp学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/lodash/" class="nav-link">
+  lodash学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/jquery/" class="nav-link">
+  jquery学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/animate/" class="nav-link">
+  animate学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/canvas/" class="nav-link">
+  canvas学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/echarts/" class="nav-link">
+  echarts学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/audio/" class="nav-link">
+  audio学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/video/" class="nav-link">
+  video学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vant/" class="nav-link">
+  vant学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/bootstrap/" class="nav-link">
+  bootstrap学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/element-ui/" class="nav-link">
+  elementUi学习
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目菜单" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目菜单" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/project/" class="nav-link">
+  我的项目
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link">
+  博文
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="我的学习笔记菜单" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="我的学习笔记菜单" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/study/webpack/" class="nav-link">
+  webpack学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue3/" class="nav-link">
+  vue3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vuex/" class="nav-link router-link-active">
+  vuex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue-router/" class="nav-link">
+  vueRouter学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/axios/" class="nav-link">
+  axios学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es5/" class="nav-link">
+  ES5学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es6/" class="nav-link">
+  ES6学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/promise/" class="nav-link">
+  promise学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/typescript/" class="nav-link">
+  typescript学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/flex/" class="nav-link">
+  flex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/css3/" class="nav-link">
+  css3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/less/" class="nav-link">
+  less学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/sass/" class="nav-link">
+  sass学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-app/" class="nav-link">
+  微信小程序学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-h5/" class="nav-link">
+  微信公众号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/ali-h5/" class="nav-link">
+  支付宝生活号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/websoket/" class="nav-link">
+  websoket学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/Bluetooth/" class="nav-link">
+  Bluetooth学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/uniapp/" class="nav-link">
+  uniapp学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/lodash/" class="nav-link">
+  lodash学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/jquery/" class="nav-link">
+  jquery学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/animate/" class="nav-link">
+  animate学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/canvas/" class="nav-link">
+  canvas学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/echarts/" class="nav-link">
+  echarts学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/audio/" class="nav-link">
+  audio学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/video/" class="nav-link">
+  video学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vant/" class="nav-link">
+  vant学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/bootstrap/" class="nav-link">
+  bootstrap学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/element-ui/" class="nav-link">
+  elementUi学习
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目菜单" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目菜单" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/project/" class="nav-link">
+  我的项目
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/study/vuex/" class="sidebar-heading clickable router-link-active open"><span>vuex学习</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/study/vuex/10.html" aria-current="page" class="active sidebar-link">vuex4 测试</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/study/vuex/10.html#测试-state-的初始值" class="sidebar-link">测试 state 的初始值</a></li><li class="sidebar-sub-header"><a href="/study/vuex/10.html#测试-mutation" class="sidebar-link">测试 mutation</a></li><li class="sidebar-sub-header"><a href="/study/vuex/10.html#测试-action" class="sidebar-link">测试 action</a></li><li class="sidebar-sub-header"><a href="/study/vuex/10.html#测试-getter" class="sidebar-link">测试 getter</a></li></ul></li><li><a href="/study/vuex/09.html" class="sidebar-link">vuex4 插件</a></li><li><a href="/study/vuex/08.html" class="sidebar-link">vuex4 组合式API</a></li><li><a href="/study/vuex/07.html" class="sidebar-link">vuex4 项目结构</a></li><li><a href="/study/vuex/06.html" class="sidebar-link">vuex4 核心概念 Module</a></li><li><a href="/study/vuex/05.html" class="sidebar-link">vuex4 核心概念 Action</a></li><li><a href="/study/vuex/04.html" class="sidebar-link">vuex4 核心概念 Mutation</a></li><li><a href="/study/vuex/03.html" class="sidebar-link">vuex4 核心概念 Getter</a></li><li><a href="/study/vuex/02.html" class="sidebar-link">vuex4 核心概念 state</a></li><li><a href="/study/vuex/01.html" class="sidebar-link">vuex4 初体验</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vuex4-测试"><a href="#vuex4-测试" class="header-anchor">#</a> vuex4 测试</h1> <p>Vuex 4 提供了一些内置工具，例如 Vuex Test Utils，可用于编写单元测试和集成测试。</p> <p>在编写 Vuex 4 测试时，我们通常需要测试以下几个方面：</p> <p>State 是否正确获取或者修改
+Getters 是否返回正确的值
+Mutations 是否正确地改变 State 的值
+Actions 是否正确地调用 Mutations 或者提交其他 Actions
+下面是一个简单的 Vuex 4 测试示例：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> createVuexStore<span class="token punctuation">,</span> createStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> mount <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@vue/test-utils'</span>
+
+<span class="token comment">// import the module to be tested</span>
+<span class="token keyword">import</span> myModule <span class="token keyword">from</span> <span class="token string">'@/store/modules/myModule'</span>
+
+<span class="token comment">// create a store for testing</span>
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createVuexStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  modules<span class="token operator">:</span> <span class="token punctuation">{</span>
+    myModule
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'myModule'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'returns the correct default state'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> defaultState <span class="token operator">=</span> <span class="token punctuation">{</span>
+      foo<span class="token operator">:</span> <span class="token string">'bar'</span><span class="token punctuation">,</span>
+      count<span class="token operator">:</span> <span class="token number">0</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">expect</span><span class="token punctuation">(</span>store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>myModule<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toEqual</span><span class="token punctuation">(</span>defaultState<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+  <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'increments count using a mutation'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> count <span class="token operator">=</span> store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>myModule<span class="token punctuation">.</span>count
+
+    store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'myModule/incrementCount'</span><span class="token punctuation">)</span>
+
+    <span class="token function">expect</span><span class="token punctuation">(</span>store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>myModule<span class="token punctuation">.</span>count<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span>count <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+  <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'increments count using an action'</span><span class="token punctuation">,</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> count <span class="token operator">=</span> store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>myModule<span class="token punctuation">.</span>count
+
+    <span class="token keyword">await</span> store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'myModule/incrementCountAsync'</span><span class="token punctuation">)</span>
+
+    <span class="token function">expect</span><span class="token punctuation">(</span>store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>myModule<span class="token punctuation">.</span>count<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span>count <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>在这个示例中，我们首先导入了需要测试的 Vuex 模块，并创建了一个包含该模块的测试 store。接着，我们使用 Jest 中的 describe 和 it 函数来编写测试用例。</p> <p>在第一个测试用例中，我们测试了 State 是否能正确获取到默认值。</p> <p>在第二个测试用例中，我们测试了使用 Mutation 是否能正确修改 State 的值。</p> <p>在第三个测试用例中，我们测试了使用 Action 是否能正确地调用 Mutation 并修改 State 的值。</p> <p>这只是一个简单的测试示例，实际上我们可以在测试中编写更多的断言来测试不同的场景和组合。</p> <p>在编写 Vuex 应用程序时，测试是非常重要的，因为测试可以帮助开发人员确保其代码在不同情况下都能够按预期工作。同时，测试还可以帮助开发人员迅速找到和修复潜在的问题。</p> <p>在 Vuex 4 中，测试与之前版本的 Vuex 非常相似，主要使用 Jest 测试框架和 vue-test-utils 库来编写和运行测试。下面介绍一些常见的测试场景和用例。</p> <h2 id="测试-state-的初始值"><a href="#测试-state-的初始值" class="header-anchor">#</a> 测试 state 的初始值</h2> <p>测试 state 的初始值通常是我们测试 Vuex 应用程序的第一步。我们可以使用一个测试套件来测试所有 state 的初始值，或者为每个 state 编写一个单独的测试套件。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> createStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+<span class="token keyword">import</span> myModule <span class="token keyword">from</span> <span class="token string">'./myModule'</span>
+
+<span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'myModule'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'state should have the correct initial values'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      modules<span class="token operator">:</span> <span class="token punctuation">{</span>
+        myModule
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token function">expect</span><span class="token punctuation">(</span>store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>myModule<span class="token punctuation">.</span>myState<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="测试-mutation"><a href="#测试-mutation" class="header-anchor">#</a> 测试 mutation</h2> <p>测试 mutation 是 Vuex 测试中最常见的一种场景。我们可以使用 Jest 的 mock 方法来模拟 mutation 的行为，然后测试 mutation 的行为是否符合预期。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> createStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+<span class="token keyword">import</span> myModule <span class="token keyword">from</span> <span class="token string">'./myModule'</span>
+
+<span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'myModule'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'INCREMENT_MY_STATE mutation should increment myState by 1'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      modules<span class="token operator">:</span> <span class="token punctuation">{</span>
+        myModule
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token comment">// 模拟 INCREMENT_MY_STATE mutation</span>
+    store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'myModule/INCREMENT_MY_STATE'</span><span class="token punctuation">)</span>
+
+    <span class="token comment">// 断言 myState 是否被正确地更新</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span>store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>myModule<span class="token punctuation">.</span>myState<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="测试-action"><a href="#测试-action" class="header-anchor">#</a> 测试 action</h2> <p>测试 action 与测试 mutation 类似，也是使用 mock 方法来模拟 action 的行为，然后测试 action 的行为是否符合预期。同时，我们可以使用 async/await 关键字来测试异步 action。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> createStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+<span class="token keyword">import</span> myModule <span class="token keyword">from</span> <span class="token string">'./myModule'</span>
+
+<span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'myModule'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'fetchData action should fetch data from API'</span><span class="token punctuation">,</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      modules<span class="token operator">:</span> <span class="token punctuation">{</span>
+        myModule
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token comment">// 模拟 fetchData action</span>
+    <span class="token keyword">await</span> store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'myModule/fetchData'</span><span class="token punctuation">)</span>
+
+    <span class="token comment">// 断言 data 是否被正确地更新</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span>store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>myModule<span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toEqual</span><span class="token punctuation">(</span><span class="token punctuation">{</span> id<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">'John'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="测试-getter"><a href="#测试-getter" class="header-anchor">#</a> 测试 getter</h2> <p>测试 getter 也是比较常见的一种场景。我们可以使用 getters 属性来获取 getter 的值，并测试其行为是否符合预期。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> createStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+<span class="token keyword">import</span> myModule <span class="token keyword">from</span> <span class="token string">'./myModule'</span>
+
+<span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'myModule'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'fullName getter should return the full name'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      modules<span class="token operator">:</span> <span class="token punctuation">{</span>
+        myModule
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token comment">// 断言 fullName 是否返回正确的值</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span>store<span class="token punctuation">.</span><span class="token function">getter</span><span class="token punctuation">(</span><span class="token string">'myModule/fullName'</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">{</span> firstName<span class="token operator">:</span> <span class="token string">'John'</span><span class="token punctuation">,</span> lastName<span class="token operator">:</span> <span class="token string">'Doe'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token string">'John Doe'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'setFirstName action should set the first name'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+modules<span class="token operator">:</span> <span class="token punctuation">{</span>
+myModule
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// dispatch setFirstName action</span>
+store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'myModule/setFirstName'</span><span class="token punctuation">,</span> <span class="token string">'Jane'</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 断言 state 中的 firstName 是否被正确设置</span>
+<span class="token function">expect</span><span class="token punctuation">(</span>store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>myModule<span class="token punctuation">.</span>firstName<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token string">'Jane'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>以上测试代码中，我们首先使用 createStore 创建了一个 Vuex Store，并在其中注册了 myModule 模块。然后，我们针对 myModule 模块中的 fullName getter 和 setFirstName action 分别进行了单元测试。</p> <p>在第一个测试中，我们使用 store.getter 方法获取了 fullName getter，并使用 { firstName: 'John', lastName: 'Doe' } 作为参数调用它，最后使用 Jest 的 expect 断言判断返回值是否为 'John Doe'。</p> <p>在第二个测试中，我们使用 store.dispatch 方法分发了 setFirstName action，并传入了 'Jane' 作为参数。最后，我们使用 Jest 的 expect 断言判断 store.state.myModule.firstName 是否被正确设置为 'Jane'。</p> <p>在实际开发中，我们可以编写更多的测试用例来保证 Vuex Store 的正确性和稳定性。</p> <p>当我们的 Vuex Store 变得越来越复杂时，编写和维护测试用例的难度也会越来越大。此时，我们可以考虑使用一些辅助工具来帮助我们更轻松地进行测试。</p> <p>一个常用的辅助工具是 vuex-module-decorators 库，它提供了一些装饰器，可以帮助我们更方便地定义 Vuex 模块，并提供了一些实用的工具函数，例如 getModule 函数，可以帮助我们更方便地获取已注册的 Vuex 模块。</p> <p>下面是一个使用 vuex-module-decorators 进行测试的例子：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> createStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Module<span class="token punctuation">,</span> VuexModule<span class="token punctuation">,</span> Mutation<span class="token punctuation">,</span> Action <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex-module-decorators'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> getModule <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex-module-decorators'</span>
+
+@<span class="token function">Module</span><span class="token punctuation">(</span><span class="token punctuation">{</span> namespaced<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">'myModule'</span><span class="token punctuation">,</span> stateFactory<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">MyModule</span> <span class="token keyword">extends</span> <span class="token class-name">VuexModule</span> <span class="token punctuation">{</span>
+  firstName <span class="token operator">=</span> <span class="token string">'John'</span>
+  lastName <span class="token operator">=</span> <span class="token string">'Doe'</span>
+
+  <span class="token keyword">get</span> <span class="token function">fullName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>firstName<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>lastName<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span>
+  <span class="token punctuation">}</span>
+
+  @Mutation
+  <span class="token function">setFirstName</span><span class="token punctuation">(</span><span class="token parameter">firstName<span class="token operator">:</span> string</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>firstName <span class="token operator">=</span> firstName
+  <span class="token punctuation">}</span>
+
+  @<span class="token function">Action</span><span class="token punctuation">(</span><span class="token punctuation">{</span> commit<span class="token operator">:</span> <span class="token string">'setFirstName'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">async</span> <span class="token function">updateFirstName</span><span class="token punctuation">(</span><span class="token parameter">firstName<span class="token operator">:</span> string</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 模拟异步操作</span>
+    <span class="token keyword">await</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token parameter">resolve</span> <span class="token operator">=&gt;</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span>resolve<span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> firstName
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'MyModule'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'fullName getter should return the full name'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      modules<span class="token operator">:</span> <span class="token punctuation">{</span>
+        myModule<span class="token operator">:</span> MyModule
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token comment">// 断言 fullName 是否返回正确的值</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span><span class="token function">getModule</span><span class="token punctuation">(</span>MyModule<span class="token punctuation">,</span> store<span class="token punctuation">)</span><span class="token punctuation">.</span>fullName<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token string">'John Doe'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+  <span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'updateFirstName action should update the first name'</span><span class="token punctuation">,</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      modules<span class="token operator">:</span> <span class="token punctuation">{</span>
+        myModule<span class="token operator">:</span> MyModule
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token comment">// dispatch updateFirstName action</span>
+    <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">getModule</span><span class="token punctuation">(</span>MyModule<span class="token punctuation">,</span> store<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">updateFirstName</span><span class="token punctuation">(</span><span class="token string">'Jane'</span><span class="token punctuation">)</span>
+
+    <span class="token comment">// 断言 firstName 是否被正确设置</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span><span class="token function">getModule</span><span class="token punctuation">(</span>MyModule<span class="token punctuation">,</span> store<span class="token punctuation">)</span><span class="token punctuation">.</span>firstName<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token string">'Jane'</span><span class="token punctuation">)</span>
+
+    <span class="token comment">// 断言 action 返回的值是否正确</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token string">'Jane'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>在上述代码中，我们首先通过 @Module 装饰器定义了一个名为 MyModule 的 Vuex 模块，并在其中定义了 firstName、lastName、fullName、setFirstName 和 updateFirstName 等属性和方法。</p> <p>接着，在测试用例中，我们使用 createStore 方法创建了一个 Vuex Store，并在其中注册了 MyModule 模块。然后，我们使用 getModule 函数获取了已注册的 MyModule 模块，并使用其提供的属性和方法进行单元测试。</p> <p>在第一个测试中，我们使用 getModule(MyModule, store).fullName 获取了 fullName getter 的返回值，并使用 Jest 的 expect 断言判断返回值是否为 'John Doe'。</p> <p>在第二个测试中，我们使用 getModule(MyModule, store).updateFirstName('Jane') 分发了 updateFirstName action，并对应的 mutation 是 updateFirstNameMutation。</p> <p>测试 updateFirstName action 是否可以正确地更新 state 和 mutation 是否被正确地调用，可以这样写</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'updateFirstName action should update first name'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    modules<span class="token operator">:</span> <span class="token punctuation">{</span>
+      myModule
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+  <span class="token comment">// 调用 action</span>
+  store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'myModule/updateFirstName'</span><span class="token punctuation">,</span> <span class="token string">'New First Name'</span><span class="token punctuation">)</span>
+
+  <span class="token comment">// 断言 state 中的 firstName 是否被更新</span>
+  <span class="token function">expect</span><span class="token punctuation">(</span>store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>myModule<span class="token punctuation">.</span>firstName<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token string">'New First Name'</span><span class="token punctuation">)</span>
+
+  <span class="token comment">// 断言 mutation 是否被正确地调用</span>
+  <span class="token function">expect</span><span class="token punctuation">(</span>store<span class="token punctuation">.</span>getters<span class="token punctuation">[</span><span class="token string">'myModule/fullName'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token string">'New First Name Last Name'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>这个测试代码中，我们调用 updateFirstName action 并传递了 'New First Name' 参数，然后断言 state 中的 firstName 是否被更新成了 'New First Name'，接着通过调用 fullName getter 来断言 mutation 是否被正确地调用，fullName getter 会返回 firstName 和 lastName 拼接起来的结果，所以我们可以判断 fullName 是否等于 'New First Name Last Name' 来验证 mutation 是否被正确地调用。</p> <p>这是一个简单的测试，更复杂的情况下可能需要模拟异步操作等等，但是这个测试代码可以帮助你理解如何测试 Vuex 模块。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/study/vuex/09.html">
+        vuex4 插件
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3ce791f2.js" defer></script><script src="/assets/js/2.0ef20547.js" defer></script><script src="/assets/js/179.bd582685.js" defer></script>
+  </body>
+</html>

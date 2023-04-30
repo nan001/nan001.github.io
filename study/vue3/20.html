@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue3 异步组件 | 南</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="这是我用 VuePress 搭建的个人学习博客！">
+    
+    <link rel="preload" href="/assets/css/0.styles.db6300be.css" as="style"><link rel="preload" href="/assets/js/app.3ce791f2.js" as="script"><link rel="preload" href="/assets/js/2.0ef20547.js" as="script"><link rel="preload" href="/assets/js/165.39c2e6af.js" as="script"><link rel="prefetch" href="/assets/js/10.b3961306.js"><link rel="prefetch" href="/assets/js/100.de8dcba1.js"><link rel="prefetch" href="/assets/js/101.0f8bdbac.js"><link rel="prefetch" href="/assets/js/102.18d0f745.js"><link rel="prefetch" href="/assets/js/103.45aa90ec.js"><link rel="prefetch" href="/assets/js/104.40ea827b.js"><link rel="prefetch" href="/assets/js/105.f19f2996.js"><link rel="prefetch" href="/assets/js/106.9a4ba006.js"><link rel="prefetch" href="/assets/js/107.fb828f4b.js"><link rel="prefetch" href="/assets/js/108.b00c84a3.js"><link rel="prefetch" href="/assets/js/109.357b5562.js"><link rel="prefetch" href="/assets/js/11.c432eaad.js"><link rel="prefetch" href="/assets/js/110.b4171ef1.js"><link rel="prefetch" href="/assets/js/111.966b67f0.js"><link rel="prefetch" href="/assets/js/112.c33489c3.js"><link rel="prefetch" href="/assets/js/113.9d0847e9.js"><link rel="prefetch" href="/assets/js/114.197b622f.js"><link rel="prefetch" href="/assets/js/115.667e255a.js"><link rel="prefetch" href="/assets/js/116.a2c5dc13.js"><link rel="prefetch" href="/assets/js/117.2b7a8f9c.js"><link rel="prefetch" href="/assets/js/118.aa987190.js"><link rel="prefetch" href="/assets/js/119.3408ca18.js"><link rel="prefetch" href="/assets/js/12.62a85baf.js"><link rel="prefetch" href="/assets/js/120.e12f7c91.js"><link rel="prefetch" href="/assets/js/121.6fb02f72.js"><link rel="prefetch" href="/assets/js/122.557f159e.js"><link rel="prefetch" href="/assets/js/123.d5e53c6d.js"><link rel="prefetch" href="/assets/js/124.df5ddc5d.js"><link rel="prefetch" href="/assets/js/125.a5a82896.js"><link rel="prefetch" href="/assets/js/126.df24f989.js"><link rel="prefetch" href="/assets/js/127.0f7eec10.js"><link rel="prefetch" href="/assets/js/128.9cf6ac7c.js"><link rel="prefetch" href="/assets/js/129.bb70491b.js"><link rel="prefetch" href="/assets/js/13.c727651b.js"><link rel="prefetch" href="/assets/js/130.190215b6.js"><link rel="prefetch" href="/assets/js/131.083dd738.js"><link rel="prefetch" href="/assets/js/132.62ea35c7.js"><link rel="prefetch" href="/assets/js/133.7d63cba7.js"><link rel="prefetch" href="/assets/js/134.18e0d50b.js"><link rel="prefetch" href="/assets/js/135.ca2fec78.js"><link rel="prefetch" href="/assets/js/136.0d3ad47c.js"><link rel="prefetch" href="/assets/js/137.418a11f3.js"><link rel="prefetch" href="/assets/js/138.69b53ece.js"><link rel="prefetch" href="/assets/js/139.62977b0b.js"><link rel="prefetch" href="/assets/js/14.5e5d0e50.js"><link rel="prefetch" href="/assets/js/140.a79b939d.js"><link rel="prefetch" href="/assets/js/141.9c66c170.js"><link rel="prefetch" href="/assets/js/142.85d6851b.js"><link rel="prefetch" href="/assets/js/143.51775333.js"><link rel="prefetch" href="/assets/js/144.9379c53a.js"><link rel="prefetch" href="/assets/js/145.17e5d8ba.js"><link rel="prefetch" href="/assets/js/146.92826ffa.js"><link rel="prefetch" href="/assets/js/147.868e4654.js"><link rel="prefetch" href="/assets/js/148.46bd2981.js"><link rel="prefetch" href="/assets/js/149.b3f0b573.js"><link rel="prefetch" href="/assets/js/15.e0ac1513.js"><link rel="prefetch" href="/assets/js/150.0496f589.js"><link rel="prefetch" href="/assets/js/151.a2b2fbad.js"><link rel="prefetch" href="/assets/js/152.2f051189.js"><link rel="prefetch" href="/assets/js/153.ca0d6fd8.js"><link rel="prefetch" href="/assets/js/154.93ce9d88.js"><link rel="prefetch" href="/assets/js/155.ad84a0c1.js"><link rel="prefetch" href="/assets/js/156.05e52fa7.js"><link rel="prefetch" href="/assets/js/157.60679b29.js"><link rel="prefetch" href="/assets/js/158.f7e0284d.js"><link rel="prefetch" href="/assets/js/159.3fff958f.js"><link rel="prefetch" href="/assets/js/16.d3490606.js"><link rel="prefetch" href="/assets/js/160.eb39fb18.js"><link rel="prefetch" href="/assets/js/161.14b90860.js"><link rel="prefetch" href="/assets/js/162.5ee0334e.js"><link rel="prefetch" href="/assets/js/163.aa0cde7a.js"><link rel="prefetch" href="/assets/js/164.98440f23.js"><link rel="prefetch" href="/assets/js/166.62e76f59.js"><link rel="prefetch" href="/assets/js/167.b3e47d54.js"><link rel="prefetch" href="/assets/js/168.03a09811.js"><link rel="prefetch" href="/assets/js/169.18721839.js"><link rel="prefetch" href="/assets/js/17.24cffbf0.js"><link rel="prefetch" href="/assets/js/170.645cd916.js"><link rel="prefetch" href="/assets/js/171.b70171f2.js"><link rel="prefetch" href="/assets/js/172.28e1cedd.js"><link rel="prefetch" href="/assets/js/173.413cb9b2.js"><link rel="prefetch" href="/assets/js/174.7cdc42a4.js"><link rel="prefetch" href="/assets/js/175.7e9f276a.js"><link rel="prefetch" href="/assets/js/176.adb1fbe0.js"><link rel="prefetch" href="/assets/js/177.56079a0e.js"><link rel="prefetch" href="/assets/js/178.3dd525e0.js"><link rel="prefetch" href="/assets/js/179.bd582685.js"><link rel="prefetch" href="/assets/js/18.9ee02a99.js"><link rel="prefetch" href="/assets/js/180.4165de33.js"><link rel="prefetch" href="/assets/js/181.208694e3.js"><link rel="prefetch" href="/assets/js/182.6621cfcd.js"><link rel="prefetch" href="/assets/js/183.13609924.js"><link rel="prefetch" href="/assets/js/184.d96f9a79.js"><link rel="prefetch" href="/assets/js/185.ad192dd3.js"><link rel="prefetch" href="/assets/js/186.d71515e4.js"><link rel="prefetch" href="/assets/js/187.2957633a.js"><link rel="prefetch" href="/assets/js/188.e9761542.js"><link rel="prefetch" href="/assets/js/189.b3254d4f.js"><link rel="prefetch" href="/assets/js/19.36aa9eae.js"><link rel="prefetch" href="/assets/js/190.1c6dcc21.js"><link rel="prefetch" href="/assets/js/20.da48423e.js"><link rel="prefetch" href="/assets/js/21.9ac934b9.js"><link rel="prefetch" href="/assets/js/22.b8c26bae.js"><link rel="prefetch" href="/assets/js/23.227fcdaa.js"><link rel="prefetch" href="/assets/js/24.08d364bb.js"><link rel="prefetch" href="/assets/js/25.984c2149.js"><link rel="prefetch" href="/assets/js/26.805e9ee6.js"><link rel="prefetch" href="/assets/js/27.db4ddb75.js"><link rel="prefetch" href="/assets/js/28.b2456edd.js"><link rel="prefetch" href="/assets/js/29.a2f6017f.js"><link rel="prefetch" href="/assets/js/3.23f4907e.js"><link rel="prefetch" href="/assets/js/30.bebab7d3.js"><link rel="prefetch" href="/assets/js/31.1d6b92cb.js"><link rel="prefetch" href="/assets/js/32.562a65a5.js"><link rel="prefetch" href="/assets/js/33.66855daf.js"><link rel="prefetch" href="/assets/js/34.805b7a34.js"><link rel="prefetch" href="/assets/js/35.2c19282a.js"><link rel="prefetch" href="/assets/js/36.945b368e.js"><link rel="prefetch" href="/assets/js/37.af1593e5.js"><link rel="prefetch" href="/assets/js/38.0a64e4f6.js"><link rel="prefetch" href="/assets/js/39.60733a6e.js"><link rel="prefetch" href="/assets/js/4.8da6a8f7.js"><link rel="prefetch" href="/assets/js/40.5ae297e8.js"><link rel="prefetch" href="/assets/js/41.5c1aa8a0.js"><link rel="prefetch" href="/assets/js/42.a857a0e6.js"><link rel="prefetch" href="/assets/js/43.ba7da108.js"><link rel="prefetch" href="/assets/js/44.009ce993.js"><link rel="prefetch" href="/assets/js/45.1cd523af.js"><link rel="prefetch" href="/assets/js/46.679a5cea.js"><link rel="prefetch" href="/assets/js/47.c921d189.js"><link rel="prefetch" href="/assets/js/48.ee12efc0.js"><link rel="prefetch" href="/assets/js/49.d7dd70e2.js"><link rel="prefetch" href="/assets/js/5.bdc1ac6b.js"><link rel="prefetch" href="/assets/js/50.bc9f0bf1.js"><link rel="prefetch" href="/assets/js/51.aaf3aebd.js"><link rel="prefetch" href="/assets/js/52.0acf038d.js"><link rel="prefetch" href="/assets/js/53.01cf6347.js"><link rel="prefetch" href="/assets/js/54.89e4a69f.js"><link rel="prefetch" href="/assets/js/55.b0d1f214.js"><link rel="prefetch" href="/assets/js/56.ca5d4676.js"><link rel="prefetch" href="/assets/js/57.553ca0a6.js"><link rel="prefetch" href="/assets/js/58.98cc5862.js"><link rel="prefetch" href="/assets/js/59.f64b8cc2.js"><link rel="prefetch" href="/assets/js/6.24e999a1.js"><link rel="prefetch" href="/assets/js/60.7ef4a647.js"><link rel="prefetch" href="/assets/js/61.f72f0bcb.js"><link rel="prefetch" href="/assets/js/62.ec890236.js"><link rel="prefetch" href="/assets/js/63.ddd5dfbc.js"><link rel="prefetch" href="/assets/js/64.320c8837.js"><link rel="prefetch" href="/assets/js/65.f99bcfcc.js"><link rel="prefetch" href="/assets/js/66.d225a06a.js"><link rel="prefetch" href="/assets/js/67.8b5477d8.js"><link rel="prefetch" href="/assets/js/68.87ae50fa.js"><link rel="prefetch" href="/assets/js/69.57ece9ad.js"><link rel="prefetch" href="/assets/js/7.5772efdd.js"><link rel="prefetch" href="/assets/js/70.c55970b3.js"><link rel="prefetch" href="/assets/js/71.fe2e2ffb.js"><link rel="prefetch" href="/assets/js/72.dae73f84.js"><link rel="prefetch" href="/assets/js/73.124f47c3.js"><link rel="prefetch" href="/assets/js/74.9c4df1a6.js"><link rel="prefetch" href="/assets/js/75.a21e4923.js"><link rel="prefetch" href="/assets/js/76.74d16534.js"><link rel="prefetch" href="/assets/js/77.671fcd3e.js"><link rel="prefetch" href="/assets/js/78.cd2e1e31.js"><link rel="prefetch" href="/assets/js/79.424d1495.js"><link rel="prefetch" href="/assets/js/8.4595d782.js"><link rel="prefetch" href="/assets/js/80.b90f1f9e.js"><link rel="prefetch" href="/assets/js/81.c78892cb.js"><link rel="prefetch" href="/assets/js/82.5a9c2ecf.js"><link rel="prefetch" href="/assets/js/83.b326d16e.js"><link rel="prefetch" href="/assets/js/84.c9aba1f2.js"><link rel="prefetch" href="/assets/js/85.80d95f81.js"><link rel="prefetch" href="/assets/js/86.6d03d757.js"><link rel="prefetch" href="/assets/js/87.b9004e5c.js"><link rel="prefetch" href="/assets/js/88.7e152654.js"><link rel="prefetch" href="/assets/js/89.110e9168.js"><link rel="prefetch" href="/assets/js/9.aab443be.js"><link rel="prefetch" href="/assets/js/90.c96c9810.js"><link rel="prefetch" href="/assets/js/91.30a74a5c.js"><link rel="prefetch" href="/assets/js/92.2735e96c.js"><link rel="prefetch" href="/assets/js/93.47b513ab.js"><link rel="prefetch" href="/assets/js/94.9ca71da5.js"><link rel="prefetch" href="/assets/js/95.4c608f53.js"><link rel="prefetch" href="/assets/js/96.a243e7de.js"><link rel="prefetch" href="/assets/js/97.f738ef91.js"><link rel="prefetch" href="/assets/js/98.06b90c5b.js"><link rel="prefetch" href="/assets/js/99.b7191e8a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.db6300be.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.svg" alt="南" class="logo"> <span class="site-name can-hide">南</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link">
+  博文
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="我的学习笔记菜单" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="我的学习笔记菜单" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/study/webpack/" class="nav-link">
+  webpack学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue3/" class="nav-link router-link-active">
+  vue3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vuex/" class="nav-link">
+  vuex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue-router/" class="nav-link">
+  vueRouter学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/axios/" class="nav-link">
+  axios学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es5/" class="nav-link">
+  ES5学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es6/" class="nav-link">
+  ES6学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/promise/" class="nav-link">
+  promise学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/typescript/" class="nav-link">
+  typescript学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/flex/" class="nav-link">
+  flex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/css3/" class="nav-link">
+  css3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/less/" class="nav-link">
+  less学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/sass/" class="nav-link">
+  sass学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-app/" class="nav-link">
+  微信小程序学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-h5/" class="nav-link">
+  微信公众号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/ali-h5/" class="nav-link">
+  支付宝生活号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/websoket/" class="nav-link">
+  websoket学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/Bluetooth/" class="nav-link">
+  Bluetooth学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/uniapp/" class="nav-link">
+  uniapp学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/lodash/" class="nav-link">
+  lodash学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/jquery/" class="nav-link">
+  jquery学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/animate/" class="nav-link">
+  animate学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/canvas/" class="nav-link">
+  canvas学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/echarts/" class="nav-link">
+  echarts学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/audio/" class="nav-link">
+  audio学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/video/" class="nav-link">
+  video学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vant/" class="nav-link">
+  vant学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/bootstrap/" class="nav-link">
+  bootstrap学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/element-ui/" class="nav-link">
+  elementUi学习
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目菜单" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目菜单" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/project/" class="nav-link">
+  我的项目
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link">
+  博文
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="我的学习笔记菜单" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="我的学习笔记菜单" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/study/webpack/" class="nav-link">
+  webpack学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue3/" class="nav-link router-link-active">
+  vue3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vuex/" class="nav-link">
+  vuex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue-router/" class="nav-link">
+  vueRouter学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/axios/" class="nav-link">
+  axios学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es5/" class="nav-link">
+  ES5学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es6/" class="nav-link">
+  ES6学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/promise/" class="nav-link">
+  promise学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/typescript/" class="nav-link">
+  typescript学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/flex/" class="nav-link">
+  flex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/css3/" class="nav-link">
+  css3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/less/" class="nav-link">
+  less学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/sass/" class="nav-link">
+  sass学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-app/" class="nav-link">
+  微信小程序学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-h5/" class="nav-link">
+  微信公众号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/ali-h5/" class="nav-link">
+  支付宝生活号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/websoket/" class="nav-link">
+  websoket学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/Bluetooth/" class="nav-link">
+  Bluetooth学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/uniapp/" class="nav-link">
+  uniapp学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/lodash/" class="nav-link">
+  lodash学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/jquery/" class="nav-link">
+  jquery学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/animate/" class="nav-link">
+  animate学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/canvas/" class="nav-link">
+  canvas学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/echarts/" class="nav-link">
+  echarts学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/audio/" class="nav-link">
+  audio学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/video/" class="nav-link">
+  video学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vant/" class="nav-link">
+  vant学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/bootstrap/" class="nav-link">
+  bootstrap学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/element-ui/" class="nav-link">
+  elementUi学习
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目菜单" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目菜单" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/project/" class="nav-link">
+  我的项目
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/study/vue3/" class="sidebar-heading clickable router-link-active open"><span>vue3学习</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/study/vue3/24.html" class="sidebar-link">vue3 内置组件</a></li><li><a href="/study/vue3/23.html" class="sidebar-link">vue3 插件</a></li><li><a href="/study/vue3/22.html" class="sidebar-link">vue3 逻辑复用 自定义指令</a></li><li><a href="/study/vue3/21.html" class="sidebar-link">vue3 逻辑复用 组合式函数</a></li><li><a href="/study/vue3/20.html" aria-current="page" class="active sidebar-link">vue3 异步组件</a></li><li><a href="/study/vue3/19.html" class="sidebar-link">vue3 依赖注入</a></li><li><a href="/study/vue3/18.html" class="sidebar-link">vue3 组合式api组件插槽 Slots</a></li><li><a href="/study/vue3/17.html" class="sidebar-link">vue3 组合式api组件透传 Attributes</a></li><li><a href="/study/vue3/16.html" class="sidebar-link">vue3 组件 v-model</a></li><li><a href="/study/vue3/15.html" class="sidebar-link">vue3 组合式api组件事件</a></li><li><a href="/study/vue3/14.html" class="sidebar-link">vue3 组合式api组件Props</a></li><li><a href="/study/vue3/13.html" class="sidebar-link">vue3 组件注册</a></li><li><a href="/study/vue3/12.html" class="sidebar-link">vue3 模板引用 组合式api</a></li><li><a href="/study/vue3/11.html" class="sidebar-link">vue3 侦听器 组合式api</a></li><li><a href="/study/vue3/10.html" class="sidebar-link">vue3 生命周期 组合式api</a></li><li><a href="/study/vue3/09.html" class="sidebar-link">vue3 表单输入绑定</a></li><li><a href="/study/vue3/08.html" class="sidebar-link">vue3 事件处理</a></li><li><a href="/study/vue3/07.html" class="sidebar-link">vue3 列表渲染</a></li><li><a href="/study/vue3/06.html" class="sidebar-link">vue3 条件渲染</a></li><li><a href="/study/vue3/05.html" class="sidebar-link">vue3 Class 与 Style 绑定</a></li><li><a href="/study/vue3/04.html" class="sidebar-link">vue3 计算属性</a></li><li><a href="/study/vue3/03.html" class="sidebar-link">vue3 响应式使用</a></li><li><a href="/study/vue3/02.html" class="sidebar-link">vue3 模板语法使用详解</a></li><li><a href="/study/vue3/01.html" class="sidebar-link">vue3 初体验</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue3-异步组件"><a href="#vue3-异步组件" class="header-anchor">#</a> vue3 异步组件</h1> <p>在 Vue 3 中，异步组件的使用和 Vue 2 类似，但是有一些细微的差别。在 Vue 3 中，异步组件可以使用组合式 API 来定义。</p> <p>异步组件通常用于懒加载某些组件，以提高应用程序的性能。在 Vue 3 中，可以使用 defineAsyncComponent 函数来定义异步组件。</p> <p>使用 defineAsyncComponent 函数定义异步组件：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> defineAsyncComponent <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue'</span>
+
+<span class="token keyword">const</span> AsyncComponent <span class="token operator">=</span> <span class="token function">defineAsyncComponent</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span>
+  <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'./components/AsyncComponent.vue'</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span>
+    AsyncComponent
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>这里使用 defineAsyncComponent 函数来定义一个异步组件 AsyncComponent，该组件将从 './components/AsyncComponent.vue' 文件中导入。</p> <p>在父组件中，可以像使用其他组件一样使用异步组件：</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>AsyncComponent</span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>需要注意的是，在 Vue 3 中，异步组件不再需要使用 webpack 的 require.ensure 或 import() 函数来定义。相反，可以直接使用 defineAsyncComponent 函数来定义。</p> <p>在 Vue3 组合式 API 中，异步组件可以通过 defineAsyncComponent 工厂函数定义，该函数接受一个异步加载组件的工厂函数或一个返回 Promise 的函数，并返回一个新组件对象。在加载期间，可以使用 Suspense 组件来显示占位符，直到组件加载完成。</p> <p>下面是一个示例，演示如何使用 defineAsyncComponent 定义异步组件：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> defineAsyncComponent <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue'</span>
+
+<span class="token keyword">const</span> AsyncComponent <span class="token operator">=</span> <span class="token function">defineAsyncComponent</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span>
+  <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'./AsyncComponent.vue'</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span>
+    AsyncComponent<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在上面的示例中，我们定义了一个名为 AsyncComponent 的异步组件，它将从 ./AsyncComponent.vue 文件中导入。然后，我们将该组件作为子组件注册到父组件中。</p> <p>在模板中，我们可以像使用任何其他组件一样使用异步组件：</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Suspense</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>AsyncComponent</span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Suspense</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>在上面的示例中，我们在 Suspense 组件中使用了 AsyncComponent 组件，并在加载期间显示了占位符。当异步组件加载完成时，它将替换占位符。</p> <p>当我们在应用程序中使用大量组件时，为了提高性能和减少初始加载时间，我们可以使用 Vue3 的异步组件加载功能。异步组件允许我们将组件的加载延迟到组件实际需要使用时。这样，当我们的应用程序开始运行时，只会加载必要的组件，而不是一次性加载所有组件。</p> <p>在 Vue2 中，我们使用 Vue.component 和 import 来创建异步组件。而在 Vue3 中，我们可以使用 defineAsyncComponent 方法来定义异步组件。defineAsyncComponent 方法接受一个工厂函数，该函数返回一个 Promise，该 Promise 将解析为异步组件的导出对象。这个工厂函数可以使用 import 语句来加载组件。</p> <p>下面是一个使用 defineAsyncComponent 方法定义异步组件的示例：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> defineAsyncComponent <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue'</span>
+
+<span class="token keyword">const</span> AsyncComponent <span class="token operator">=</span> <span class="token function">defineAsyncComponent</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'./AsyncComponent.vue'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span>
+    AsyncComponent
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在这个示例中，我们首先从 Vue3 中导入 defineAsyncComponent 方法。然后，我们使用 defineAsyncComponent 方法来定义一个名为 AsyncComponent 的异步组件。defineAsyncComponent 方法接受一个工厂函数，该函数使用 import 语句来异步加载 AsyncComponent.vue 文件。最后，我们将 AsyncComponent 注册为本地组件。</p> <p>在使用异步组件时，我们可以像使用常规组件一样在模板中使用它们：</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>AsyncComponent</span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>注意，我们在模板中使用的是 <code>&lt;AsyncComponent /&gt;</code> 而不是 <code>&lt;async-component /&gt;</code>。这是因为在 Vue3 中，我们可以使用 PascalCase 命名约定来引用组件，而不仅限于使用 kebab-case。</p> <p>当组件需要传递 props 时，我们可以通过 props 选项来定义异步组件的 props。例如：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> AsyncComponent <span class="token operator">=</span> <span class="token function">defineAsyncComponent</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'./AsyncComponent.vue'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  props<span class="token operator">:</span> <span class="token punctuation">{</span>
+    message<span class="token operator">:</span> String
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>这样，当 AsyncComponent 被创建时，它将具有一个名为 message 的 props。</p> <p>在 Vue3 中，异步组件还可以通过 Suspense 组件进行包装。Suspense 组件允许我们为异步组件的加载添加一个占位符。当异步组件被加载时，Suspense 组件会显示占位符，直到异步组件加载完成。</p> <p>下面是一个使用 Suspense 组件包装异步组件的示例：</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Suspense</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#default</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>AsyncComponent</span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#fallback</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>Loading...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Suspense</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>在这个示例中，我们将 <code>&lt;AsyncComponent /&gt;</code> 包装在 <code>&lt;Suspense&gt;</code> 组件中。当 <code>AsyncComponent</code>完成加载并渲染时，<code>&lt;Suspense&gt;</code> 组件会自动展示其内容。</p> <p>需要注意的是，在异步组件中使用组合式 API 时，需要使用 defineAsyncComponent 函数将异步组件转换为组件对象。在使用异步组件时，还可以配置加载状态的默认占位符，以及加载出错时的占位符。例如：</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Suspense</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#default</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>AsyncComponent</span> <span class="token attr-name">:msg</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>msg<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#fallback</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>Loading...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#error</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{ error }<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>Error: {{ error.message }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Suspense</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> <span class="token punctuation">{</span> defineAsyncComponent <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue'</span>
+
+<span class="token keyword">const</span> AsyncComponent <span class="token operator">=</span> <span class="token function">defineAsyncComponent</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'./AsyncComponent.vue'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span>
+    AsyncComponent
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      msg<span class="token operator">:</span> <span class="token string">'Hello, world!'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>在上面的示例中，当 AsyncComponent 组件加载完成之前，会显示 &quot;Loading...&quot;，当出现错误时，会显示 &quot;Error: 错误信息&quot;。</p> <p>在上一个示例中，我们将 <code>&lt;AsyncComponent /&gt;</code> 包装在 <code>&lt;Suspense&gt;</code> 组件中。当 AsyncComponent 加载时， <code>&lt;Suspense&gt;</code> 组件会显示它的 fallback 内容，直到 AsyncComponent 完全加载并准备好渲染。</p> <p>除了使用 <code>&lt;Suspense&gt;</code> 组件外，我们还可以使用异步组件的 defineAsyncComponent 函数来加载组件。这个函数接收一个函数，该函数返回一个 Promise，该 Promise 解析后返回一个组件选项对象。</p> <p>下面是一个使用 defineAsyncComponent 加载异步组件的示例：</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>loadComponent<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Load Async Component<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Suspense</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>isComponentLoaded<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>AsyncComponent</span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Suspense</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> <span class="token punctuation">{</span> defineAsyncComponent<span class="token punctuation">,</span> ref <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">'App'</span><span class="token punctuation">,</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> isComponentLoaded <span class="token operator">=</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">const</span> <span class="token function-variable function">loadComponent</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> asyncComponent <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'./AsyncComponent.vue'</span><span class="token punctuation">)</span>
+      <span class="token keyword">const</span> component <span class="token operator">=</span> <span class="token function">defineAsyncComponent</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> asyncComponent<span class="token punctuation">)</span>
+      isComponentLoaded<span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token boolean">true</span>
+      <span class="token keyword">return</span> component
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">const</span> AsyncComponent <span class="token operator">=</span> <span class="token function">defineAsyncComponent</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">loadComponent</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      isComponentLoaded<span class="token punctuation">,</span>
+      loadComponent<span class="token punctuation">,</span>
+      AsyncComponent
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>在这个示例中，我们定义了一个 loadComponent 函数，该函数使用 import() 动态地加载组件文件。一旦加载完成，我们使用 defineAsyncComponent 将异步组件包装在一个新的异步组件中，并将其赋值给 AsyncComponent 变量。</p> <p>在模板中，我们通过点击按钮来加载异步组件，并在 isComponentLoaded 值为 true 时渲染 <code>&lt;AsyncComponent /&gt;</code> 组件。</p> <p>需要注意的是，在使用 defineAsyncComponent 函数时，我们必须确保返回的组件选项对象符合 Vue 组件的定义规则。例如，我们必须至少包含一个 name 选项，以及一个渲染函数或模板。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/study/vue3/21.html" class="prev">
+        vue3 逻辑复用 组合式函数
+      </a></span> <span class="next"><a href="/study/vue3/19.html">
+        vue3 依赖注入
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3ce791f2.js" defer></script><script src="/assets/js/2.0ef20547.js" defer></script><script src="/assets/js/165.39c2e6af.js" defer></script>
+  </body>
+</html>

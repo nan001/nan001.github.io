@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue-router4 动态路由、方法 | 南</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="这是我用 VuePress 搭建的个人学习博客！">
+    
+    <link rel="preload" href="/assets/css/0.styles.db6300be.css" as="style"><link rel="preload" href="/assets/js/app.3ce791f2.js" as="script"><link rel="preload" href="/assets/js/2.0ef20547.js" as="script"><link rel="preload" href="/assets/js/137.418a11f3.js" as="script"><link rel="prefetch" href="/assets/js/10.b3961306.js"><link rel="prefetch" href="/assets/js/100.de8dcba1.js"><link rel="prefetch" href="/assets/js/101.0f8bdbac.js"><link rel="prefetch" href="/assets/js/102.18d0f745.js"><link rel="prefetch" href="/assets/js/103.45aa90ec.js"><link rel="prefetch" href="/assets/js/104.40ea827b.js"><link rel="prefetch" href="/assets/js/105.f19f2996.js"><link rel="prefetch" href="/assets/js/106.9a4ba006.js"><link rel="prefetch" href="/assets/js/107.fb828f4b.js"><link rel="prefetch" href="/assets/js/108.b00c84a3.js"><link rel="prefetch" href="/assets/js/109.357b5562.js"><link rel="prefetch" href="/assets/js/11.c432eaad.js"><link rel="prefetch" href="/assets/js/110.b4171ef1.js"><link rel="prefetch" href="/assets/js/111.966b67f0.js"><link rel="prefetch" href="/assets/js/112.c33489c3.js"><link rel="prefetch" href="/assets/js/113.9d0847e9.js"><link rel="prefetch" href="/assets/js/114.197b622f.js"><link rel="prefetch" href="/assets/js/115.667e255a.js"><link rel="prefetch" href="/assets/js/116.a2c5dc13.js"><link rel="prefetch" href="/assets/js/117.2b7a8f9c.js"><link rel="prefetch" href="/assets/js/118.aa987190.js"><link rel="prefetch" href="/assets/js/119.3408ca18.js"><link rel="prefetch" href="/assets/js/12.62a85baf.js"><link rel="prefetch" href="/assets/js/120.e12f7c91.js"><link rel="prefetch" href="/assets/js/121.6fb02f72.js"><link rel="prefetch" href="/assets/js/122.557f159e.js"><link rel="prefetch" href="/assets/js/123.d5e53c6d.js"><link rel="prefetch" href="/assets/js/124.df5ddc5d.js"><link rel="prefetch" href="/assets/js/125.a5a82896.js"><link rel="prefetch" href="/assets/js/126.df24f989.js"><link rel="prefetch" href="/assets/js/127.0f7eec10.js"><link rel="prefetch" href="/assets/js/128.9cf6ac7c.js"><link rel="prefetch" href="/assets/js/129.bb70491b.js"><link rel="prefetch" href="/assets/js/13.c727651b.js"><link rel="prefetch" href="/assets/js/130.190215b6.js"><link rel="prefetch" href="/assets/js/131.083dd738.js"><link rel="prefetch" href="/assets/js/132.62ea35c7.js"><link rel="prefetch" href="/assets/js/133.7d63cba7.js"><link rel="prefetch" href="/assets/js/134.18e0d50b.js"><link rel="prefetch" href="/assets/js/135.ca2fec78.js"><link rel="prefetch" href="/assets/js/136.0d3ad47c.js"><link rel="prefetch" href="/assets/js/138.69b53ece.js"><link rel="prefetch" href="/assets/js/139.62977b0b.js"><link rel="prefetch" href="/assets/js/14.5e5d0e50.js"><link rel="prefetch" href="/assets/js/140.a79b939d.js"><link rel="prefetch" href="/assets/js/141.9c66c170.js"><link rel="prefetch" href="/assets/js/142.85d6851b.js"><link rel="prefetch" href="/assets/js/143.51775333.js"><link rel="prefetch" href="/assets/js/144.9379c53a.js"><link rel="prefetch" href="/assets/js/145.17e5d8ba.js"><link rel="prefetch" href="/assets/js/146.92826ffa.js"><link rel="prefetch" href="/assets/js/147.868e4654.js"><link rel="prefetch" href="/assets/js/148.46bd2981.js"><link rel="prefetch" href="/assets/js/149.b3f0b573.js"><link rel="prefetch" href="/assets/js/15.e0ac1513.js"><link rel="prefetch" href="/assets/js/150.0496f589.js"><link rel="prefetch" href="/assets/js/151.a2b2fbad.js"><link rel="prefetch" href="/assets/js/152.2f051189.js"><link rel="prefetch" href="/assets/js/153.ca0d6fd8.js"><link rel="prefetch" href="/assets/js/154.93ce9d88.js"><link rel="prefetch" href="/assets/js/155.ad84a0c1.js"><link rel="prefetch" href="/assets/js/156.05e52fa7.js"><link rel="prefetch" href="/assets/js/157.60679b29.js"><link rel="prefetch" href="/assets/js/158.f7e0284d.js"><link rel="prefetch" href="/assets/js/159.3fff958f.js"><link rel="prefetch" href="/assets/js/16.d3490606.js"><link rel="prefetch" href="/assets/js/160.eb39fb18.js"><link rel="prefetch" href="/assets/js/161.14b90860.js"><link rel="prefetch" href="/assets/js/162.5ee0334e.js"><link rel="prefetch" href="/assets/js/163.aa0cde7a.js"><link rel="prefetch" href="/assets/js/164.98440f23.js"><link rel="prefetch" href="/assets/js/165.39c2e6af.js"><link rel="prefetch" href="/assets/js/166.62e76f59.js"><link rel="prefetch" href="/assets/js/167.b3e47d54.js"><link rel="prefetch" href="/assets/js/168.03a09811.js"><link rel="prefetch" href="/assets/js/169.18721839.js"><link rel="prefetch" href="/assets/js/17.24cffbf0.js"><link rel="prefetch" href="/assets/js/170.645cd916.js"><link rel="prefetch" href="/assets/js/171.b70171f2.js"><link rel="prefetch" href="/assets/js/172.28e1cedd.js"><link rel="prefetch" href="/assets/js/173.413cb9b2.js"><link rel="prefetch" href="/assets/js/174.7cdc42a4.js"><link rel="prefetch" href="/assets/js/175.7e9f276a.js"><link rel="prefetch" href="/assets/js/176.adb1fbe0.js"><link rel="prefetch" href="/assets/js/177.56079a0e.js"><link rel="prefetch" href="/assets/js/178.3dd525e0.js"><link rel="prefetch" href="/assets/js/179.bd582685.js"><link rel="prefetch" href="/assets/js/18.9ee02a99.js"><link rel="prefetch" href="/assets/js/180.4165de33.js"><link rel="prefetch" href="/assets/js/181.208694e3.js"><link rel="prefetch" href="/assets/js/182.6621cfcd.js"><link rel="prefetch" href="/assets/js/183.13609924.js"><link rel="prefetch" href="/assets/js/184.d96f9a79.js"><link rel="prefetch" href="/assets/js/185.ad192dd3.js"><link rel="prefetch" href="/assets/js/186.d71515e4.js"><link rel="prefetch" href="/assets/js/187.2957633a.js"><link rel="prefetch" href="/assets/js/188.e9761542.js"><link rel="prefetch" href="/assets/js/189.b3254d4f.js"><link rel="prefetch" href="/assets/js/19.36aa9eae.js"><link rel="prefetch" href="/assets/js/190.1c6dcc21.js"><link rel="prefetch" href="/assets/js/20.da48423e.js"><link rel="prefetch" href="/assets/js/21.9ac934b9.js"><link rel="prefetch" href="/assets/js/22.b8c26bae.js"><link rel="prefetch" href="/assets/js/23.227fcdaa.js"><link rel="prefetch" href="/assets/js/24.08d364bb.js"><link rel="prefetch" href="/assets/js/25.984c2149.js"><link rel="prefetch" href="/assets/js/26.805e9ee6.js"><link rel="prefetch" href="/assets/js/27.db4ddb75.js"><link rel="prefetch" href="/assets/js/28.b2456edd.js"><link rel="prefetch" href="/assets/js/29.a2f6017f.js"><link rel="prefetch" href="/assets/js/3.23f4907e.js"><link rel="prefetch" href="/assets/js/30.bebab7d3.js"><link rel="prefetch" href="/assets/js/31.1d6b92cb.js"><link rel="prefetch" href="/assets/js/32.562a65a5.js"><link rel="prefetch" href="/assets/js/33.66855daf.js"><link rel="prefetch" href="/assets/js/34.805b7a34.js"><link rel="prefetch" href="/assets/js/35.2c19282a.js"><link rel="prefetch" href="/assets/js/36.945b368e.js"><link rel="prefetch" href="/assets/js/37.af1593e5.js"><link rel="prefetch" href="/assets/js/38.0a64e4f6.js"><link rel="prefetch" href="/assets/js/39.60733a6e.js"><link rel="prefetch" href="/assets/js/4.8da6a8f7.js"><link rel="prefetch" href="/assets/js/40.5ae297e8.js"><link rel="prefetch" href="/assets/js/41.5c1aa8a0.js"><link rel="prefetch" href="/assets/js/42.a857a0e6.js"><link rel="prefetch" href="/assets/js/43.ba7da108.js"><link rel="prefetch" href="/assets/js/44.009ce993.js"><link rel="prefetch" href="/assets/js/45.1cd523af.js"><link rel="prefetch" href="/assets/js/46.679a5cea.js"><link rel="prefetch" href="/assets/js/47.c921d189.js"><link rel="prefetch" href="/assets/js/48.ee12efc0.js"><link rel="prefetch" href="/assets/js/49.d7dd70e2.js"><link rel="prefetch" href="/assets/js/5.bdc1ac6b.js"><link rel="prefetch" href="/assets/js/50.bc9f0bf1.js"><link rel="prefetch" href="/assets/js/51.aaf3aebd.js"><link rel="prefetch" href="/assets/js/52.0acf038d.js"><link rel="prefetch" href="/assets/js/53.01cf6347.js"><link rel="prefetch" href="/assets/js/54.89e4a69f.js"><link rel="prefetch" href="/assets/js/55.b0d1f214.js"><link rel="prefetch" href="/assets/js/56.ca5d4676.js"><link rel="prefetch" href="/assets/js/57.553ca0a6.js"><link rel="prefetch" href="/assets/js/58.98cc5862.js"><link rel="prefetch" href="/assets/js/59.f64b8cc2.js"><link rel="prefetch" href="/assets/js/6.24e999a1.js"><link rel="prefetch" href="/assets/js/60.7ef4a647.js"><link rel="prefetch" href="/assets/js/61.f72f0bcb.js"><link rel="prefetch" href="/assets/js/62.ec890236.js"><link rel="prefetch" href="/assets/js/63.ddd5dfbc.js"><link rel="prefetch" href="/assets/js/64.320c8837.js"><link rel="prefetch" href="/assets/js/65.f99bcfcc.js"><link rel="prefetch" href="/assets/js/66.d225a06a.js"><link rel="prefetch" href="/assets/js/67.8b5477d8.js"><link rel="prefetch" href="/assets/js/68.87ae50fa.js"><link rel="prefetch" href="/assets/js/69.57ece9ad.js"><link rel="prefetch" href="/assets/js/7.5772efdd.js"><link rel="prefetch" href="/assets/js/70.c55970b3.js"><link rel="prefetch" href="/assets/js/71.fe2e2ffb.js"><link rel="prefetch" href="/assets/js/72.dae73f84.js"><link rel="prefetch" href="/assets/js/73.124f47c3.js"><link rel="prefetch" href="/assets/js/74.9c4df1a6.js"><link rel="prefetch" href="/assets/js/75.a21e4923.js"><link rel="prefetch" href="/assets/js/76.74d16534.js"><link rel="prefetch" href="/assets/js/77.671fcd3e.js"><link rel="prefetch" href="/assets/js/78.cd2e1e31.js"><link rel="prefetch" href="/assets/js/79.424d1495.js"><link rel="prefetch" href="/assets/js/8.4595d782.js"><link rel="prefetch" href="/assets/js/80.b90f1f9e.js"><link rel="prefetch" href="/assets/js/81.c78892cb.js"><link rel="prefetch" href="/assets/js/82.5a9c2ecf.js"><link rel="prefetch" href="/assets/js/83.b326d16e.js"><link rel="prefetch" href="/assets/js/84.c9aba1f2.js"><link rel="prefetch" href="/assets/js/85.80d95f81.js"><link rel="prefetch" href="/assets/js/86.6d03d757.js"><link rel="prefetch" href="/assets/js/87.b9004e5c.js"><link rel="prefetch" href="/assets/js/88.7e152654.js"><link rel="prefetch" href="/assets/js/89.110e9168.js"><link rel="prefetch" href="/assets/js/9.aab443be.js"><link rel="prefetch" href="/assets/js/90.c96c9810.js"><link rel="prefetch" href="/assets/js/91.30a74a5c.js"><link rel="prefetch" href="/assets/js/92.2735e96c.js"><link rel="prefetch" href="/assets/js/93.47b513ab.js"><link rel="prefetch" href="/assets/js/94.9ca71da5.js"><link rel="prefetch" href="/assets/js/95.4c608f53.js"><link rel="prefetch" href="/assets/js/96.a243e7de.js"><link rel="prefetch" href="/assets/js/97.f738ef91.js"><link rel="prefetch" href="/assets/js/98.06b90c5b.js"><link rel="prefetch" href="/assets/js/99.b7191e8a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.db6300be.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.svg" alt="南" class="logo"> <span class="site-name can-hide">南</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link">
+  博文
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="我的学习笔记菜单" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="我的学习笔记菜单" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/study/webpack/" class="nav-link">
+  webpack学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue3/" class="nav-link">
+  vue3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vuex/" class="nav-link">
+  vuex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue-router/" class="nav-link router-link-active">
+  vueRouter学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/axios/" class="nav-link">
+  axios学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es5/" class="nav-link">
+  ES5学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es6/" class="nav-link">
+  ES6学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/promise/" class="nav-link">
+  promise学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/typescript/" class="nav-link">
+  typescript学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/flex/" class="nav-link">
+  flex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/css3/" class="nav-link">
+  css3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/less/" class="nav-link">
+  less学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/sass/" class="nav-link">
+  sass学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-app/" class="nav-link">
+  微信小程序学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-h5/" class="nav-link">
+  微信公众号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/ali-h5/" class="nav-link">
+  支付宝生活号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/websoket/" class="nav-link">
+  websoket学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/Bluetooth/" class="nav-link">
+  Bluetooth学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/uniapp/" class="nav-link">
+  uniapp学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/lodash/" class="nav-link">
+  lodash学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/jquery/" class="nav-link">
+  jquery学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/animate/" class="nav-link">
+  animate学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/canvas/" class="nav-link">
+  canvas学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/echarts/" class="nav-link">
+  echarts学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/audio/" class="nav-link">
+  audio学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/video/" class="nav-link">
+  video学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vant/" class="nav-link">
+  vant学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/bootstrap/" class="nav-link">
+  bootstrap学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/element-ui/" class="nav-link">
+  elementUi学习
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目菜单" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目菜单" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/project/" class="nav-link">
+  我的项目
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link">
+  博文
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="我的学习笔记菜单" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="我的学习笔记菜单" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/study/webpack/" class="nav-link">
+  webpack学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue3/" class="nav-link">
+  vue3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vuex/" class="nav-link">
+  vuex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue-router/" class="nav-link router-link-active">
+  vueRouter学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/axios/" class="nav-link">
+  axios学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es5/" class="nav-link">
+  ES5学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es6/" class="nav-link">
+  ES6学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/promise/" class="nav-link">
+  promise学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/typescript/" class="nav-link">
+  typescript学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/flex/" class="nav-link">
+  flex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/css3/" class="nav-link">
+  css3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/less/" class="nav-link">
+  less学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/sass/" class="nav-link">
+  sass学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-app/" class="nav-link">
+  微信小程序学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-h5/" class="nav-link">
+  微信公众号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/ali-h5/" class="nav-link">
+  支付宝生活号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/websoket/" class="nav-link">
+  websoket学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/Bluetooth/" class="nav-link">
+  Bluetooth学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/uniapp/" class="nav-link">
+  uniapp学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/lodash/" class="nav-link">
+  lodash学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/jquery/" class="nav-link">
+  jquery学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/animate/" class="nav-link">
+  animate学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/canvas/" class="nav-link">
+  canvas学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/echarts/" class="nav-link">
+  echarts学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/audio/" class="nav-link">
+  audio学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/video/" class="nav-link">
+  video学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vant/" class="nav-link">
+  vant学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/bootstrap/" class="nav-link">
+  bootstrap学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/element-ui/" class="nav-link">
+  elementUi学习
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目菜单" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目菜单" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/project/" class="nav-link">
+  我的项目
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/study/vue-router/" class="sidebar-heading clickable router-link-active open"><span>vue-router学习</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/study/vue-router/13.html" class="sidebar-link">vue-router4 和 组合式 API</a></li><li><a href="/study/vue-router/12.html" aria-current="page" class="active sidebar-link">vue-router4 动态路由、方法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/study/vue-router/12.html#动态路由" class="sidebar-link">动态路由</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/study/vue-router/12.html#动态路由参数" class="sidebar-link">动态路由参数</a></li><li class="sidebar-sub-header"><a href="/study/vue-router/12.html#正则表达式路由" class="sidebar-link">正则表达式路由</a></li><li class="sidebar-sub-header"><a href="/study/vue-router/12.html#定义动态路由" class="sidebar-link">定义动态路由</a></li><li class="sidebar-sub-header"><a href="/study/vue-router/12.html#获取动态路由参数" class="sidebar-link">获取动态路由参数</a></li><li class="sidebar-sub-header"><a href="/study/vue-router/12.html#监听动态路由参数的变化" class="sidebar-link">监听动态路由参数的变化</a></li><li class="sidebar-sub-header"><a href="/study/vue-router/12.html#动态路由的懒加载" class="sidebar-link">动态路由的懒加载</a></li></ul></li><li class="sidebar-sub-header"><a href="/study/vue-router/12.html#动态路由方法" class="sidebar-link">动态路由方法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/study/vue-router/12.html#router-addroute-route-routeconfig-添加路由" class="sidebar-link">router.addRoute(route: RouteConfig)：添加路由</a></li><li class="sidebar-sub-header"><a href="/study/vue-router/12.html#router-removeroute-name-string-移除路由" class="sidebar-link">router.removeRoute(name: string)：移除路由</a></li><li class="sidebar-sub-header"><a href="/study/vue-router/12.html#router-hasroute-location-rawlocation-routelocation-判断路由是否存在" class="sidebar-link">router.hasRoute(location: RawLocation | RouteLocation)：判断路由是否存在</a></li><li class="sidebar-sub-header"><a href="/study/vue-router/12.html#router-getroutes-获取当前所有路由" class="sidebar-link">router.getRoutes()：获取当前所有路由</a></li><li class="sidebar-sub-header"><a href="/study/vue-router/12.html#router-resolve-location-rawlocation-current-route-append-boolean-promise-resolved" class="sidebar-link">router.resolve(location: RawLocation, current?: Route, append?: boolean): Promise&lt;Resolved&gt;</a></li><li class="sidebar-sub-header"><a href="/study/vue-router/12.html#router-beforeresolve-to-from-next-在路由解析之前执行" class="sidebar-link">router.beforeResolve((to, from, next) =&gt; {})：在路由解析之前执行</a></li><li class="sidebar-sub-header"><a href="/study/vue-router/12.html#router-beforeeach-to-from-next-在路由跳转之前执行" class="sidebar-link">router.beforeEach((to, from, next) =&gt; {})：在路由跳转之前执行</a></li><li class="sidebar-sub-header"><a href="/study/vue-router/12.html#router-aftereach-to-from-在路由跳转之后执行" class="sidebar-link">router.afterEach((to, from) =&gt; {})：在路由跳转之后执行</a></li><li class="sidebar-sub-header"><a href="/study/vue-router/12.html#demo" class="sidebar-link">demo</a></li></ul></li></ul></li><li><a href="/study/vue-router/11.html" class="sidebar-link">vue-router4 URL 的正确编码</a></li><li><a href="/study/vue-router/10.html" class="sidebar-link">vue-router4 可定制的滚动行为</a></li><li><a href="/study/vue-router/09.html" class="sidebar-link">vue-router4 HTML5 history 模式或 hash 模式</a></li><li><a href="/study/vue-router/08.html" class="sidebar-link">vue-router4 自动激活 CSS 类的链接</a></li><li><a href="/study/vue-router/07.html" class="sidebar-link">vue-router4 细致的导航控制</a></li><li><a href="/study/vue-router/06.html" class="sidebar-link">vue-router4 展示由 Vue.js 的过渡系统提供的过渡效果</a></li><li><a href="/study/vue-router/05.html" class="sidebar-link">vue-router4 路由参数、查询、通配符</a></li><li><a href="/study/vue-router/04.html" class="sidebar-link">vue-router4 模块化、基于组件的路由配置</a></li><li><a href="/study/vue-router/03.html" class="sidebar-link">vue-router4 动态路由选择</a></li><li><a href="/study/vue-router/02.html" class="sidebar-link">vue-router4 嵌套路由映射</a></li><li><a href="/study/vue-router/01.html" class="sidebar-link">vue-router4 初体验</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue-router4-动态路由、方法"><a href="#vue-router4-动态路由、方法" class="header-anchor">#</a> vue-router4 动态路由、方法</h1> <h2 id="动态路由"><a href="#动态路由" class="header-anchor">#</a> 动态路由</h2> <p>Vue Router 4 中的动态路由可以让我们根据不同的 URL 动态加载不同的组件和数据，非常灵活和方便。在使用动态路由时，我们可以使用动态路由参数，也可以使用正则表达式来匹配路由。</p> <h3 id="动态路由参数"><a href="#动态路由参数" class="header-anchor">#</a> 动态路由参数</h3> <p>动态路由参数可以让我们根据不同的 URL，动态地加载不同的组件或者数据。例如，我们可以将路由地址设为 /user/:id，其中 :id 就是动态路由参数，表示一个动态的用户 id。这个路由地址匹配的所有 URL 都将被重定向到同一个路由，只是动态路由参数不同。</p> <p>在组件中，可以通过 $route.params 访问动态路由参数。例如，在上面的例子中，可以通过 $route.params.id 访问路由参数。</p> <p>我们可以在路由配置中使用动态路由参数来定义动态路由。例如：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token function">createRouter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  routes<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      path<span class="token operator">:</span> <span class="token string">'/user/:id'</span><span class="token punctuation">,</span>
+      component<span class="token operator">:</span> User<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="正则表达式路由"><a href="#正则表达式路由" class="header-anchor">#</a> 正则表达式路由</h3> <p>除了使用动态路由参数，Vue Router 4 还支持使用正则表达式来匹配路由。例如，我们可以使用正则表达式来匹配以 /user 开头，后面跟着任意数字的 URL。这可以使用如下代码来实现：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token function">createRouter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  routes<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      path<span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^\/user\/\d+$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+      component<span class="token operator">:</span> User<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>在这个例子中，路由地址的 path 属性使用了一个正则表达式来匹配 URL，这个正则表达式可以匹配以 /user 开头，后面跟着任意数字的 URL。当 URL 匹配成功时，就会加载 User 组件。</p> <p>值得注意的是，使用正则表达式来匹配路由可能会使路由配置变得复杂，也可能会对性能造成一定的影响。因此，应该根据具体的需求来决定是否使用正则表达式路由。</p> <p>除了使用正则表达式来匹配路由，Vue Router 4 还支持使用自定义的匹配函数来匹配路由。这个函数接收两个参数：路由对象和路由地址。如果函数返回 true，则表示 URL 匹配成功，将会加载相应的组件。</p> <h3 id="定义动态路由"><a href="#定义动态路由" class="header-anchor">#</a> 定义动态路由</h3> <p>在定义动态路由时，需要在路由路径中使用参数。这些参数用冒号 : 开头，后面跟着参数名称。例如，如果我们想要匹配路径 /users/:id，我们可以使用以下路由定义：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> routes <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">'/users/:id'</span><span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">'User'</span><span class="token punctuation">,</span>
+    component<span class="token operator">:</span> User
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><p>在上面的示例中，我们使用了 :id 参数，表示该部分路径可以匹配任何值。</p> <h3 id="获取动态路由参数"><a href="#获取动态路由参数" class="header-anchor">#</a> 获取动态路由参数</h3> <p>在组件中使用动态路由时，我们可以通过 $route.params 对象来获取参数。例如，对于上面的路由定义，我们可以使用以下代码来获取路由参数：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$route<span class="token punctuation">.</span>params<span class="token punctuation">.</span>id<span class="token punctuation">)</span> <span class="token comment">// 输出路由参数 id 的值</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在上面的示例中，我们通过 $route.params.id 来访问路由参数 id 的值。</p> <h3 id="监听动态路由参数的变化"><a href="#监听动态路由参数的变化" class="header-anchor">#</a> 监听动态路由参数的变化</h3> <p>如果你想在路由参数发生变化时更新组件，你可以使用 watch 来监听 $route 对象的变化。例如，下面的代码将监听 $route.params.id 的变化，并在参数变化时更新组件：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  watch<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'$route.params.id'</span><span class="token punctuation">(</span>newVal<span class="token punctuation">,</span> oldVal<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 参数变化时的操作</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="动态路由的懒加载"><a href="#动态路由的懒加载" class="header-anchor">#</a> 动态路由的懒加载</h3> <p>在 Vue Router 4 中，可以使用 import() 函数来实现动态路由的懒加载。这种方法可以帮助你提高应用程序的性能，因为它可以延迟加载组件代码，而不是在应用程序加载时全部加载。以下是一个使用 import() 函数进行懒加载的示例：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> routes <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">'/users/:id'</span><span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">'User'</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">component</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'./components/User.vue'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><p>在上面的示例中，我们将 component 属性设置为一个函数，这个函数会在路由被访问时异步加载组件。当路由被访问时，Vue Router 4 将自动使用 Webpack 进行代码分割，并将组件代码作为单独的文件加载。</p> <p>在使用动态路由时，我们还需要注意以下几点：</p> <p>动态路由参数的变化会重新触发组件的创建和销毁，因此需要在组件内部正确地处理这些变化。
+动态路由参数的匹配顺序与路由规则的顺序有关，因此需要注意路由规则的编写顺序。
+动态路由参数可以通过正则表达式进行匹配，从而更加灵活地匹配不同的参数值。
+动态路由参数也可以在编程式导航和路由链接中使用，从而实现更加灵活的路由跳转。</p> <h2 id="动态路由方法"><a href="#动态路由方法" class="header-anchor">#</a> 动态路由方法</h2> <p>动态路由主要是通过这两个函数来实现的，其中 router.addRoute() 用于动态添加路由，router.removeRoute() 用于动态移除路由。</p> <p>使用这两个函数，我们可以在路由运行时添加和移除路由。这意味着我们可以根据应用程序的需求来动态地创建和销毁路由。比如在某些场景下，我们需要动态地根据后端返回的数据来生成路由，而这时候就可以使用动态路由来实现。</p> <p>需要注意的是，添加的路由只有在下一次路由跳转时才会生效，而不会立即生效。这是因为在路由注册时，Vue Router 会先遍历一遍所有的路由规则，所以新添加的路由必须要等到下一次遍历时才会被生效。</p> <p>另外，使用动态路由时需要特别小心，因为动态路由可能会带来潜在的安全风险。如果你不对动态路由做出正确的处理，可能会导致应用程序出现安全漏洞，比如跨站脚本攻击。因此，在使用动态路由时一定要谨慎，并对用户输入进行严格的验证和过滤。</p> <h3 id="router-addroute-route-routeconfig-添加路由"><a href="#router-addroute-route-routeconfig-添加路由" class="header-anchor">#</a> router.addRoute(route: RouteConfig)：添加路由</h3> <p>该方法用于向路由表中动态添加一条路由记录。需要注意的是，该方法只能在路由初始化之后调用。</p> <p>示例：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> newRoute <span class="token operator">=</span> <span class="token punctuation">{</span>
+  path<span class="token operator">:</span> <span class="token string">'/new-route'</span><span class="token punctuation">,</span>
+  component<span class="token operator">:</span> NewComponent
+<span class="token punctuation">}</span>
+router<span class="token punctuation">.</span><span class="token function">addRoute</span><span class="token punctuation">(</span>newRoute<span class="token punctuation">)</span>
+</code></pre></div><h3 id="router-removeroute-name-string-移除路由"><a href="#router-removeroute-name-string-移除路由" class="header-anchor">#</a> router.removeRoute(name: string)：移除路由</h3> <p>该方法用于从路由表中移除一条路由记录。需要注意的是，该方法只能在路由初始化之后调用。</p> <p>示例：</p> <div class="language-js extra-class"><pre class="language-js"><code>router<span class="token punctuation">.</span><span class="token function">removeRoute</span><span class="token punctuation">(</span><span class="token string">'name-of-route-to-be-removed'</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="router-hasroute-location-rawlocation-routelocation-判断路由是否存在"><a href="#router-hasroute-location-rawlocation-routelocation-判断路由是否存在" class="header-anchor">#</a> router.hasRoute(location: RawLocation | RouteLocation)：判断路由是否存在</h3> <p>该方法用于判断某个路由是否存在于路由表中。</p> <p>示例：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> exists <span class="token operator">=</span> router<span class="token punctuation">.</span><span class="token function">hasRoute</span><span class="token punctuation">(</span><span class="token string">'/some-route'</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="router-getroutes-获取当前所有路由"><a href="#router-getroutes-获取当前所有路由" class="header-anchor">#</a> router.getRoutes()：获取当前所有路由</h3> <p>该方法用于获取当前路由表中的所有路由记录。</p> <p>示例：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> allRoutes <span class="token operator">=</span> router<span class="token punctuation">.</span><span class="token function">getRoutes</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="router-resolve-location-rawlocation-current-route-append-boolean-promise-resolved"><a href="#router-resolve-location-rawlocation-current-route-append-boolean-promise-resolved" class="header-anchor">#</a> router.resolve(location: RawLocation, current?: Route, append?: boolean): <code>Promise&lt;Resolved&gt;</code></h3> <p>该方法用于解析路由并返回一个 <code>Promise</code>，该 <code>Promise</code> 将返回包含当前路由信息的对象。如果解析失败，则会被拒绝并返回错误对象。</p> <p>示例：</p> <div class="language-js extra-class"><pre class="language-js"><code>router<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">'/some-route'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolved</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>resolved<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="router-beforeresolve-to-from-next-在路由解析之前执行"><a href="#router-beforeresolve-to-from-next-在路由解析之前执行" class="header-anchor">#</a> router.beforeResolve((to, from, next) =&gt; {})：在路由解析之前执行</h3> <p>该方法用于在路由解析之前执行一些逻辑，比如获取用户信息、权限验证等。</p> <p>示例：</p> <div class="language-js extra-class"><pre class="language-js"><code>router<span class="token punctuation">.</span><span class="token function">beforeResolve</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">to<span class="token punctuation">,</span> from<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 获取用户信息并保存到 store 中</span>
+  store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'getUserInfo'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">next</span><span class="token punctuation">(</span><span class="token string">'/login'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="router-beforeeach-to-from-next-在路由跳转之前执行"><a href="#router-beforeeach-to-from-next-在路由跳转之前执行" class="header-anchor">#</a> router.beforeEach((to, from, next) =&gt; {})：在路由跳转之前执行</h3> <p>该方法用于在路由跳转之前执行一些逻辑，比如判断用户是否登录等。</p> <p>示例：</p> <div class="language-js extra-class"><pre class="language-js"><code>router<span class="token punctuation">.</span><span class="token function">beforeEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">to<span class="token punctuation">,</span> from<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>to<span class="token punctuation">.</span>meta<span class="token punctuation">.</span>requiresAuth <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>isAuthenticated<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">next</span><span class="token punctuation">(</span><span class="token string">'/login'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="router-aftereach-to-from-在路由跳转之后执行"><a href="#router-aftereach-to-from-在路由跳转之后执行" class="header-anchor">#</a> router.afterEach((to, from) =&gt; {})：在路由跳转之后执行</h3> <p>该方法用于在路由跳转之后执行一些逻辑，比如上报 PV 数据等。</p> <p>示例：</p> <div class="language-js extra-class"><pre class="language-js"><code>router<span class="token punctuation">.</span><span class="token function">afterEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">to<span class="token punctuation">,</span> <span class="token keyword">from</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 上报 PV 数据</span>
+  <span class="token function">reportPV</span><span class="token punctuation">(</span>to<span class="token punctuation">.</span>path<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>以上是 Vue Router 4 中常用的动态路由方法，使用这些方法可以实现更加灵活和高效的路由管理。</p> <p>在使用 router.addRoute() 方法添加动态路由时，我们需要提供一个路由配置对象，这个对象包含了路由的各种属性，例如：</p> <div class="language-js extra-class"><pre class="language-js"><code>router<span class="token punctuation">.</span><span class="token function">addRoute</span><span class="token punctuation">(</span><span class="token string">'parent'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  path<span class="token operator">:</span> <span class="token string">'/child'</span><span class="token punctuation">,</span>
+  component<span class="token operator">:</span> ChildComponent
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>在这个例子中，我们为名为 parent 的路由添加了一个子路由 child，子路由的组件是 ChildComponent。在这个路由配置对象中，还可以包含许多其他属性，例如 meta 和 props 等，这些属性的作用和使用方式与常规路由的配置是一样的。</p> <p>在使用 router.removeRoute() 方法删除动态路由时，我们需要提供要删除的路由名称或路由配置对象。例如，我们可以使用以下代码从路由器中删除名为 parent 的路由：</p> <div class="language-js extra-class"><pre class="language-js"><code>router<span class="token punctuation">.</span><span class="token function">removeRoute</span><span class="token punctuation">(</span><span class="token string">'parent'</span><span class="token punctuation">)</span>
+</code></pre></div><p>或者，我们也可以通过提供路由配置对象来删除路由：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> route <span class="token operator">=</span> router<span class="token punctuation">.</span><span class="token function">getRoutes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token parameter">route</span> <span class="token operator">=&gt;</span> route<span class="token punctuation">.</span>name <span class="token operator">===</span> <span class="token string">'parent'</span><span class="token punctuation">)</span>
+router<span class="token punctuation">.</span><span class="token function">removeRoute</span><span class="token punctuation">(</span>route<span class="token punctuation">)</span>
+</code></pre></div><p>在这个例子中，我们使用 router.getRoutes() 方法获取路由器中的所有路由，然后从中查找名称为 parent 的路由，最后将这个路由对象传递给 router.removeRoute() 方法来删除路由。</p> <p>需要注意的是，当我们使用 router.removeRoute() 方法删除一个路由时，它会删除整个路由记录，包括该路由下的所有子路由。如果我们只想删除某个子路由，可以先通过 router.getRoutes() 方法获取到该子路由的父路由对象，然后在父路由对象上使用 children 属性删除子路由。</p> <p>例如，假设我们要删除父路由为 parent 的路由下名为 child 的子路由，可以使用以下代码：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> parentRoute <span class="token operator">=</span> router<span class="token punctuation">.</span>options<span class="token punctuation">.</span>routes<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token parameter">route</span> <span class="token operator">=&gt;</span> route<span class="token punctuation">.</span>name <span class="token operator">===</span> <span class="token string">'parent'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> childIndex <span class="token operator">=</span> parentRoute<span class="token punctuation">.</span>children<span class="token punctuation">.</span><span class="token function">findIndex</span><span class="token punctuation">(</span><span class="token parameter">route</span> <span class="token operator">=&gt;</span> route<span class="token punctuation">.</span>name <span class="token operator">===</span> <span class="token string">'child'</span><span class="token punctuation">)</span>
+parentRoute<span class="token punctuation">.</span>children<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span>childIndex<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+router<span class="token punctuation">.</span><span class="token function">removeRoute</span><span class="token punctuation">(</span><span class="token string">'parent-child'</span><span class="token punctuation">)</span>
+</code></pre></div><p>这里首先通过 router.options.routes 找到父路由为 parent 的路由配置，然后再从其中的 children 数组中找到名为 child 的子路由，最后使用 splice() 方法将其从 children 数组中删除。需要注意的是，这里删除的是路由配置，而不是路由实例，因此我们还需要通过 router.removeRoute() 方法将其从路由表中删除。</p> <h3 id="demo"><a href="#demo" class="header-anchor">#</a> demo</h3> <p>下面是一个使用addRoute和removeRoute实现动态路由的示例：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> createRouter<span class="token punctuation">,</span> createWebHistory <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue-router'</span>
+
+<span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token function">createRouter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  history<span class="token operator">:</span> <span class="token function">createWebHistory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  routes<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      path<span class="token operator">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span>
+      <span class="token function-variable function">component</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'./views/Home.vue'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      path<span class="token operator">:</span> <span class="token string">'/parent/:id'</span><span class="token punctuation">,</span>
+      <span class="token function-variable function">component</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'./views/Parent.vue'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      children<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          path<span class="token operator">:</span> <span class="token string">'child/:childId'</span><span class="token punctuation">,</span>
+          <span class="token function-variable function">component</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'./views/Child.vue'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 添加路由</span>
+router<span class="token punctuation">.</span><span class="token function">addRoute</span><span class="token punctuation">(</span><span class="token string">'parent'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  path<span class="token operator">:</span> <span class="token string">'/parent/new-child'</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">component</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'./views/NewChild.vue'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 删除路由</span>
+router<span class="token punctuation">.</span><span class="token function">removeRoute</span><span class="token punctuation">(</span><span class="token string">'parent-child'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> router
+</code></pre></div><p>上面的示例中，我们首先创建一个基本的Vue Router实例，并定义了一个带有动态路由的初始路由配置。然后，我们使用addRoute方法添加了一个名为parent的新路由，该路由将作为该路由的子路由。最后，我们使用removeRoute方法删除了名为parent-child的路由。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/study/vue-router/13.html" class="prev">
+        vue-router4 和 组合式 API
+      </a></span> <span class="next"><a href="/study/vue-router/11.html">
+        vue-router4 URL 的正确编码
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3ce791f2.js" defer></script><script src="/assets/js/2.0ef20547.js" defer></script><script src="/assets/js/137.418a11f3.js" defer></script>
+  </body>
+</html>

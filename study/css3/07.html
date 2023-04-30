@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>css3 动画过渡 | 南</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="这是我用 VuePress 搭建的个人学习博客！">
+    
+    <link rel="preload" href="/assets/css/0.styles.db6300be.css" as="style"><link rel="preload" href="/assets/js/app.3ce791f2.js" as="script"><link rel="preload" href="/assets/js/2.0ef20547.js" as="script"><link rel="preload" href="/assets/js/64.320c8837.js" as="script"><link rel="prefetch" href="/assets/js/10.b3961306.js"><link rel="prefetch" href="/assets/js/100.de8dcba1.js"><link rel="prefetch" href="/assets/js/101.0f8bdbac.js"><link rel="prefetch" href="/assets/js/102.18d0f745.js"><link rel="prefetch" href="/assets/js/103.45aa90ec.js"><link rel="prefetch" href="/assets/js/104.40ea827b.js"><link rel="prefetch" href="/assets/js/105.f19f2996.js"><link rel="prefetch" href="/assets/js/106.9a4ba006.js"><link rel="prefetch" href="/assets/js/107.fb828f4b.js"><link rel="prefetch" href="/assets/js/108.b00c84a3.js"><link rel="prefetch" href="/assets/js/109.357b5562.js"><link rel="prefetch" href="/assets/js/11.c432eaad.js"><link rel="prefetch" href="/assets/js/110.b4171ef1.js"><link rel="prefetch" href="/assets/js/111.966b67f0.js"><link rel="prefetch" href="/assets/js/112.c33489c3.js"><link rel="prefetch" href="/assets/js/113.9d0847e9.js"><link rel="prefetch" href="/assets/js/114.197b622f.js"><link rel="prefetch" href="/assets/js/115.667e255a.js"><link rel="prefetch" href="/assets/js/116.a2c5dc13.js"><link rel="prefetch" href="/assets/js/117.2b7a8f9c.js"><link rel="prefetch" href="/assets/js/118.aa987190.js"><link rel="prefetch" href="/assets/js/119.3408ca18.js"><link rel="prefetch" href="/assets/js/12.62a85baf.js"><link rel="prefetch" href="/assets/js/120.e12f7c91.js"><link rel="prefetch" href="/assets/js/121.6fb02f72.js"><link rel="prefetch" href="/assets/js/122.557f159e.js"><link rel="prefetch" href="/assets/js/123.d5e53c6d.js"><link rel="prefetch" href="/assets/js/124.df5ddc5d.js"><link rel="prefetch" href="/assets/js/125.a5a82896.js"><link rel="prefetch" href="/assets/js/126.df24f989.js"><link rel="prefetch" href="/assets/js/127.0f7eec10.js"><link rel="prefetch" href="/assets/js/128.9cf6ac7c.js"><link rel="prefetch" href="/assets/js/129.bb70491b.js"><link rel="prefetch" href="/assets/js/13.c727651b.js"><link rel="prefetch" href="/assets/js/130.190215b6.js"><link rel="prefetch" href="/assets/js/131.083dd738.js"><link rel="prefetch" href="/assets/js/132.62ea35c7.js"><link rel="prefetch" href="/assets/js/133.7d63cba7.js"><link rel="prefetch" href="/assets/js/134.18e0d50b.js"><link rel="prefetch" href="/assets/js/135.ca2fec78.js"><link rel="prefetch" href="/assets/js/136.0d3ad47c.js"><link rel="prefetch" href="/assets/js/137.418a11f3.js"><link rel="prefetch" href="/assets/js/138.69b53ece.js"><link rel="prefetch" href="/assets/js/139.62977b0b.js"><link rel="prefetch" href="/assets/js/14.5e5d0e50.js"><link rel="prefetch" href="/assets/js/140.a79b939d.js"><link rel="prefetch" href="/assets/js/141.9c66c170.js"><link rel="prefetch" href="/assets/js/142.85d6851b.js"><link rel="prefetch" href="/assets/js/143.51775333.js"><link rel="prefetch" href="/assets/js/144.9379c53a.js"><link rel="prefetch" href="/assets/js/145.17e5d8ba.js"><link rel="prefetch" href="/assets/js/146.92826ffa.js"><link rel="prefetch" href="/assets/js/147.868e4654.js"><link rel="prefetch" href="/assets/js/148.46bd2981.js"><link rel="prefetch" href="/assets/js/149.b3f0b573.js"><link rel="prefetch" href="/assets/js/15.e0ac1513.js"><link rel="prefetch" href="/assets/js/150.0496f589.js"><link rel="prefetch" href="/assets/js/151.a2b2fbad.js"><link rel="prefetch" href="/assets/js/152.2f051189.js"><link rel="prefetch" href="/assets/js/153.ca0d6fd8.js"><link rel="prefetch" href="/assets/js/154.93ce9d88.js"><link rel="prefetch" href="/assets/js/155.ad84a0c1.js"><link rel="prefetch" href="/assets/js/156.05e52fa7.js"><link rel="prefetch" href="/assets/js/157.60679b29.js"><link rel="prefetch" href="/assets/js/158.f7e0284d.js"><link rel="prefetch" href="/assets/js/159.3fff958f.js"><link rel="prefetch" href="/assets/js/16.d3490606.js"><link rel="prefetch" href="/assets/js/160.eb39fb18.js"><link rel="prefetch" href="/assets/js/161.14b90860.js"><link rel="prefetch" href="/assets/js/162.5ee0334e.js"><link rel="prefetch" href="/assets/js/163.aa0cde7a.js"><link rel="prefetch" href="/assets/js/164.98440f23.js"><link rel="prefetch" href="/assets/js/165.39c2e6af.js"><link rel="prefetch" href="/assets/js/166.62e76f59.js"><link rel="prefetch" href="/assets/js/167.b3e47d54.js"><link rel="prefetch" href="/assets/js/168.03a09811.js"><link rel="prefetch" href="/assets/js/169.18721839.js"><link rel="prefetch" href="/assets/js/17.24cffbf0.js"><link rel="prefetch" href="/assets/js/170.645cd916.js"><link rel="prefetch" href="/assets/js/171.b70171f2.js"><link rel="prefetch" href="/assets/js/172.28e1cedd.js"><link rel="prefetch" href="/assets/js/173.413cb9b2.js"><link rel="prefetch" href="/assets/js/174.7cdc42a4.js"><link rel="prefetch" href="/assets/js/175.7e9f276a.js"><link rel="prefetch" href="/assets/js/176.adb1fbe0.js"><link rel="prefetch" href="/assets/js/177.56079a0e.js"><link rel="prefetch" href="/assets/js/178.3dd525e0.js"><link rel="prefetch" href="/assets/js/179.bd582685.js"><link rel="prefetch" href="/assets/js/18.9ee02a99.js"><link rel="prefetch" href="/assets/js/180.4165de33.js"><link rel="prefetch" href="/assets/js/181.208694e3.js"><link rel="prefetch" href="/assets/js/182.6621cfcd.js"><link rel="prefetch" href="/assets/js/183.13609924.js"><link rel="prefetch" href="/assets/js/184.d96f9a79.js"><link rel="prefetch" href="/assets/js/185.ad192dd3.js"><link rel="prefetch" href="/assets/js/186.d71515e4.js"><link rel="prefetch" href="/assets/js/187.2957633a.js"><link rel="prefetch" href="/assets/js/188.e9761542.js"><link rel="prefetch" href="/assets/js/189.b3254d4f.js"><link rel="prefetch" href="/assets/js/19.36aa9eae.js"><link rel="prefetch" href="/assets/js/190.1c6dcc21.js"><link rel="prefetch" href="/assets/js/20.da48423e.js"><link rel="prefetch" href="/assets/js/21.9ac934b9.js"><link rel="prefetch" href="/assets/js/22.b8c26bae.js"><link rel="prefetch" href="/assets/js/23.227fcdaa.js"><link rel="prefetch" href="/assets/js/24.08d364bb.js"><link rel="prefetch" href="/assets/js/25.984c2149.js"><link rel="prefetch" href="/assets/js/26.805e9ee6.js"><link rel="prefetch" href="/assets/js/27.db4ddb75.js"><link rel="prefetch" href="/assets/js/28.b2456edd.js"><link rel="prefetch" href="/assets/js/29.a2f6017f.js"><link rel="prefetch" href="/assets/js/3.23f4907e.js"><link rel="prefetch" href="/assets/js/30.bebab7d3.js"><link rel="prefetch" href="/assets/js/31.1d6b92cb.js"><link rel="prefetch" href="/assets/js/32.562a65a5.js"><link rel="prefetch" href="/assets/js/33.66855daf.js"><link rel="prefetch" href="/assets/js/34.805b7a34.js"><link rel="prefetch" href="/assets/js/35.2c19282a.js"><link rel="prefetch" href="/assets/js/36.945b368e.js"><link rel="prefetch" href="/assets/js/37.af1593e5.js"><link rel="prefetch" href="/assets/js/38.0a64e4f6.js"><link rel="prefetch" href="/assets/js/39.60733a6e.js"><link rel="prefetch" href="/assets/js/4.8da6a8f7.js"><link rel="prefetch" href="/assets/js/40.5ae297e8.js"><link rel="prefetch" href="/assets/js/41.5c1aa8a0.js"><link rel="prefetch" href="/assets/js/42.a857a0e6.js"><link rel="prefetch" href="/assets/js/43.ba7da108.js"><link rel="prefetch" href="/assets/js/44.009ce993.js"><link rel="prefetch" href="/assets/js/45.1cd523af.js"><link rel="prefetch" href="/assets/js/46.679a5cea.js"><link rel="prefetch" href="/assets/js/47.c921d189.js"><link rel="prefetch" href="/assets/js/48.ee12efc0.js"><link rel="prefetch" href="/assets/js/49.d7dd70e2.js"><link rel="prefetch" href="/assets/js/5.bdc1ac6b.js"><link rel="prefetch" href="/assets/js/50.bc9f0bf1.js"><link rel="prefetch" href="/assets/js/51.aaf3aebd.js"><link rel="prefetch" href="/assets/js/52.0acf038d.js"><link rel="prefetch" href="/assets/js/53.01cf6347.js"><link rel="prefetch" href="/assets/js/54.89e4a69f.js"><link rel="prefetch" href="/assets/js/55.b0d1f214.js"><link rel="prefetch" href="/assets/js/56.ca5d4676.js"><link rel="prefetch" href="/assets/js/57.553ca0a6.js"><link rel="prefetch" href="/assets/js/58.98cc5862.js"><link rel="prefetch" href="/assets/js/59.f64b8cc2.js"><link rel="prefetch" href="/assets/js/6.24e999a1.js"><link rel="prefetch" href="/assets/js/60.7ef4a647.js"><link rel="prefetch" href="/assets/js/61.f72f0bcb.js"><link rel="prefetch" href="/assets/js/62.ec890236.js"><link rel="prefetch" href="/assets/js/63.ddd5dfbc.js"><link rel="prefetch" href="/assets/js/65.f99bcfcc.js"><link rel="prefetch" href="/assets/js/66.d225a06a.js"><link rel="prefetch" href="/assets/js/67.8b5477d8.js"><link rel="prefetch" href="/assets/js/68.87ae50fa.js"><link rel="prefetch" href="/assets/js/69.57ece9ad.js"><link rel="prefetch" href="/assets/js/7.5772efdd.js"><link rel="prefetch" href="/assets/js/70.c55970b3.js"><link rel="prefetch" href="/assets/js/71.fe2e2ffb.js"><link rel="prefetch" href="/assets/js/72.dae73f84.js"><link rel="prefetch" href="/assets/js/73.124f47c3.js"><link rel="prefetch" href="/assets/js/74.9c4df1a6.js"><link rel="prefetch" href="/assets/js/75.a21e4923.js"><link rel="prefetch" href="/assets/js/76.74d16534.js"><link rel="prefetch" href="/assets/js/77.671fcd3e.js"><link rel="prefetch" href="/assets/js/78.cd2e1e31.js"><link rel="prefetch" href="/assets/js/79.424d1495.js"><link rel="prefetch" href="/assets/js/8.4595d782.js"><link rel="prefetch" href="/assets/js/80.b90f1f9e.js"><link rel="prefetch" href="/assets/js/81.c78892cb.js"><link rel="prefetch" href="/assets/js/82.5a9c2ecf.js"><link rel="prefetch" href="/assets/js/83.b326d16e.js"><link rel="prefetch" href="/assets/js/84.c9aba1f2.js"><link rel="prefetch" href="/assets/js/85.80d95f81.js"><link rel="prefetch" href="/assets/js/86.6d03d757.js"><link rel="prefetch" href="/assets/js/87.b9004e5c.js"><link rel="prefetch" href="/assets/js/88.7e152654.js"><link rel="prefetch" href="/assets/js/89.110e9168.js"><link rel="prefetch" href="/assets/js/9.aab443be.js"><link rel="prefetch" href="/assets/js/90.c96c9810.js"><link rel="prefetch" href="/assets/js/91.30a74a5c.js"><link rel="prefetch" href="/assets/js/92.2735e96c.js"><link rel="prefetch" href="/assets/js/93.47b513ab.js"><link rel="prefetch" href="/assets/js/94.9ca71da5.js"><link rel="prefetch" href="/assets/js/95.4c608f53.js"><link rel="prefetch" href="/assets/js/96.a243e7de.js"><link rel="prefetch" href="/assets/js/97.f738ef91.js"><link rel="prefetch" href="/assets/js/98.06b90c5b.js"><link rel="prefetch" href="/assets/js/99.b7191e8a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.db6300be.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.svg" alt="南" class="logo"> <span class="site-name can-hide">南</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link">
+  博文
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="我的学习笔记菜单" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="我的学习笔记菜单" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/study/webpack/" class="nav-link">
+  webpack学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue3/" class="nav-link">
+  vue3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vuex/" class="nav-link">
+  vuex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue-router/" class="nav-link">
+  vueRouter学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/axios/" class="nav-link">
+  axios学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es5/" class="nav-link">
+  ES5学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es6/" class="nav-link">
+  ES6学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/promise/" class="nav-link">
+  promise学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/typescript/" class="nav-link">
+  typescript学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/flex/" class="nav-link">
+  flex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/css3/" class="nav-link router-link-active">
+  css3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/less/" class="nav-link">
+  less学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/sass/" class="nav-link">
+  sass学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-app/" class="nav-link">
+  微信小程序学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-h5/" class="nav-link">
+  微信公众号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/ali-h5/" class="nav-link">
+  支付宝生活号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/websoket/" class="nav-link">
+  websoket学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/Bluetooth/" class="nav-link">
+  Bluetooth学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/uniapp/" class="nav-link">
+  uniapp学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/lodash/" class="nav-link">
+  lodash学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/jquery/" class="nav-link">
+  jquery学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/animate/" class="nav-link">
+  animate学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/canvas/" class="nav-link">
+  canvas学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/echarts/" class="nav-link">
+  echarts学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/audio/" class="nav-link">
+  audio学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/video/" class="nav-link">
+  video学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vant/" class="nav-link">
+  vant学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/bootstrap/" class="nav-link">
+  bootstrap学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/element-ui/" class="nav-link">
+  elementUi学习
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目菜单" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目菜单" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/project/" class="nav-link">
+  我的项目
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link">
+  博文
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="我的学习笔记菜单" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="我的学习笔记菜单" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/study/webpack/" class="nav-link">
+  webpack学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue3/" class="nav-link">
+  vue3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vuex/" class="nav-link">
+  vuex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue-router/" class="nav-link">
+  vueRouter学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/axios/" class="nav-link">
+  axios学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es5/" class="nav-link">
+  ES5学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es6/" class="nav-link">
+  ES6学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/promise/" class="nav-link">
+  promise学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/typescript/" class="nav-link">
+  typescript学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/flex/" class="nav-link">
+  flex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/css3/" class="nav-link router-link-active">
+  css3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/less/" class="nav-link">
+  less学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/sass/" class="nav-link">
+  sass学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-app/" class="nav-link">
+  微信小程序学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-h5/" class="nav-link">
+  微信公众号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/ali-h5/" class="nav-link">
+  支付宝生活号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/websoket/" class="nav-link">
+  websoket学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/Bluetooth/" class="nav-link">
+  Bluetooth学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/uniapp/" class="nav-link">
+  uniapp学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/lodash/" class="nav-link">
+  lodash学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/jquery/" class="nav-link">
+  jquery学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/animate/" class="nav-link">
+  animate学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/canvas/" class="nav-link">
+  canvas学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/echarts/" class="nav-link">
+  echarts学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/audio/" class="nav-link">
+  audio学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/video/" class="nav-link">
+  video学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vant/" class="nav-link">
+  vant学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/bootstrap/" class="nav-link">
+  bootstrap学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/element-ui/" class="nav-link">
+  elementUi学习
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目菜单" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目菜单" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/project/" class="nav-link">
+  我的项目
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/study/css3/" class="sidebar-heading clickable router-link-active open"><span>css3学习</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/study/css3/12.html" class="sidebar-link">css3 filter 滤镜</a></li><li><a href="/study/css3/11.html" class="sidebar-link">css3 杂项</a></li><li><a href="/study/css3/10.html" class="sidebar-link">css3 语法与规则</a></li><li><a href="/study/css3/09.html" class="sidebar-link">css3 长度单位</a></li><li><a href="/study/css3/08.html" class="sidebar-link">css3 媒体载体</a></li><li><a href="/study/css3/07.html" aria-current="page" class="active sidebar-link">css3 动画过渡</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/study/css3/07.html#transform" class="sidebar-link">transform</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/study/css3/07.html#变换函数" class="sidebar-link">变换函数</a></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#transform-function-list" class="sidebar-link">transform-function list:</a></li></ul></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#transform-origin" class="sidebar-link">transform-origin</a></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#transform-style" class="sidebar-link">transform-style</a></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#perspective-2" class="sidebar-link">perspective</a></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#perspective-origin" class="sidebar-link">perspective-origin</a></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#backface-visibility" class="sidebar-link">backface-visibility</a></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#transition" class="sidebar-link">transition</a></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#transition-property" class="sidebar-link">transition-property</a></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#transition-duration" class="sidebar-link">transition-duration</a></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#transition-timing-function" class="sidebar-link">transition-timing-function</a></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#transition-delay" class="sidebar-link">transition-delay</a></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#animation" class="sidebar-link">animation</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/study/css3/07.html#animation-name" class="sidebar-link">animation-name：</a></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#animation-duration" class="sidebar-link">animation-duration：</a></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#animation-timing-function" class="sidebar-link">animation-timing-function：</a></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#animation-delay" class="sidebar-link">animation-delay：</a></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#animation-iteration-count" class="sidebar-link">animation-iteration-count：</a></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#animation-direction" class="sidebar-link">animation-direction：</a></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#animation-fill-mode" class="sidebar-link">animation-fill-mode：</a></li></ul></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#animation-name-2" class="sidebar-link">animation-name</a></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#animation-duration-2" class="sidebar-link">animation-duration</a></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#animation-timing-function-2" class="sidebar-link">animation-timing-function</a></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#animation-delay-2" class="sidebar-link">animation-delay</a></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#animation-iteration-count-2" class="sidebar-link">animation-iteration-count</a></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#animation-direction-2" class="sidebar-link">animation-direction</a></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#animation-play-state" class="sidebar-link">animation-play-state</a></li><li class="sidebar-sub-header"><a href="/study/css3/07.html#animation-fill-mode-2" class="sidebar-link">animation-fill-mode</a></li></ul></li><li><a href="/study/css3/06.html" class="sidebar-link">css3 用户界面</a></li><li><a href="/study/css3/05.html" class="sidebar-link">css3 列表表格</a></li><li><a href="/study/css3/04.html" class="sidebar-link">css3 文字字体</a></li><li><a href="/study/css3/03.html" class="sidebar-link">css3 颜色背景</a></li><li><a href="/study/css3/02.html" class="sidebar-link">css3 选择器</a></li><li><a href="/study/css3/01.html" class="sidebar-link">css3 定位布局</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="css3-动画过渡"><a href="#css3-动画过渡" class="header-anchor">#</a> css3 动画过渡</h1> <h2 id="transform"><a href="#transform" class="header-anchor">#</a> transform</h2> <p>CSS3 transform是一种可以对HTML元素进行2D或3D变换的属性，可以对元素进行旋转、缩放、平移等操作，从而实现复杂的动画效果。本文将详细介绍CSS3 transform属性及其常见的变换函数。</p> <p>语法
+CSS3 transform属性的语法如下：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">transform</span><span class="token punctuation">:</span> none | &lt;transform-function&gt; [ &lt;transform-function&gt; ]*
+</code></pre></div><p>其中，none表示元素不进行变换，<code>&lt;transform-function&gt;</code>是变换函数，可以为以下任何一种：</p> <div class="language- extra-class"><pre><code>translate()：平移
+rotate()：旋转
+scale()：缩放
+skew()：扭曲
+matrix()：矩阵变换
+</code></pre></div><p>多个变换函数可以同时使用，用空格隔开，例如：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translate</span><span class="token punctuation">(</span>50px<span class="token punctuation">,</span> 50px<span class="token punctuation">)</span> <span class="token function">rotate</span><span class="token punctuation">(</span>45deg<span class="token punctuation">)</span> <span class="token function">scale</span><span class="token punctuation">(</span>2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>上面的代码表示对元素进行平移、旋转和缩放操作。</p> <h3 id="变换函数"><a href="#变换函数" class="header-anchor">#</a> 变换函数</h3> <h4 id="translate"><a href="#translate" class="header-anchor">#</a> translate()</h4> <p>translate()函数可以对元素进行平移操作，它接受一个或两个参数，表示水平和垂直方向的平移距离。如果只指定一个参数，则表示水平方向的平移距离。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 仅水平方向平移 */</span>
+<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translate</span><span class="token punctuation">(</span>50px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">/* 水平和垂直方向平移 */</span>
+<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translate</span><span class="token punctuation">(</span>50px<span class="token punctuation">,</span> 50px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="rotate"><a href="#rotate" class="header-anchor">#</a> rotate()</h4> <p>rotate()函数可以对元素进行旋转操作，它接受一个参数，表示旋转的角度，可以使用deg或rad单位。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 顺时针旋转45度 */</span>
+<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>45deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">/* 逆时针旋转90度 */</span>
+<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>-90deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="scale"><a href="#scale" class="header-anchor">#</a> scale()</h4> <p>scale()函数可以对元素进行缩放操作，它接受一个或两个参数，表示水平和垂直方向的缩放比例。如果只指定一个参数，则表示水平和垂直方向的缩放比例相同。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 水平和垂直方向均放大2倍 */</span>
+<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">/* 水平方向放大2倍，垂直方向放大1.5倍 */</span>
+<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>2<span class="token punctuation">,</span> 1.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="skew"><a href="#skew" class="header-anchor">#</a> skew()</h4> <p>skew()函数可以对元素进行扭曲操作，它接受一个或两个参数，表示水平和垂直方向的扭曲角度。如果只指定一个参数，则表示水平和垂直方向的扭曲角度相同。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 水平方向扭曲30度 */</span>
+<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">skew</span><span class="token punctuation">(</span>30deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">/* 水平和垂直方向扭曲30度和45度 */</span>
+<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">skew</span><span class="token punctuation">(</span>30deg<span class="token punctuation">,</span> 45deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="matrix"><a href="#matrix" class="header-anchor">#</a> matrix()</h4> <p>matrix()函数可以对元素进行任意的2D变换，它接受6个参数，表示一个矩阵的各个元素是一个3x3的矩阵。这些参数按照如下顺序依次表示：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token function">matrix</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c<span class="token punctuation">,</span> d<span class="token punctuation">,</span> tx<span class="token punctuation">,</span> ty<span class="token punctuation">)</span>
+</code></pre></div><p>其中a、b、c、d表示变换矩阵的前四个元素，tx、ty表示平移的距离。</p> <p>具体来说，参数a、b、c、d代表元素在水平方向上的缩放、水平方向上的倾斜、竖直方向上的倾斜以及竖直方向上的缩放，而tx和ty则代表元素在水平和竖直方向上的位移。</p> <p>使用matrix()函数可以实现复杂的2D变换效果，但也需要对变换矩阵有一定的理解和计算能力。在实际开发中，往往会使用其他函数或工具辅助完成常见的2D变换操作。</p> <h3 id="transform-function-list"><a href="#transform-function-list" class="header-anchor">#</a> transform-function list:</h3> <p>CSS3 transform属性可以对元素进行多种变换操作，通过组合不同的变换函数可以实现更加复杂的效果，以下是常用的变换函数列表及其示例：</p> <h4 id="translate-移动元素在平面上的位置-可以接受一个或两个参数-分别表示水平方向和垂直方向的移动距离。"><a href="#translate-移动元素在平面上的位置-可以接受一个或两个参数-分别表示水平方向和垂直方向的移动距离。" class="header-anchor">#</a> translate()：移动元素在平面上的位置，可以接受一个或两个参数，分别表示水平方向和垂直方向的移动距离。</h4> <p>示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 向右移动50px */</span>
+<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>50px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/* 向下移动50px */</span>
+<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>50px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/* 向右下移动50px */</span>
+<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translate</span><span class="token punctuation">(</span>50px<span class="token punctuation">,</span> 50px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="rotate-旋转元素-可以接受一个参数-表示旋转的角度-可以使用deg、rad、grad等单位。"><a href="#rotate-旋转元素-可以接受一个参数-表示旋转的角度-可以使用deg、rad、grad等单位。" class="header-anchor">#</a> rotate()：旋转元素，可以接受一个参数，表示旋转的角度，可以使用deg、rad、grad等单位。</h4> <p>示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 顺时针旋转45度 */</span>
+<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>45deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/* 逆时针旋转45度 */</span>
+<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>-45deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="scale-对元素进行缩放操作-可以接受一个或两个参数-分别表示水平和垂直方向的缩放比例。"><a href="#scale-对元素进行缩放操作-可以接受一个或两个参数-分别表示水平和垂直方向的缩放比例。" class="header-anchor">#</a> scale()：对元素进行缩放操作，可以接受一个或两个参数，分别表示水平和垂直方向的缩放比例。</h4> <p>示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 水平和垂直方向同时放大2倍 */</span>
+<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/* 水平方向放大2倍，垂直方向缩小1倍 */</span>
+<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>2<span class="token punctuation">,</span> 0.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="skew-对元素进行倾斜操作-可以接受一个或两个参数-分别表示水平和垂直方向的倾斜角度。"><a href="#skew-对元素进行倾斜操作-可以接受一个或两个参数-分别表示水平和垂直方向的倾斜角度。" class="header-anchor">#</a> skew()：对元素进行倾斜操作，可以接受一个或两个参数，分别表示水平和垂直方向的倾斜角度。</h4> <p>示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 水平方向倾斜30度 */</span>
+<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">skewX</span><span class="token punctuation">(</span>30deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/* 垂直方向倾斜30度 */</span>
+<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">skewY</span><span class="token punctuation">(</span>30deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/* 水平方向倾斜30度，垂直方向倾斜45度 */</span>
+<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">skew</span><span class="token punctuation">(</span>30deg<span class="token punctuation">,</span> 45deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="matrix-使用一个3x3的矩阵来对元素进行变换-可以接受6个参数-分别表示矩阵中的各个元素。"><a href="#matrix-使用一个3x3的矩阵来对元素进行变换-可以接受6个参数-分别表示矩阵中的各个元素。" class="header-anchor">#</a> matrix()：使用一个3x3的矩阵来对元素进行变换，可以接受6个参数，分别表示矩阵中的各个元素。</h4> <p>示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 对元素进行复合变换 */</span>
+<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">matrix</span><span class="token punctuation">(</span>1<span class="token punctuation">,</span> 0.5<span class="token punctuation">,</span> -0.5<span class="token punctuation">,</span> 1<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="perspective-给元素设置透视-用于制作3d效果-可以接受一个参数-表示透视的距离。"><a href="#perspective-给元素设置透视-用于制作3d效果-可以接受一个参数-表示透视的距离。" class="header-anchor">#</a> perspective()：给元素设置透视，用于制作3D效果，可以接受一个参数，表示透视的距离。</h4> <p>示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 给元素设置透视效果 */</span>
+<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1000px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="translate3d-移动元素在3d空间中的位置-可以接受三个参数-分别表示水平、垂直和深度方向的移动距离。"><a href="#translate3d-移动元素在3d空间中的位置-可以接受三个参数-分别表示水平、垂直和深度方向的移动距离。" class="header-anchor">#</a> translate3d()：移动元素在3D空间中的位置，可以接受三个参数，分别表示水平、垂直和深度方向的移动距离。</h4> <p>示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 向右移动50px，向下移动50px，深度移动50px */</span>
+<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translate3d</span><span class="token punctuation">(</span>50px<span class="token punctuation">,</span> 50px<span class="token punctuation">,</span> 50px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="rotate3d"><a href="#rotate3d" class="header-anchor">#</a> rotate3d()</h4> <p>rotate3d()函数可以对元素进行3D旋转操作，可以接受四个参数，分别表示旋转轴的x、y、z坐标和旋转角度。</p> <p>语法：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token function">rotate3d</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">,</span> angle<span class="token punctuation">)</span>
+</code></pre></div><p>参数说明：</p> <div class="language- extra-class"><pre><code>x：表示旋转轴x坐标值，默认值为0。
+y：表示旋转轴y坐标值，默认值为0。
+z：表示旋转轴z坐标值，默认值为1。
+angle：表示旋转角度，可以为正数或负数，单位为deg。
+</code></pre></div><p>示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.rotate</span> <span class="token punctuation">{</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate3d</span><span class="token punctuation">(</span>1<span class="token punctuation">,</span> 1<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 45deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>以上代码表示对元素进行绕着x轴和y轴的旋转，旋转角度为45度。</p> <h4 id="scale3d"><a href="#scale3d" class="header-anchor">#</a> scale3d()</h4> <p>scale3d()函数可以对元素进行3D缩放操作，可以接受三个参数，分别表示x、y、z方向上的缩放比例。</p> <p>语法：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token function">scale3d</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">)</span>
+</code></pre></div><p>参数说明：</p> <div class="language- extra-class"><pre><code>x：表示x方向上的缩放比例，默认值为1。
+y：表示y方向上的缩放比例，默认值为1。
+z：表示z方向上的缩放比例，默认值为1。
+</code></pre></div><p>示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.scale</span> <span class="token punctuation">{</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale3d</span><span class="token punctuation">(</span>1.5<span class="token punctuation">,</span> 1<span class="token punctuation">,</span> 0.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>以上代码表示对元素进行x轴和z轴方向上的缩放，x轴方向缩放1.5倍，z轴方向缩放0.5倍。</p> <h4 id="translate3d"><a href="#translate3d" class="header-anchor">#</a> translate3d()</h4> <p>translate3d()函数可以对元素进行3D平移操作，可以接受三个参数，分别表示x、y、z方向上的平移距离。</p> <p>语法：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token function">translate3d</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">)</span>
+</code></pre></div><p>参数说明：</p> <div class="language- extra-class"><pre><code>x：表示x方向上的平移距离，默认值为0。
+y：表示y方向上的平移距离，默认值为0。
+z：表示z方向上的平移距离，默认值为0。
+</code></pre></div><p>示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.translate</span> <span class="token punctuation">{</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translate3d</span><span class="token punctuation">(</span>20px<span class="token punctuation">,</span> 30px<span class="token punctuation">,</span> -10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>以上代码表示对元素进行x轴方向上的平移20px，y轴方向上的平移30px，z轴方向上的平移-10px。</p> <h4 id="perspective"><a href="#perspective" class="header-anchor">#</a> perspective()</h4> <p>perspective()函数可以设置元素的透视效果，可以接受一个参数，表示透视距离。</p> <p>语法：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token function">perspective</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span>
+</code></pre></div><p>参数说明：</p> <div class="language- extra-class"><pre><code>value：表示透视距离，可以为正数或负数，默认值为none。
+</code></pre></div><p>示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.perspective</span> <span class="token punctuation">{</span>
+  <span class="token property">perspective</span><span class="token punctuation">:</span> 500px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>以上代码表示对元素设置透视效果，透视距离为500px。</p> <h2 id="transform-origin"><a href="#transform-origin" class="header-anchor">#</a> transform-origin</h2> <p>transform-origin属性用于设置元素的变换原点，即变换的中心点。默认情况下，变换的中心点为元素的中心点。</p> <p>语法格式如下：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">transform-origin</span><span class="token punctuation">:</span> x-axis y-axis z-axis<span class="token punctuation">;</span>
+</code></pre></div><p>其中，x-axis、y-axis、z-axis分别表示元素的X轴、Y轴、Z轴上的变换原点位置。这些值可以是像素、百分比、关键字或组合值。如果只指定了两个值，则第三个值默认为0。</p> <p>示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.box</span> <span class="token punctuation">{</span>
+  <span class="token property">transform-origin</span><span class="token punctuation">:</span> center center<span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>45deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>以上代码将会把.box元素沿中心点旋转45度。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.box</span> <span class="token punctuation">{</span>
+  <span class="token property">transform-origin</span><span class="token punctuation">:</span> top left<span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>45deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>以上代码将会把.box元素以左上角为变换中心点，沿左上角旋转45度。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.box</span> <span class="token punctuation">{</span>
+  <span class="token property">transform-origin</span><span class="token punctuation">:</span> 50% 50%<span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>以上代码将会把.box元素以中心点为变换中心点，沿X和Y轴放大两倍。</p> <h2 id="transform-style"><a href="#transform-style" class="header-anchor">#</a> transform-style</h2> <p>transform-style 属性用于指定一个元素的子元素如何在 3D 空间中呈现。它可以设置为 flat 或 preserve-3d。</p> <div class="language- extra-class"><pre><code>flat：表示所有子元素将被绘制在一个平面上。这是默认值。
+preserve-3d：表示子元素将在 3D 空间中呈现，具有 Z 轴深度感。
+</code></pre></div><p>该属性通常与 transform 属性一起使用，以在 3D 空间中呈现元素及其子元素。</p> <p>示例：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>parent<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>child<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.parent</span> <span class="token punctuation">{</span>
+  <span class="token property">transform-style</span><span class="token punctuation">:</span> preserve-3d<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.child</span> <span class="token punctuation">{</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotateY</span><span class="token punctuation">(</span>45deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在上面的示例中，父元素 .parent 设置了 transform-style: preserve-3d，使其子元素 .child 可以在 3D 空间中呈现。.child 使用 transform: rotateY(45deg) 进行旋转，因此它将在 Y 轴上绕着父元素旋转。</p> <h2 id="perspective-2"><a href="#perspective-2" class="header-anchor">#</a> perspective</h2> <p>perspective是CSS3中的一个属性，它可以用来设置3D场景下的透视效果。它被用来为被嵌套的元素创建透视的视图。</p> <p>语法</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">perspective</span><span class="token punctuation">:</span> &lt;length&gt;|none<span class="token punctuation">;</span>
+</code></pre></div><p>其中：</p> <div class="language- extra-class"><pre><code>`&lt;length&gt;`指定透视距离的长度，可以是正数或0。值越小，则透视越大，元素离观察者越近。
+none表示无透视效果。
+</code></pre></div><p>示例
+下面的例子中，设置了两个元素的透视距离分别为500px和1000px。可以看到，透视距离越小，元素的倾斜程度越大，视觉上越接近用户。</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+    <span class="token selector">.box1</span> <span class="token punctuation">{</span>
+        <span class="token property">perspective</span><span class="token punctuation">:</span> 500px<span class="token punctuation">;</span>
+        <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotateY</span><span class="token punctuation">(</span>45deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+        <span class="token property">background-color</span><span class="token punctuation">:</span> #f7d7c4<span class="token punctuation">;</span>
+        <span class="token property">margin</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+        <span class="token property">float</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.box2</span> <span class="token punctuation">{</span>
+        <span class="token property">perspective</span><span class="token punctuation">:</span> 1000px<span class="token punctuation">;</span>
+        <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotateY</span><span class="token punctuation">(</span>45deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+        <span class="token property">background-color</span><span class="token punctuation">:</span> #f7d7c4<span class="token punctuation">;</span>
+        <span class="token property">margin</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+        <span class="token property">float</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>box1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>box2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>注意事项
+perspective属性只对被嵌套的元素生效，即只有在父元素中设置了perspective属性后，子元素才会产生透视效果。
+perspective属性只能影响使用3D变换的元素，对于普通的2D元素没有影响。
+perspective属性不能应用于inline元素，应用于inline元素时，它会被忽略。</p> <h2 id="perspective-origin"><a href="#perspective-origin" class="header-anchor">#</a> perspective-origin</h2> <p>perspective-origin属性用于设置3D转换中观察者的位置，它定义了一个二元组（X，Y），该二元组决定了观察者视角的位置，也就是观察者眼睛的位置。它的语法如下：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">perspective-origin</span><span class="token punctuation">:</span> x-axis y-axis<span class="token punctuation">;</span>
+</code></pre></div><p>其中，x-axis和y-axis可以使用以下单位：</p> <div class="language- extra-class"><pre><code>px：像素值
+%：百分比值，相对于父元素的宽度
+left、center、right、top、center、bottom：关键字，相对于元素的左侧、中心或右侧、顶部、中心或底部
+</code></pre></div><p>如果只设置了一个值，则第二个值默认为50%。如果只设置了perspective属性而没有设置perspective-origin属性，则视点默认是垂直于元素的中心。</p> <p>以下是一个例子：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>box<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.container</span> <span class="token punctuation">{</span>
+  <span class="token property">perspective</span><span class="token punctuation">:</span> 500px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.box</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotateX</span><span class="token punctuation">(</span>60deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform-origin</span><span class="token punctuation">:</span> center bottom<span class="token punctuation">;</span>
+  <span class="token property">transition</span><span class="token punctuation">:</span> transform 1s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.box:hover</span> <span class="token punctuation">{</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotateX</span><span class="token punctuation">(</span>0deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在上面的例子中，容器元素设置了perspective属性，表示元素的观察点距离屏幕的距离为500px。.box元素设置了transform属性和transform-origin属性，表示元素在X轴上旋转60度，并以元素的中心底部作为旋转点。当鼠标悬停在.box元素上时，使用过渡效果将元素旋转回原始状态。</p> <p>可以通过修改transform-origin属性中的值来改变元素的旋转点，从而实现不同的3D效果。</p> <h2 id="backface-visibility"><a href="#backface-visibility" class="header-anchor">#</a> backface-visibility</h2> <p>backface-visibility 属性是用于设置元素背面是否可见，仅在元素使用 3D 转换时才会生效。</p> <p>当设置为 visible 时，元素背面可见，当设置为 hidden 时，元素背面不可见。</p> <p>示例：</p> <p>HTML 代码：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>box<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>CSS 代码：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.box</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #ff6a5c<span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotateY</span><span class="token punctuation">(</span>180deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">backface-visibility</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>解释：</p> <p>在上面的示例中，.box 元素被旋转 180 度，也就是正面和背面都可以看到。但是由于 backface-visibility 属性被设置为 hidden，所以元素的背面将不可见。</p> <h2 id="transition"><a href="#transition" class="header-anchor">#</a> transition</h2> <p>CSS3的transition（过渡）属性可以实现元素状态变化时的动画效果，比如鼠标悬停、单击等交互操作时元素的变化。</p> <p>该属性可以设置元素状态变化的过渡效果，如透明度、位置、大小、颜色等。transition属性的基本语法如下：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">transition</span><span class="token punctuation">:</span> &lt;property&gt; &lt;duration&gt; &lt;timing-function&gt; &lt;delay&gt;<span class="token punctuation">;</span>
+</code></pre></div><p>其中，各个参数含义如下：</p> <div class="language- extra-class"><pre><code>property：指定需要过渡的CSS属性名称，多个属性名称以逗号分隔。
+duration：指定过渡效果的持续时间，以秒或毫秒为单位。
+timing-function：指定过渡效果的速度变化函数，常用的有ease（默认值，慢-快-慢）、linear（匀速）、ease-in（慢-快）、ease-out（快-慢）、ease-in-out（慢-快-慢）等。
+delay：指定过渡效果开始执行的延迟时间，以秒或毫秒为单位。
+</code></pre></div><p>以下是一个例子，当鼠标悬停在按钮上时，背景色和字体颜色都会以1秒的时间从原来的值过渡到新的值：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">button</span> <span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+  <span class="token property">transition</span><span class="token punctuation">:</span> background-color 1s ease<span class="token punctuation">,</span> color 1s ease<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">button:hover</span> <span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在这个例子中，transition属性设置了两个过渡效果，一个是background-color，另一个是color。当按钮被悬停时，background-color会从蓝色变为绿色，color会从白色变为黑色，持续时间均为1秒，速度变化函数为默认的ease。</p> <p>值得注意的是，CSS3的transition属性只能实现简单的状态变化过渡，如果需要实现更复杂的动画效果，需要使用CSS3的animation属性。</p> <h2 id="transition-property"><a href="#transition-property" class="header-anchor">#</a> transition-property</h2> <p>transition-property 属性指定应该过渡的 CSS 属性名称。只有指定的属性才会发生过渡效果。</p> <p>语法</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">transition-property</span><span class="token punctuation">:</span> none|all|property1 [property2 ...]<span class="token punctuation">;</span>
+</code></pre></div><p>属性值
+none：默认值。指示不对任何属性进行过渡。
+all：指示对所有属性都进行过渡。
+property1, property2 等：指定一个或多个需要过渡的 CSS 属性名称。</p> <p>可以指定多个属性名称，多个属性名称之间用空格隔开。如果指定 all，则所有属性都会过渡。</p> <p>示例</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 对 width 和 background-color 进行过渡 */</span>
+<span class="token selector">div</span> <span class="token punctuation">{</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> width<span class="token punctuation">,</span> background-color<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* 对所有属性进行过渡 */</span>
+<span class="token selector">div</span> <span class="token punctuation">{</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> all<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* 不进行过渡 */</span>
+<span class="token selector">div</span> <span class="token punctuation">{</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在上面的示例中，div 元素将对 width 和 background-color 属性进行过渡。第二个示例中，将对所有属性进行过渡。第三个示例中，将不进行任何过渡。</p> <h2 id="transition-duration"><a href="#transition-duration" class="header-anchor">#</a> transition-duration</h2> <p>transition-duration 属性指定了过渡动画的持续时间，也就是在何时将属性从一个状态过渡到另一个状态，它接受一个时间值，可以使用秒（s）或毫秒（ms）作为单位。</p> <p>语法如下：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">transition-duration</span><span class="token punctuation">:</span> time<span class="token punctuation">;</span>
+</code></pre></div><p>其中，time 表示过渡动画的持续时间，可以是整数、小数或科学计数法表示的时间值。</p> <p>示例：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+      <span class="token selector">div</span> <span class="token punctuation">{</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+        <span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+        <span class="token property">transition-duration</span><span class="token punctuation">:</span> 2s<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token selector">div:hover</span> <span class="token punctuation">{</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+        <span class="token property">background-color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>在上面的示例中，当鼠标悬停在 div 元素上时，div 元素的宽高和背景色会在2秒内平滑地过渡到另一个状态。</p> <h2 id="transition-timing-function"><a href="#transition-timing-function" class="header-anchor">#</a> transition-timing-function</h2> <p>transition-timing-function 属性用于设置过渡效果的时间函数（timing function），即指定过渡期间动画如何变化，可以控制过渡期间动画的加速度和减速度。</p> <p>该属性可以接受以下预定义的时间函数之一，也可以自定义贝塞尔曲线：</p> <div class="language- extra-class"><pre><code>ease：默认值。过渡期间动画先慢后快再慢。
+linear：过渡期间动画匀速。
+ease-in：过渡期间动画由慢到快。
+ease-out：过渡期间动画由快到慢。
+ease-in-out：过渡期间动画先慢后快再慢。
+</code></pre></div><p>自定义贝塞尔曲线需要使用 cubic-bezier() 函数，它接受四个值作为参数，分别表示两个控制点的坐标。这四个值应该在 0 到 1 之间。</p> <p>以下是一个使用自定义贝塞尔曲线实现的示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">div</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #007bff<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> background-color<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 1s<span class="token punctuation">;</span>
+  <span class="token property">transition-timing-function</span><span class="token punctuation">:</span> <span class="token function">cubic-bezier</span><span class="token punctuation">(</span>0.25<span class="token punctuation">,</span> 0.1<span class="token punctuation">,</span> 0.25<span class="token punctuation">,</span> 1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">div:hover</span> <span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #dc3545<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在这个例子中，当鼠标悬停在 div 元素上时，它的背景色将从蓝色变为红色，并在过渡期间使用自定义的贝塞尔曲线来控制动画效果。这个贝塞尔曲线会在动画的前 25% 时间内先缓慢加速，接着在接下来的 10% 时间内匀速加速，然后在接下来的 25% 时间内缓慢减速，最后在剩余的 40% 时间内匀速减速。</p> <h2 id="transition-delay"><a href="#transition-delay" class="header-anchor">#</a> transition-delay</h2> <p>transition-delay是CSS3过渡属性之一，用于设置过渡效果的延迟时间，即过渡效果在何时开始。它的取值可以是秒或毫秒，如果没有设置则默认为0。</p> <p>语法：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">transition-delay</span><span class="token punctuation">:</span> time<span class="token punctuation">;</span>
+</code></pre></div><p>其中time可以是一个秒数或者毫秒数，也可以是一个负值，表示过渡效果立即开始，但在指定时间内不会执行。</p> <p>示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.box</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+  <span class="token property">transition</span><span class="token punctuation">:</span> background-color 1s linear 0.5s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.box:hover</span> <span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在上面的示例中，当鼠标悬停在.box上时，它的背景颜色会从红色渐变到蓝色。transition-delay属性设置为0.5s，表示在鼠标悬停0.5秒后开始过渡效果。</p> <h2 id="animation"><a href="#animation" class="header-anchor">#</a> animation</h2> <p>CSS3动画是一种通过在指定时间内逐步改变元素的样式和位置，实现动画效果的技术。它允许您定义一个或多个帧，并使用动画特性（例如时长，延迟，循环等）来使这些帧按照一定的顺序播放。</p> <p>以下是一些关于CSS3动画的详解和示例：</p> <h3 id="animation-name"><a href="#animation-name" class="header-anchor">#</a> animation-name：</h3> <p>animation-name属性指定要用于动画的关键帧集合名称。以下是一个示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 定义关键帧 */</span>
+<span class="token atrule"><span class="token rule">@keyframes</span> example</span> <span class="token punctuation">{</span>
+  <span class="token selector">from</span> <span class="token punctuation">{</span><span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span><span class="token punctuation">}</span>
+  <span class="token selector">to</span> <span class="token punctuation">{</span><span class="token property">background-color</span><span class="token punctuation">:</span> yellow<span class="token punctuation">;</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* 使用关键帧 */</span>
+<span class="token selector">div</span> <span class="token punctuation">{</span>
+  <span class="token property">animation-name</span><span class="token punctuation">:</span> example<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="animation-duration"><a href="#animation-duration" class="header-anchor">#</a> animation-duration：</h3> <p>animation-duration属性指定动画的持续时间。默认值为0s，表示没有动画效果。以下是一个示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">div</span> <span class="token punctuation">{</span>
+  <span class="token property">animation-name</span><span class="token punctuation">:</span> example<span class="token punctuation">;</span>
+  <span class="token property">animation-duration</span><span class="token punctuation">:</span> 3s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* 等同于 */</span>
+<span class="token selector">div</span> <span class="token punctuation">{</span>
+  <span class="token property">animation</span><span class="token punctuation">:</span> example 3s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="animation-timing-function"><a href="#animation-timing-function" class="header-anchor">#</a> animation-timing-function：</h3> <p>animation-timing-function属性指定动画的速度曲线。默认值为“ease”，表示动画开始缓慢，然后逐渐变快，最后再次减缓。以下是一些其他可能的值：
+linear：动画匀速进行
+ease-in：动画开始缓慢，然后逐渐加速
+ease-out：动画开始快速，然后逐渐减速
+ease-in-out：动画开始缓慢，然后加速，最后减速</p> <p>示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">div</span> <span class="token punctuation">{</span>
+  <span class="token property">animation-name</span><span class="token punctuation">:</span> example<span class="token punctuation">;</span>
+  <span class="token property">animation-duration</span><span class="token punctuation">:</span> 3s<span class="token punctuation">;</span>
+  <span class="token property">animation-timing-function</span><span class="token punctuation">:</span> ease-in-out<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="animation-delay"><a href="#animation-delay" class="header-anchor">#</a> animation-delay：</h3> <p>animation-delay属性指定动画开始前的延迟时间。默认值为0s。以下是一个示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">div</span> <span class="token punctuation">{</span>
+  <span class="token property">animation-name</span><span class="token punctuation">:</span> example<span class="token punctuation">;</span>
+  <span class="token property">animation-duration</span><span class="token punctuation">:</span> 3s<span class="token punctuation">;</span>
+  <span class="token property">animation-delay</span><span class="token punctuation">:</span> 1s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="animation-iteration-count"><a href="#animation-iteration-count" class="header-anchor">#</a> animation-iteration-count：</h3> <p>animation-iteration-count属性指定动画播放次数。默认值为1，可以设置为一个具体的次数，也可以设置为无限次播放。以下是一个示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">div</span> <span class="token punctuation">{</span>
+  <span class="token property">animation-name</span><span class="token punctuation">:</span> example<span class="token punctuation">;</span>
+  <span class="token property">animation-duration</span><span class="token punctuation">:</span> 3s<span class="token punctuation">;</span>
+  <span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> infinite<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="animation-direction"><a href="#animation-direction" class="header-anchor">#</a> animation-direction：</h3> <p>animation-direction属性指定动画播放的方向。默认值为“normal”，表示正常播放。以下是一些其他可能的值：
+alternate：动画交替进行，先正向播放再反向播放
+reverse：动画反向进行
+alternate-reverse：动画交替进行，先反向播放再正向播放</p> <p>示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">div</span> <span class="token punctuation">{</span>
+  <span class="token property">animation-name</span><span class="token punctuation">:</span> example<span class="token punctuation">;</span>
+  <span class="token property">animation-duration</span><span class="token punctuation">:</span> 3s<span class="token punctuation">;</span>
+  <span class="token property">animation-direction</span><span class="token punctuation">:</span> alternate<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="animation-fill-mode"><a href="#animation-fill-mode" class="header-anchor">#</a> animation-fill-mode：</h3> <p>animation-fill-mode属性指定动画在开始和结束时应用到元素上的样式。默认值为“none”，表示元素将按照动画的开始和结束状态自然地转换。以下是一些常用的取值：</p> <div class="language- extra-class"><pre><code>none：元素不应用任何样式，即按照自然状态过渡。
+forwards：元素应用动画结束时的样式，持续到动画后续的状态。
+backwards：元素应用动画开始时的样式，持续到动画前面的状态。
+both：元素应用动画开始和结束时的样式，持续到动画前后的状态。
+</code></pre></div><p>示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.box</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+  <span class="token property">animation-name</span><span class="token punctuation">:</span> example<span class="token punctuation">;</span>
+  <span class="token property">animation-duration</span><span class="token punctuation">:</span> 2s<span class="token punctuation">;</span>
+  <span class="token property">animation-fill-mode</span><span class="token punctuation">:</span> forwards<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token atrule"><span class="token rule">@keyframes</span> example</span> <span class="token punctuation">{</span>
+  <span class="token selector">from</span> <span class="token punctuation">{</span><span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span><span class="token punctuation">}</span>
+  <span class="token selector">to</span> <span class="token punctuation">{</span><span class="token property">background-color</span><span class="token punctuation">:</span> yellow<span class="token punctuation">;</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>上述代码中，元素在动画结束后将一直保持黄色，因为animation-fill-mode被设置为forwards。</p> <h2 id="animation-name-2"><a href="#animation-name-2" class="header-anchor">#</a> animation-name</h2> <p>在CSS3中，animation-name属性用于指定用于动画的关键帧名称。</p> <p>语法如下：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">animation-name</span><span class="token punctuation">:</span> keyframeName<span class="token punctuation">;</span>
+</code></pre></div><p>其中keyframeName是一个关键帧动画名称，指定用于该元素的动画效果。可以定义多个动画名称，使用逗号进行分隔。</p> <p>示例代码：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token atrule"><span class="token rule">@keyframes</span> rotate</span> <span class="token punctuation">{</span>
+  <span class="token selector">0%</span> <span class="token punctuation">{</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>0deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">100%</span> <span class="token punctuation">{</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>360deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token atrule"><span class="token rule">@keyframes</span> scale</span> <span class="token punctuation">{</span>
+  <span class="token selector">0%</span> <span class="token punctuation">{</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">100%</span> <span class="token punctuation">{</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">div</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+  <span class="token property">animation-name</span><span class="token punctuation">:</span> rotate<span class="token punctuation">,</span> scale<span class="token punctuation">;</span>
+  <span class="token property">animation-duration</span><span class="token punctuation">:</span> 3s<span class="token punctuation">;</span>
+  <span class="token property">animation-timing-function</span><span class="token punctuation">:</span> linear<span class="token punctuation">;</span>
+  <span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> infinite<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在上面的示例中，animation-name属性指定了两个动画名称，rotate和scale，这两个动画分别定义了旋转和缩放的关键帧动画。将这两个动画应用于div元素，并设置了动画的持续时间、动画函数和动画循环次数。</p> <h2 id="animation-duration-2"><a href="#animation-duration-2" class="header-anchor">#</a> animation-duration</h2> <p>animation-duration 属性指定一个动画周期的持续时间，即动画完成从开始到结束所需的时间。它的值可以是以秒或毫秒为单位的数值，也可以是 0，表示没有动画效果。</p> <p>以下是 animation-duration 属性的语法：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">animation-duration</span><span class="token punctuation">:</span> time<span class="token punctuation">;</span>
+</code></pre></div><p>其中，time 可以是一个表示时间的数值，如 1s 表示一秒，500ms 表示五百毫秒。</p> <p>以下是一个示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">div</span> <span class="token punctuation">{</span>
+  <span class="token property">animation-name</span><span class="token punctuation">:</span> myanimation<span class="token punctuation">;</span>
+  <span class="token property">animation-duration</span><span class="token punctuation">:</span> 2s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token atrule"><span class="token rule">@keyframes</span> myanimation</span> <span class="token punctuation">{</span>
+  <span class="token selector">from</span> <span class="token punctuation">{</span> <span class="token property">opacity</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+  <span class="token selector">to</span> <span class="token punctuation">{</span> <span class="token property">opacity</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在这个例子中，div 元素会使用名为 myanimation 的动画，动画的周期持续时间为 2s，动画效果为从不透明度为 0 的状态到不透明度为 1 的状态过渡。</p> <h2 id="animation-timing-function-2"><a href="#animation-timing-function-2" class="header-anchor">#</a> animation-timing-function</h2> <p>animation-timing-function 属性定义动画的速度曲线。它可以让动画在不同的时间段有不同的速度。</p> <p>该属性接受以下值之一：</p> <div class="language- extra-class"><pre><code>ease：动画从开始到结束慢慢加速，然后再慢慢减速到结束
+linear：动画的速度始终保持匀速
+ease-in：动画从开始到结束慢慢加速
+ease-out：动画从开始到结束慢慢减速
+ease-in-out：动画从开始到结束慢慢加速，然后再慢慢减速到结束
+cubic-bezier(n,n,n,n)：通过贝塞尔曲线自定义动画速度曲线。其中的 n 值是介于 0 和 1 之间的数值。
+</code></pre></div><p>示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">div</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+  <span class="token property">animation-name</span><span class="token punctuation">:</span> my-animation<span class="token punctuation">;</span>
+  <span class="token property">animation-duration</span><span class="token punctuation">:</span> 2s<span class="token punctuation">;</span>
+  <span class="token property">animation-timing-function</span><span class="token punctuation">:</span> ease-in-out<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token atrule"><span class="token rule">@keyframes</span> my-animation</span> <span class="token punctuation">{</span>
+  <span class="token selector">from</span> <span class="token punctuation">{</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">to</span> <span class="token punctuation">{</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>200px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在这个示例中，元素 div 会沿着 x 轴移动 200px。它使用 ease-in-out 作为动画速度曲线，使动画在开始和结束时速度较慢，在中间时速度较快。</p> <h2 id="animation-delay-2"><a href="#animation-delay-2" class="header-anchor">#</a> animation-delay</h2> <p>animation-delay 属性用于指定动画开始之前的延迟时间，即动画延迟播放的时间，以秒或毫秒为单位。它是动画的一个可选属性，如果没有指定则默认为 0s。</p> <p>语法格式如下：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">animation-delay</span><span class="token punctuation">:</span> time<span class="token punctuation">;</span>
+</code></pre></div><p>其中，time 是一个时间值，可以是正值、负值或 0，可以使用秒（s）或毫秒（ms）作为单位。如果是负值，则表示动画将会在指定时间之前开始播放。</p> <p>示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 指定动画延迟 2 秒后开始播放 */</span>
+<span class="token property">animation-delay</span><span class="token punctuation">:</span> 2s<span class="token punctuation">;</span>
+</code></pre></div><div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 指定动画延迟 500 毫秒后开始播放 */</span>
+<span class="token property">animation-delay</span><span class="token punctuation">:</span> 500ms<span class="token punctuation">;</span>
+</code></pre></div><div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 指定动画延迟 -1s 后开始播放 */</span>
+<span class="token property">animation-delay</span><span class="token punctuation">:</span> -1s<span class="token punctuation">;</span>
+</code></pre></div><p>动画延迟时间可以与 animation-duration 属性一起使用，以控制动画的播放时间和延迟时间。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* 指定动画延迟 2 秒后开始播放，持续时间为 3 秒 */</span>
+<span class="token property">animation-delay</span><span class="token punctuation">:</span> 2s<span class="token punctuation">;</span>
+<span class="token property">animation-duration</span><span class="token punctuation">:</span> 3s<span class="token punctuation">;</span>
+</code></pre></div><p>注意，animation-delay 属性不会影响动画的计时函数和时间轴。换句话说，动画的计时函数和时间轴是从动画开始计时的时间点开始运行的，而不是从动画延迟结束的时间点开始计时的。</p> <h2 id="animation-iteration-count-2"><a href="#animation-iteration-count-2" class="header-anchor">#</a> animation-iteration-count</h2> <p>animation-iteration-count是CSS3动画属性之一，用于设置动画循环的次数。它可以指定一个具体的数值或者特定的关键字，如infinite（无限循环）。</p> <p>语法：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> number | infinite | initial | inherit<span class="token punctuation">;</span>
+</code></pre></div><p>属性值：</p> <div class="language- extra-class"><pre><code>number: 用于设置动画循环的次数，必须是一个非负整数。
+infinite: 无限循环。
+initial: 使用默认值。
+inherit: 从父元素继承该属性。
+</code></pre></div><p>示例：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>box<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.box</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+  <span class="token property">animation-name</span><span class="token punctuation">:</span> example<span class="token punctuation">;</span>
+  <span class="token property">animation-duration</span><span class="token punctuation">:</span> 2s<span class="token punctuation">;</span>
+  <span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> 3<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token atrule"><span class="token rule">@keyframes</span> example</span> <span class="token punctuation">{</span>
+  <span class="token selector">from</span> <span class="token punctuation">{</span><span class="token property">background-color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span><span class="token punctuation">}</span>
+  <span class="token selector">to</span> <span class="token punctuation">{</span><span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>解释：</p> <div class="language- extra-class"><pre><code>animation-name属性指定要应用的关键帧动画名称（本例中是example）。
+animation-duration属性指定动画的持续时间（本例中是2秒）。
+animation-iteration-count属性指定动画重复的次数（本例中是3次）。
+</code></pre></div><p>在上面的例子中，元素将从蓝色渐变到红色，在2秒内执行动画，动画将重复3次。</p> <h2 id="animation-direction-2"><a href="#animation-direction-2" class="header-anchor">#</a> animation-direction</h2> <p>animation-direction 属性用于指定动画播放方向。</p> <p>语法如下：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">animation-direction</span><span class="token punctuation">:</span> normal|reverse|alternate|alternate-reverse<span class="token punctuation">;</span>
+</code></pre></div><p>属性值：</p> <div class="language- extra-class"><pre><code>normal：默认值，动画正常播放。
+reverse：动画反向播放。
+alternate：动画交替正向播放和反向播放。
+alternate-reverse：动画交替反向播放和正向播放。
+</code></pre></div><p>示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">div</span> <span class="token punctuation">{</span>
+  <span class="token property">animation-name</span><span class="token punctuation">:</span> example<span class="token punctuation">;</span>
+  <span class="token property">animation-duration</span><span class="token punctuation">:</span> 2s<span class="token punctuation">;</span>
+  <span class="token property">animation-direction</span><span class="token punctuation">:</span> alternate<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token atrule"><span class="token rule">@keyframes</span> example</span> <span class="token punctuation">{</span>
+  <span class="token selector">from</span> <span class="token punctuation">{</span><span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>0deg<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+  <span class="token selector">to</span> <span class="token punctuation">{</span><span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>360deg<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>上面的示例将会使一个 div 元素在正向和反向之间交替旋转，旋转一周需要 4 秒。</p> <h2 id="animation-play-state"><a href="#animation-play-state" class="header-anchor">#</a> animation-play-state</h2> <p>animation-play-state 属性指定动画是否正在运行或已被暂停。该属性接受两个值： running 和 paused。</p> <p>当属性值为 running 时，动画正常运行。
+当属性值为 paused 时，动画停止，会在暂停的状态下保持当前状态，直到继续播放动画。
+以下是一个示例：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+    <span class="token selector">div</span> <span class="token punctuation">{</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+        <span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+        <span class="token property">animation</span><span class="token punctuation">:</span> example 2s infinite<span class="token punctuation">;</span>
+        <span class="token property">animation-play-state</span><span class="token punctuation">:</span> paused<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token atrule"><span class="token rule">@keyframes</span> example</span> <span class="token punctuation">{</span>
+        <span class="token selector">0%</span>   <span class="token punctuation">{</span><span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <span class="token property">left</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span> <span class="token property">top</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span><span class="token punctuation">}</span>
+        <span class="token selector">50%</span>  <span class="token punctuation">{</span><span class="token property">background-color</span><span class="token punctuation">:</span> yellow<span class="token punctuation">;</span> <span class="token property">left</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span> <span class="token property">top</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span><span class="token punctuation">}</span>
+        <span class="token selector">100%</span> <span class="token punctuation">{</span><span class="token property">background-color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span> <span class="token property">left</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span> <span class="token property">top</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span><span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token special-attr"><span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value javascript language-javascript"><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span><span class="token punctuation">&quot;</span></span></span><span class="token punctuation">&gt;</span></span>播放<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token special-attr"><span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value javascript language-javascript"><span class="token function">pause</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span><span class="token punctuation">&quot;</span></span></span><span class="token punctuation">&gt;</span></span>暂停<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+    <span class="token keyword">function</span> <span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>animationPlayState <span class="token operator">=</span> <span class="token string">'running'</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">function</span> <span class="token function">pause</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>animationPlayState <span class="token operator">=</span> <span class="token string">'paused'</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>在此示例中，我们创建了一个无限循环的动画，并使用 animation-play-state 属性将其初始状态设置为 paused。页面上有两个按钮，点击“播放”按钮可以让动画继续运行，点击“暂停”按钮可以暂停动画。</p> <h2 id="animation-fill-mode-2"><a href="#animation-fill-mode-2" class="header-anchor">#</a> animation-fill-mode</h2> <p>animation-fill-mode属性用于定义动画播放之前和之后应该应用哪些CSS属性值。具体来说，它控制了在动画执行前和执行后，元素应该如何表现。</p> <p>animation-fill-mode属性可以取以下值：</p> <div class="language- extra-class"><pre><code>none：不填充。元素在动画播放之前和之后都将保持原始状态，即不会有任何样式更改。
+forwards：向前填充。元素将保持动画的最后一帧的样式。
+backwards：向后填充。元素在动画播放之前将应用第一帧的样式。
+both：向前和向后填充。元素将应用第一帧的样式，在动画播放结束后，它将保持在最后一帧的状态。
+</code></pre></div><p>以下是animation-fill-mode的示例：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">div</span> <span class="token punctuation">{</span>
+  <span class="token property">animation-name</span><span class="token punctuation">:</span> myanimation<span class="token punctuation">;</span>
+  <span class="token property">animation-duration</span><span class="token punctuation">:</span> 2s<span class="token punctuation">;</span>
+  <span class="token property">animation-fill-mode</span><span class="token punctuation">:</span> forwards<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token atrule"><span class="token rule">@keyframes</span> myanimation</span> <span class="token punctuation">{</span>
+  <span class="token selector">from</span> <span class="token punctuation">{</span> <span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+  <span class="token selector">to</span> <span class="token punctuation">{</span> <span class="token property">background-color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在这个示例中，div元素将播放名为myanimation的动画。当动画结束时，它将保持在最后一帧的状态（即animation-fill-mode设置为forwards）。在动画过程中，div的背景颜色将从红色平滑过渡到蓝色。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/study/css3/08.html" class="prev">
+        css3 媒体载体
+      </a></span> <span class="next"><a href="/study/css3/06.html">
+        css3 用户界面
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3ce791f2.js" defer></script><script src="/assets/js/2.0ef20547.js" defer></script><script src="/assets/js/64.320c8837.js" defer></script>
+  </body>
+</html>

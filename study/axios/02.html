@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>axios api | 南</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="这是我用 VuePress 搭建的个人学习博客！">
+    
+    <link rel="preload" href="/assets/css/0.styles.db6300be.css" as="style"><link rel="preload" href="/assets/js/app.3ce791f2.js" as="script"><link rel="preload" href="/assets/js/2.0ef20547.js" as="script"><link rel="preload" href="/assets/js/52.0acf038d.js" as="script"><link rel="prefetch" href="/assets/js/10.b3961306.js"><link rel="prefetch" href="/assets/js/100.de8dcba1.js"><link rel="prefetch" href="/assets/js/101.0f8bdbac.js"><link rel="prefetch" href="/assets/js/102.18d0f745.js"><link rel="prefetch" href="/assets/js/103.45aa90ec.js"><link rel="prefetch" href="/assets/js/104.40ea827b.js"><link rel="prefetch" href="/assets/js/105.f19f2996.js"><link rel="prefetch" href="/assets/js/106.9a4ba006.js"><link rel="prefetch" href="/assets/js/107.fb828f4b.js"><link rel="prefetch" href="/assets/js/108.b00c84a3.js"><link rel="prefetch" href="/assets/js/109.357b5562.js"><link rel="prefetch" href="/assets/js/11.c432eaad.js"><link rel="prefetch" href="/assets/js/110.b4171ef1.js"><link rel="prefetch" href="/assets/js/111.966b67f0.js"><link rel="prefetch" href="/assets/js/112.c33489c3.js"><link rel="prefetch" href="/assets/js/113.9d0847e9.js"><link rel="prefetch" href="/assets/js/114.197b622f.js"><link rel="prefetch" href="/assets/js/115.667e255a.js"><link rel="prefetch" href="/assets/js/116.a2c5dc13.js"><link rel="prefetch" href="/assets/js/117.2b7a8f9c.js"><link rel="prefetch" href="/assets/js/118.aa987190.js"><link rel="prefetch" href="/assets/js/119.3408ca18.js"><link rel="prefetch" href="/assets/js/12.62a85baf.js"><link rel="prefetch" href="/assets/js/120.e12f7c91.js"><link rel="prefetch" href="/assets/js/121.6fb02f72.js"><link rel="prefetch" href="/assets/js/122.557f159e.js"><link rel="prefetch" href="/assets/js/123.d5e53c6d.js"><link rel="prefetch" href="/assets/js/124.df5ddc5d.js"><link rel="prefetch" href="/assets/js/125.a5a82896.js"><link rel="prefetch" href="/assets/js/126.df24f989.js"><link rel="prefetch" href="/assets/js/127.0f7eec10.js"><link rel="prefetch" href="/assets/js/128.9cf6ac7c.js"><link rel="prefetch" href="/assets/js/129.bb70491b.js"><link rel="prefetch" href="/assets/js/13.c727651b.js"><link rel="prefetch" href="/assets/js/130.190215b6.js"><link rel="prefetch" href="/assets/js/131.083dd738.js"><link rel="prefetch" href="/assets/js/132.62ea35c7.js"><link rel="prefetch" href="/assets/js/133.7d63cba7.js"><link rel="prefetch" href="/assets/js/134.18e0d50b.js"><link rel="prefetch" href="/assets/js/135.ca2fec78.js"><link rel="prefetch" href="/assets/js/136.0d3ad47c.js"><link rel="prefetch" href="/assets/js/137.418a11f3.js"><link rel="prefetch" href="/assets/js/138.69b53ece.js"><link rel="prefetch" href="/assets/js/139.62977b0b.js"><link rel="prefetch" href="/assets/js/14.5e5d0e50.js"><link rel="prefetch" href="/assets/js/140.a79b939d.js"><link rel="prefetch" href="/assets/js/141.9c66c170.js"><link rel="prefetch" href="/assets/js/142.85d6851b.js"><link rel="prefetch" href="/assets/js/143.51775333.js"><link rel="prefetch" href="/assets/js/144.9379c53a.js"><link rel="prefetch" href="/assets/js/145.17e5d8ba.js"><link rel="prefetch" href="/assets/js/146.92826ffa.js"><link rel="prefetch" href="/assets/js/147.868e4654.js"><link rel="prefetch" href="/assets/js/148.46bd2981.js"><link rel="prefetch" href="/assets/js/149.b3f0b573.js"><link rel="prefetch" href="/assets/js/15.e0ac1513.js"><link rel="prefetch" href="/assets/js/150.0496f589.js"><link rel="prefetch" href="/assets/js/151.a2b2fbad.js"><link rel="prefetch" href="/assets/js/152.2f051189.js"><link rel="prefetch" href="/assets/js/153.ca0d6fd8.js"><link rel="prefetch" href="/assets/js/154.93ce9d88.js"><link rel="prefetch" href="/assets/js/155.ad84a0c1.js"><link rel="prefetch" href="/assets/js/156.05e52fa7.js"><link rel="prefetch" href="/assets/js/157.60679b29.js"><link rel="prefetch" href="/assets/js/158.f7e0284d.js"><link rel="prefetch" href="/assets/js/159.3fff958f.js"><link rel="prefetch" href="/assets/js/16.d3490606.js"><link rel="prefetch" href="/assets/js/160.eb39fb18.js"><link rel="prefetch" href="/assets/js/161.14b90860.js"><link rel="prefetch" href="/assets/js/162.5ee0334e.js"><link rel="prefetch" href="/assets/js/163.aa0cde7a.js"><link rel="prefetch" href="/assets/js/164.98440f23.js"><link rel="prefetch" href="/assets/js/165.39c2e6af.js"><link rel="prefetch" href="/assets/js/166.62e76f59.js"><link rel="prefetch" href="/assets/js/167.b3e47d54.js"><link rel="prefetch" href="/assets/js/168.03a09811.js"><link rel="prefetch" href="/assets/js/169.18721839.js"><link rel="prefetch" href="/assets/js/17.24cffbf0.js"><link rel="prefetch" href="/assets/js/170.645cd916.js"><link rel="prefetch" href="/assets/js/171.b70171f2.js"><link rel="prefetch" href="/assets/js/172.28e1cedd.js"><link rel="prefetch" href="/assets/js/173.413cb9b2.js"><link rel="prefetch" href="/assets/js/174.7cdc42a4.js"><link rel="prefetch" href="/assets/js/175.7e9f276a.js"><link rel="prefetch" href="/assets/js/176.adb1fbe0.js"><link rel="prefetch" href="/assets/js/177.56079a0e.js"><link rel="prefetch" href="/assets/js/178.3dd525e0.js"><link rel="prefetch" href="/assets/js/179.bd582685.js"><link rel="prefetch" href="/assets/js/18.9ee02a99.js"><link rel="prefetch" href="/assets/js/180.4165de33.js"><link rel="prefetch" href="/assets/js/181.208694e3.js"><link rel="prefetch" href="/assets/js/182.6621cfcd.js"><link rel="prefetch" href="/assets/js/183.13609924.js"><link rel="prefetch" href="/assets/js/184.d96f9a79.js"><link rel="prefetch" href="/assets/js/185.ad192dd3.js"><link rel="prefetch" href="/assets/js/186.d71515e4.js"><link rel="prefetch" href="/assets/js/187.2957633a.js"><link rel="prefetch" href="/assets/js/188.e9761542.js"><link rel="prefetch" href="/assets/js/189.b3254d4f.js"><link rel="prefetch" href="/assets/js/19.36aa9eae.js"><link rel="prefetch" href="/assets/js/190.1c6dcc21.js"><link rel="prefetch" href="/assets/js/20.da48423e.js"><link rel="prefetch" href="/assets/js/21.9ac934b9.js"><link rel="prefetch" href="/assets/js/22.b8c26bae.js"><link rel="prefetch" href="/assets/js/23.227fcdaa.js"><link rel="prefetch" href="/assets/js/24.08d364bb.js"><link rel="prefetch" href="/assets/js/25.984c2149.js"><link rel="prefetch" href="/assets/js/26.805e9ee6.js"><link rel="prefetch" href="/assets/js/27.db4ddb75.js"><link rel="prefetch" href="/assets/js/28.b2456edd.js"><link rel="prefetch" href="/assets/js/29.a2f6017f.js"><link rel="prefetch" href="/assets/js/3.23f4907e.js"><link rel="prefetch" href="/assets/js/30.bebab7d3.js"><link rel="prefetch" href="/assets/js/31.1d6b92cb.js"><link rel="prefetch" href="/assets/js/32.562a65a5.js"><link rel="prefetch" href="/assets/js/33.66855daf.js"><link rel="prefetch" href="/assets/js/34.805b7a34.js"><link rel="prefetch" href="/assets/js/35.2c19282a.js"><link rel="prefetch" href="/assets/js/36.945b368e.js"><link rel="prefetch" href="/assets/js/37.af1593e5.js"><link rel="prefetch" href="/assets/js/38.0a64e4f6.js"><link rel="prefetch" href="/assets/js/39.60733a6e.js"><link rel="prefetch" href="/assets/js/4.8da6a8f7.js"><link rel="prefetch" href="/assets/js/40.5ae297e8.js"><link rel="prefetch" href="/assets/js/41.5c1aa8a0.js"><link rel="prefetch" href="/assets/js/42.a857a0e6.js"><link rel="prefetch" href="/assets/js/43.ba7da108.js"><link rel="prefetch" href="/assets/js/44.009ce993.js"><link rel="prefetch" href="/assets/js/45.1cd523af.js"><link rel="prefetch" href="/assets/js/46.679a5cea.js"><link rel="prefetch" href="/assets/js/47.c921d189.js"><link rel="prefetch" href="/assets/js/48.ee12efc0.js"><link rel="prefetch" href="/assets/js/49.d7dd70e2.js"><link rel="prefetch" href="/assets/js/5.bdc1ac6b.js"><link rel="prefetch" href="/assets/js/50.bc9f0bf1.js"><link rel="prefetch" href="/assets/js/51.aaf3aebd.js"><link rel="prefetch" href="/assets/js/53.01cf6347.js"><link rel="prefetch" href="/assets/js/54.89e4a69f.js"><link rel="prefetch" href="/assets/js/55.b0d1f214.js"><link rel="prefetch" href="/assets/js/56.ca5d4676.js"><link rel="prefetch" href="/assets/js/57.553ca0a6.js"><link rel="prefetch" href="/assets/js/58.98cc5862.js"><link rel="prefetch" href="/assets/js/59.f64b8cc2.js"><link rel="prefetch" href="/assets/js/6.24e999a1.js"><link rel="prefetch" href="/assets/js/60.7ef4a647.js"><link rel="prefetch" href="/assets/js/61.f72f0bcb.js"><link rel="prefetch" href="/assets/js/62.ec890236.js"><link rel="prefetch" href="/assets/js/63.ddd5dfbc.js"><link rel="prefetch" href="/assets/js/64.320c8837.js"><link rel="prefetch" href="/assets/js/65.f99bcfcc.js"><link rel="prefetch" href="/assets/js/66.d225a06a.js"><link rel="prefetch" href="/assets/js/67.8b5477d8.js"><link rel="prefetch" href="/assets/js/68.87ae50fa.js"><link rel="prefetch" href="/assets/js/69.57ece9ad.js"><link rel="prefetch" href="/assets/js/7.5772efdd.js"><link rel="prefetch" href="/assets/js/70.c55970b3.js"><link rel="prefetch" href="/assets/js/71.fe2e2ffb.js"><link rel="prefetch" href="/assets/js/72.dae73f84.js"><link rel="prefetch" href="/assets/js/73.124f47c3.js"><link rel="prefetch" href="/assets/js/74.9c4df1a6.js"><link rel="prefetch" href="/assets/js/75.a21e4923.js"><link rel="prefetch" href="/assets/js/76.74d16534.js"><link rel="prefetch" href="/assets/js/77.671fcd3e.js"><link rel="prefetch" href="/assets/js/78.cd2e1e31.js"><link rel="prefetch" href="/assets/js/79.424d1495.js"><link rel="prefetch" href="/assets/js/8.4595d782.js"><link rel="prefetch" href="/assets/js/80.b90f1f9e.js"><link rel="prefetch" href="/assets/js/81.c78892cb.js"><link rel="prefetch" href="/assets/js/82.5a9c2ecf.js"><link rel="prefetch" href="/assets/js/83.b326d16e.js"><link rel="prefetch" href="/assets/js/84.c9aba1f2.js"><link rel="prefetch" href="/assets/js/85.80d95f81.js"><link rel="prefetch" href="/assets/js/86.6d03d757.js"><link rel="prefetch" href="/assets/js/87.b9004e5c.js"><link rel="prefetch" href="/assets/js/88.7e152654.js"><link rel="prefetch" href="/assets/js/89.110e9168.js"><link rel="prefetch" href="/assets/js/9.aab443be.js"><link rel="prefetch" href="/assets/js/90.c96c9810.js"><link rel="prefetch" href="/assets/js/91.30a74a5c.js"><link rel="prefetch" href="/assets/js/92.2735e96c.js"><link rel="prefetch" href="/assets/js/93.47b513ab.js"><link rel="prefetch" href="/assets/js/94.9ca71da5.js"><link rel="prefetch" href="/assets/js/95.4c608f53.js"><link rel="prefetch" href="/assets/js/96.a243e7de.js"><link rel="prefetch" href="/assets/js/97.f738ef91.js"><link rel="prefetch" href="/assets/js/98.06b90c5b.js"><link rel="prefetch" href="/assets/js/99.b7191e8a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.db6300be.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.svg" alt="南" class="logo"> <span class="site-name can-hide">南</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link">
+  博文
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="我的学习笔记菜单" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="我的学习笔记菜单" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/study/webpack/" class="nav-link">
+  webpack学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue3/" class="nav-link">
+  vue3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vuex/" class="nav-link">
+  vuex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue-router/" class="nav-link">
+  vueRouter学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/axios/" class="nav-link router-link-active">
+  axios学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es5/" class="nav-link">
+  ES5学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es6/" class="nav-link">
+  ES6学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/promise/" class="nav-link">
+  promise学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/typescript/" class="nav-link">
+  typescript学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/flex/" class="nav-link">
+  flex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/css3/" class="nav-link">
+  css3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/less/" class="nav-link">
+  less学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/sass/" class="nav-link">
+  sass学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-app/" class="nav-link">
+  微信小程序学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-h5/" class="nav-link">
+  微信公众号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/ali-h5/" class="nav-link">
+  支付宝生活号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/websoket/" class="nav-link">
+  websoket学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/Bluetooth/" class="nav-link">
+  Bluetooth学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/uniapp/" class="nav-link">
+  uniapp学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/lodash/" class="nav-link">
+  lodash学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/jquery/" class="nav-link">
+  jquery学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/animate/" class="nav-link">
+  animate学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/canvas/" class="nav-link">
+  canvas学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/echarts/" class="nav-link">
+  echarts学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/audio/" class="nav-link">
+  audio学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/video/" class="nav-link">
+  video学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vant/" class="nav-link">
+  vant学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/bootstrap/" class="nav-link">
+  bootstrap学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/element-ui/" class="nav-link">
+  elementUi学习
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目菜单" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目菜单" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/project/" class="nav-link">
+  我的项目
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link">
+  博文
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="我的学习笔记菜单" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="我的学习笔记菜单" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/study/webpack/" class="nav-link">
+  webpack学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue3/" class="nav-link">
+  vue3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vuex/" class="nav-link">
+  vuex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vue-router/" class="nav-link">
+  vueRouter学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/axios/" class="nav-link router-link-active">
+  axios学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es5/" class="nav-link">
+  ES5学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/es6/" class="nav-link">
+  ES6学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/promise/" class="nav-link">
+  promise学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/typescript/" class="nav-link">
+  typescript学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/flex/" class="nav-link">
+  flex学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/css3/" class="nav-link">
+  css3学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/less/" class="nav-link">
+  less学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/sass/" class="nav-link">
+  sass学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-app/" class="nav-link">
+  微信小程序学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/wx-h5/" class="nav-link">
+  微信公众号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/ali-h5/" class="nav-link">
+  支付宝生活号网页学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/websoket/" class="nav-link">
+  websoket学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/Bluetooth/" class="nav-link">
+  Bluetooth学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/uniapp/" class="nav-link">
+  uniapp学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/lodash/" class="nav-link">
+  lodash学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/jquery/" class="nav-link">
+  jquery学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/animate/" class="nav-link">
+  animate学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/canvas/" class="nav-link">
+  canvas学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/echarts/" class="nav-link">
+  echarts学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/audio/" class="nav-link">
+  audio学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/video/" class="nav-link">
+  video学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/vant/" class="nav-link">
+  vant学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/bootstrap/" class="nav-link">
+  bootstrap学习
+</a></li><li class="dropdown-item"><!----> <a href="/study/element-ui/" class="nav-link">
+  elementUi学习
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目菜单" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目菜单" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/project/" class="nav-link">
+  我的项目
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/study/axios/" class="sidebar-heading clickable router-link-active open"><span>axios学习</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/study/axios/05.html" class="sidebar-link">axios  响应结构</a></li><li><a href="/study/axios/04.html" class="sidebar-link">axios 请求配置</a></li><li><a href="/study/axios/03.html" class="sidebar-link">axios 实例</a></li><li><a href="/study/axios/02.html" aria-current="page" class="active sidebar-link">axios api</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/study/axios/02.html#axios-config" class="sidebar-link">axios(config)</a></li><li class="sidebar-sub-header"><a href="/study/axios/02.html#axios-request-config" class="sidebar-link">axios.request(config)</a></li><li class="sidebar-sub-header"><a href="/study/axios/02.html#axios-get-url-config" class="sidebar-link">axios.get(url[, config])</a></li><li class="sidebar-sub-header"><a href="/study/axios/02.html#axios-delete-url-config" class="sidebar-link">axios.delete(url[, config])</a></li><li class="sidebar-sub-header"><a href="/study/axios/02.html#axios-head-url-config" class="sidebar-link">axios.head(url[, config])</a></li><li class="sidebar-sub-header"><a href="/study/axios/02.html#axios-options-url-config" class="sidebar-link">axios.options(url[, config])</a></li><li class="sidebar-sub-header"><a href="/study/axios/02.html#axios-post-url-data-config" class="sidebar-link">axios.post(url[, data[, config]])</a></li><li class="sidebar-sub-header"><a href="/study/axios/02.html#axios-put-url-data-config" class="sidebar-link">axios.put(url[, data[, config]])</a></li><li class="sidebar-sub-header"><a href="/study/axios/02.html#axios-patch-url-data-config" class="sidebar-link">axios.patch(url[, data[, config]])</a></li><li class="sidebar-sub-header"><a href="/study/axios/02.html#axios-create-config" class="sidebar-link">axios.create([config])</a></li><li class="sidebar-sub-header"><a href="/study/axios/02.html#axios-canceltoken" class="sidebar-link">axios.CancelToken</a></li><li class="sidebar-sub-header"><a href="/study/axios/02.html#axios-iscancel-value" class="sidebar-link">axios.isCancel(value)</a></li><li class="sidebar-sub-header"><a href="/study/axios/02.html#拦截器" class="sidebar-link">拦截器</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/study/axios/02.html#请求拦截器" class="sidebar-link">请求拦截器</a></li><li class="sidebar-sub-header"><a href="/study/axios/02.html#响应拦截器" class="sidebar-link">响应拦截器</a></li></ul></li><li class="sidebar-sub-header"><a href="/study/axios/02.html#错误处理" class="sidebar-link">错误处理</a></li><li class="sidebar-sub-header"><a href="/study/axios/02.html#取消请求" class="sidebar-link">取消请求</a></li><li class="sidebar-sub-header"><a href="/study/axios/02.html#取消多个请求" class="sidebar-link">取消多个请求</a></li><li class="sidebar-sub-header"><a href="/study/axios/02.html#配置选项" class="sidebar-link">配置选项</a></li><li class="sidebar-sub-header"><a href="/study/axios/02.html#结语" class="sidebar-link">结语</a></li></ul></li><li><a href="/study/axios/01.html" class="sidebar-link">axios 初体验</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="axios-api"><a href="#axios-api" class="header-anchor">#</a> axios api</h1> <p>Axios是一个基于Promise的HTTP客户端，支持浏览器和Node.js环境，并提供了丰富的API，包括请求和响应拦截器、取消请求、自动转换JSON数据、并发请求等功能。下面是Axios的API详解：</p> <h2 id="axios-config"><a href="#axios-config" class="header-anchor">#</a> axios(config)</h2> <p>描述：发送HTTP请求并返回Promise对象。
+参数：
+config: {Object} 请求配置，可以包含以下属性：
+url {string} - 请求的URL地址
+method {string} - 请求方法，例如'get'、'post'等
+headers {Object} - 请求头
+params {Object} - GET请求参数
+data {Object} - POST请求参数
+timeout {number} - 超时时间，单位为毫秒
+withCredentials {boolean} - 是否发送跨域请求时携带凭证信息
+responseType {string} - 响应数据类型，例如'json'、'text'等
+maxContentLength {number} - 最大允许的响应数据大小
+maxRedirects {number} - 最大重定向次数
+auth {Object} - HTTP基本认证信息，包含username和password属性
+cancelToken {CancelToken} - 取消请求的令牌
+返回值：{Promise} - 返回一个Promise对象，如果请求成功，则返回一个响应对象，否则抛出一个错误。</p> <h2 id="axios-request-config"><a href="#axios-request-config" class="header-anchor">#</a> axios.request(config)</h2> <p>描述：发送HTTP请求并返回Promise对象。
+参数：
+config: {Object} 请求配置，与axios(config)的参数相同。
+返回值：{Promise} - 返回一个Promise对象，如果请求成功，则返回一个响应对象，否则抛出一个错误。</p> <h2 id="axios-get-url-config"><a href="#axios-get-url-config" class="header-anchor">#</a> axios.get(url[, config])</h2> <p>描述：发送HTTP GET请求并返回Promise对象。
+参数：
+url: {string} - 请求的URL地址
+config: {Object} - 请求配置，与axios(config)的参数相同。
+返回值：{Promise} - 返回一个Promise对象，如果请求成功，则返回一个响应对象，否则抛出一个错误。</p> <h2 id="axios-delete-url-config"><a href="#axios-delete-url-config" class="header-anchor">#</a> axios.delete(url[, config])</h2> <p>描述：发送HTTP DELETE请求并返回Promise对象。
+参数：
+url: {string} - 请求的URL地址
+config: {Object} - 请求配置，与axios(config)的参数相同。
+返回值：{Promise} - 返回一个Promise对象，如果请求成功，则返回一个响应对象，否则抛出一个错误。</p> <h2 id="axios-head-url-config"><a href="#axios-head-url-config" class="header-anchor">#</a> axios.head(url[, config])</h2> <p>描述：发送HTTP HEAD请求并返回Promise对象。
+参数：
+url: {string} - 请求的URL地址
+config: {Object} - 请求配置，与axios(config)的参数相同。
+返回值：{Promise} - 返回一个Promise对象，如果请求成功，则返回一个响应对象，否则抛出一个错误。</p> <h2 id="axios-options-url-config"><a href="#axios-options-url-config" class="header-anchor">#</a> axios.options(url[, config])</h2> <p>描述：发送HTTP OPTIONS请求并返回Promise对象。
+参数：
+url: {string} - 请求的URL地址
+config: {Object} - 请求配置，与axios(config)的参数相同。</p> <p>返回值：{Promise} - 返回一个Promise对象，如果请求成功，则返回一个响应对象，否则抛出一个错误。</p> <h2 id="axios-post-url-data-config"><a href="#axios-post-url-data-config" class="header-anchor">#</a> axios.post(url[, data[, config]])</h2> <p>描述：发送HTTP POST请求并返回Promise对象。
+参数：
+url: {string} - 请求的URL地址
+data: {Object} - POST请求参数
+config: {Object} - 请求配置，与axios(config)的参数相同。
+返回值：{Promise} - 返回一个Promise对象，如果请求成功，则返回一个响应对象，否则抛出一个错误。</p> <h2 id="axios-put-url-data-config"><a href="#axios-put-url-data-config" class="header-anchor">#</a> axios.put(url[, data[, config]])</h2> <p>描述：发送HTTP PUT请求并返回Promise对象。
+参数：
+url: {string} - 请求的URL地址
+data: {Object} - PUT请求参数
+config: {Object} - 请求配置，与axios(config)的参数相同。
+返回值：{Promise} - 返回一个Promise对象，如果请求成功，则返回一个响应对象，否则抛出一个错误。</p> <h2 id="axios-patch-url-data-config"><a href="#axios-patch-url-data-config" class="header-anchor">#</a> axios.patch(url[, data[, config]])</h2> <p>描述：发送HTTP PATCH请求并返回Promise对象。
+参数：
+url: {string} - 请求的URL地址
+data: {Object} - PATCH请求参数
+config: {Object} - 请求配置，与axios(config)的参数相同。
+返回值：{Promise} - 返回一个Promise对象，如果请求成功，则返回一个响应对象，否则抛出一个错误。</p> <h2 id="axios-create-config"><a href="#axios-create-config" class="header-anchor">#</a> axios.create([config])</h2> <p>描述：创建一个新的Axios实例，可以使用不同的配置选项。
+参数：
+config: {Object} - 配置选项，与axios(config)的参数相同。
+返回值：{AxiosInstance} - 返回一个新的Axios实例，与Axios对象具有相同的API。可以使用不同的配置选项。</p> <h2 id="axios-canceltoken"><a href="#axios-canceltoken" class="header-anchor">#</a> axios.CancelToken</h2> <p>描述：用于创建一个取消请求的令牌。
+示例：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> source <span class="token operator">=</span> axios<span class="token punctuation">.</span>CancelToken<span class="token punctuation">.</span><span class="token function">source</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/user/12345'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  cancelToken<span class="token operator">:</span> source<span class="token punctuation">.</span>token
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">thrown</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>axios<span class="token punctuation">.</span><span class="token function">isCancel</span><span class="token punctuation">(</span>thrown<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Request canceled'</span><span class="token punctuation">,</span> thrown<span class="token punctuation">.</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token comment">// handle error</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 取消请求</span>
+source<span class="token punctuation">.</span><span class="token function">cancel</span><span class="token punctuation">(</span><span class="token string">'请求被取消了'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>属性：
+source.token：用于取消请求的令牌。
+方法：
+source.cancel([message])：取消请求，并传递一个可选的错误信息。</p> <h2 id="axios-iscancel-value"><a href="#axios-iscancel-value" class="header-anchor">#</a> axios.isCancel(value)</h2> <p>描述：检查一个错误是否是Axios取消请求错误。
+参数：
+value: {any} - 要检查的值。
+返回值：{boolean} - 如果是Axios取消请求错误，则返回true，否则返回false。
+以上是Axios的主要API，使用Axios可以轻松地发送HTTP请求，并且具有丰富的功能。</p> <p>除了主要API外，Axios还提供了其他有用的功能，如拦截器、错误处理和取消请求等。</p> <h2 id="拦截器"><a href="#拦截器" class="header-anchor">#</a> 拦截器</h2> <p>Axios拦截器允许在请求或响应被处理之前或之后，拦截并对其进行修改。拦截器可以添加、修改或删除请求或响应的任何内容。</p> <p>Axios提供了两种拦截器：请求拦截器和响应拦截器。</p> <h3 id="请求拦截器"><a href="#请求拦截器" class="header-anchor">#</a> 请求拦截器</h3> <p>请求拦截器用于在发送请求之前修改请求的配置，如添加请求头、设置请求超时等。</p> <p>拦截器可以使用axios.interceptors.request.use()方法添加到Axios实例中。</p> <div class="language-js extra-class"><pre class="language-js"><code>axios<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>request<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>
+  <span class="token comment">// 在发送请求之前修改请求配置</span>
+  <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">config</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 添加请求头</span>
+    config<span class="token punctuation">.</span>headers<span class="token punctuation">.</span>Authorization <span class="token operator">=</span> <span class="token string">'Bearer '</span> <span class="token operator">+</span> <span class="token function">getToken</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> config<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 请求失败时的处理</span>
+  <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>在上面的示例中，我们添加了一个请求拦截器，它在发送请求之前向请求头中添加了一个Authorization字段，并设置了它的值为获取的token。</p> <h3 id="响应拦截器"><a href="#响应拦截器" class="header-anchor">#</a> 响应拦截器</h3> <p>响应拦截器用于在处理响应之前修改响应的数据、错误信息等。</p> <p>拦截器可以使用axios.interceptors.response.use()方法添加到Axios实例中。</p> <div class="language-js extra-class"><pre class="language-js"><code>axios<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>response<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>
+  <span class="token comment">// 处理成功响应</span>
+  <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 对响应数据做些什么</span>
+    <span class="token keyword">return</span> response<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 处理错误响应</span>
+  <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 对响应错误做些什么</span>
+    <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>在上面的示例中，我们添加了一个响应拦截器，它处理成功的响应和错误的响应，并返回响应或错误信息。</p> <h2 id="错误处理"><a href="#错误处理" class="header-anchor">#</a> 错误处理</h2> <p>Axios可以自动处理HTTP错误，如404 Not Found、500 Internal Server Error等。如果请求返回错误状态码，Axios会自动抛出一个错误。可以使用catch()方法捕获这个错误，并进行相应的处理。</p> <div class="language-js extra-class"><pre class="language-js"><code>axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/user/12345'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>在上面的示例中，如果请求返回一个错误状态码，Axios会自动抛出一个错误，我们可以使用catch()方法捕获这个错误并进行处理。</p> <h2 id="取消请求"><a href="#取消请求" class="header-anchor">#</a> 取消请求</h2> <p>Axios可以通过使用取消令牌取消请求。取消令牌是一个对象，可以使用它来取消正在进行的请求。取消请求是通过使用CancelToken工厂函数创建一个取消令牌，并将它传递给请求配置中的cancelToken选项来实现的。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> source <span class="token operator">=</span> axios<span class="token punctuation">.</span>CancelToken<span class="token punctuation">.</span><span class="token function">source</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/user/12345'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  cancelToken<span class="token operator">:</span> source<span class="token punctuation">.</span>token
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">thrown</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>axios<span class="token punctuation">.</span><span class="token function">isCancel</span><span class="token punctuation">(</span>thrown<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Request canceled'</span><span class="token punctuation">,</span> thrown<span class="token punctuation">.</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>thrown<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+source<span class="token punctuation">.</span><span class="token function">cancel</span><span class="token punctuation">(</span><span class="token string">'请求已被取消'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>在上面的示例中，我们首先使用CancelToken工厂函数创建了一个取消令牌，并将它传递给请求配置中的cancelToken选项。然后，我们使用source.cancel()方法来取消请求。如果请求被取消，Axios会自动抛出一个Cancel错误，我们可以使用axios.isCancel()方法来检查这个错误是否是取消错误。</p> <p>如果需要取消多个请求，可以使用一个共享的取消令牌。在这种情况下，每个请求都需要将同一个取消令牌传递给它们的cancelToken选项。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> source <span class="token operator">=</span> axios<span class="token punctuation">.</span>CancelToken<span class="token punctuation">.</span><span class="token function">source</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/user/12345'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  cancelToken<span class="token operator">:</span> source<span class="token punctuation">.</span>token
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">thrown</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>axios<span class="token punctuation">.</span><span class="token function">isCancel</span><span class="token punctuation">(</span>thrown<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Request canceled'</span><span class="token punctuation">,</span> thrown<span class="token punctuation">.</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>thrown<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/user/67890'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  cancelToken<span class="token operator">:</span> source<span class="token punctuation">.</span>token
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">thrown</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>axios<span class="token punctuation">.</span><span class="token function">isCancel</span><span class="token punctuation">(</span>thrown<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Request canceled'</span><span class="token punctuation">,</span> thrown<span class="token punctuation">.</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>thrown<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 取消请求</span>
+source<span class="token punctuation">.</span><span class="token function">cancel</span><span class="token punctuation">(</span><span class="token string">'请求被取消了'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>在上面的代码中，我们使用同一个取消令牌来取消两个请求。当我们调用source.cancel()方法时，两个请求都会被取消。</p> <p>在请求被取消时，Axios会抛出一个包含message属性的异常对象。可以使用axios.isCancel(thrown)方法来检查异常对象是否是一个取消异常。</p> <h2 id="取消多个请求"><a href="#取消多个请求" class="header-anchor">#</a> 取消多个请求</h2> <p>要取消多个Axios请求，您需要使用一个存储取消令牌的数组，然后在取消请求时遍历该数组并取消每个请求。以下是一个示例代码：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> axios <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'axios'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 创建多个请求</span>
+<span class="token keyword">const</span> request1 <span class="token operator">=</span> axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/api/request1'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> cancelToken<span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">axios<span class="token punctuation">.</span>CancelToken</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> request2 <span class="token operator">=</span> axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/api/request2'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> cancelToken<span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">axios<span class="token punctuation">.</span>CancelToken</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> request3 <span class="token operator">=</span> axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/api/request3'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> cancelToken<span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">axios<span class="token punctuation">.</span>CancelToken</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 存储所有取消令牌</span>
+<span class="token keyword">const</span> cancelTokens <span class="token operator">=</span> <span class="token punctuation">[</span>request1<span class="token punctuation">,</span> request2<span class="token punctuation">,</span> request3<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">source</span> <span class="token operator">=&gt;</span> source<span class="token punctuation">.</span>cancelToken<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 取消所有请求</span>
+axios<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span><span class="token punctuation">[</span>request1<span class="token punctuation">,</span> request2<span class="token punctuation">,</span> request3<span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span>axios<span class="token punctuation">.</span>Cancel<span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">finally</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 遍历所有取消令牌并取消请求</span>
+    cancelTokens<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">cancelToken</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      cancelToken<span class="token punctuation">.</span><span class="token function">cancel</span><span class="token punctuation">(</span><span class="token string">'请求已被取消'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>在上面的示例中，我们首先创建了多个请求，并将每个请求的取消令牌存储在一个数组中。然后，我们使用axios.all()方法将所有请求封装成一个Axios Promise，并在Promise被拒绝时抛出axios.Cancel错误。最后，我们遍历所有取消令牌并取消请求。</p> <p>请注意，axios.all()方法已被弃用，您可以使用Promise.all()方法来替代它，如下所示：</p> <div class="language-js extra-class"><pre class="language-js"><code>Promise<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span><span class="token punctuation">[</span>request1<span class="token punctuation">,</span> request2<span class="token punctuation">,</span> request3<span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span>axios<span class="token punctuation">.</span>Cancel<span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">finally</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 遍历所有取消令牌并取消请求</span>
+    cancelTokens<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">cancelToken</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      cancelToken<span class="token punctuation">.</span><span class="token function">cancel</span><span class="token punctuation">(</span><span class="token string">'请求已被取消'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>在上面的示例中，我们使用Promise.all()方法来替代已被弃用的axios.all()方法，并在该方法的回调函数中使用axios.Cancel错误来捕获所有请求的取消操作。</p> <p>在Promise.all()方法的回调函数中，我们遍历所有取消令牌，并使用cancel()方法取消每个请求。请注意，finally()方法将始终在Promise.all()方法的回调函数完成后执行，这意味着即使回调函数抛出错误或中断执行，也将执行取消操作。</p> <p>需要注意的是，如果请求已经发送并且服务器已经响应，那么取消请求将不起作用。此时，您需要依赖服务器响应中包含的某些机制（如头信息或数据格式）来进行适当的处理。</p> <h2 id="配置选项"><a href="#配置选项" class="header-anchor">#</a> 配置选项</h2> <p>除了上面介绍的选项外，Axios还提供了许多其他选项，可用于配置请求和响应的行为。下面列出了一些常用的选项：</p> <p>baseURL: 基本URL，用于在所有请求的URL前添加路径。
+headers: 请求头对象。
+params: 用于在请求URL中添加查询参数的对象。
+timeout: 超时时间，单位毫秒。
+withCredentials: 是否发送跨域请求时携带cookie。
+maxContentLength: 允许的响应内容的最大大小，单位字节。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">axios</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  method<span class="token operator">:</span> <span class="token string">'get'</span><span class="token punctuation">,</span>
+  url<span class="token operator">:</span> <span class="token string">'/user'</span><span class="token punctuation">,</span>
+  baseURL<span class="token operator">:</span> <span class="token string">'https://api.example.com'</span><span class="token punctuation">,</span>
+  headers<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'X-Requested-With'</span><span class="token operator">:</span> <span class="token string">'XMLHttpRequest'</span><span class="token punctuation">,</span>
+    <span class="token string">'Content-Type'</span><span class="token operator">:</span> <span class="token string">'application/json'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  params<span class="token operator">:</span> <span class="token punctuation">{</span>
+    id<span class="token operator">:</span> <span class="token number">12345</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  timeout<span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span>
+  withCredentials<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  maxContentLength<span class="token operator">:</span> <span class="token number">2000</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>在上面的示例中，我们使用Axios的配置选项来配置请求的行为，包括基本URL、请求头、查询参数、超时时间、是否携带cookie以及允许的响应内容的最大大小。</p> <h2 id="结语"><a href="#结语" class="header-anchor">#</a> 结语</h2> <p>Axios是一个流行的基于Promise的HTTP客户端，可以在浏览器和Node.js环境中使用。它提供了一个简单的API，支持多种HTTP请求方法和数据格式，同时还提供了拦截器、错误处理和取消请求等功能，使得HTTP请求更加方便和可靠。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/study/axios/03.html" class="prev">
+        axios 实例
+      </a></span> <span class="next"><a href="/study/axios/01.html">
+        axios 初体验
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3ce791f2.js" defer></script><script src="/assets/js/2.0ef20547.js" defer></script><script src="/assets/js/52.0acf038d.js" defer></script>
+  </body>
+</html>
